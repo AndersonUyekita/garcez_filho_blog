@@ -1,0 +1,1 @@
+O cartão de visita do Carlos foi feito usando o InkScape.
