@@ -83,17 +83,17 @@
 
             <!-- Sobre -->
             <li class="nav-item px-3">
-              <a class="nav-link" href="#sobre">SOBRE</a>
+              <a class="nav-link" href="https://www.garcezfilho.com.br/#sobre">SOBRE</a>
             </li>
 
             <!-- Equipe -->
             <li class="nav-item px-3">
-              <a class="nav-link" href="#equipe">EQUIPE</a>
+              <a class="nav-link" href="https://www.garcezfilho.com.br/#equipe">EQUIPE</a>
             </li>
 
             <!-- Localização -->
             <li class="nav-item px-3">
-              <a class="nav-link" href="#localizacao">LOCALIZAÇÃO</a>
+              <a class="nav-link" href="https://www.garcezfilho.com.br/#localizacao">LOCALIZAÇÃO</a>
             </li>
 
             <!-- Blog -->
@@ -103,7 +103,7 @@
 
             <!-- Contatos -->
             <li class="nav-item px-3">
-              <a class="nav-link" href="#contatos" tabindex="-1">CONTATOS</a>
+              <a class="nav-link" href="https://www.garcezfilho.com.br/#contatos" tabindex="-1">CONTATOS</a>
             </li>
           </ul>
         </div>
@@ -176,10 +176,33 @@
             font-weight: bold;
         }
 
+        .corpo_regular{
+            font-family:'Book Antiqua';
+        }
 
+        /* Zoom Animation */
+        @-webkit-keyframes zoom {
+          from {
+            -webkit-transform: scale(1, 1);
+          }
+          to {
+            -webkit-transform: scale(1.5, 1.5);
+          }
+        }
 
+        @keyframes zoom {
+          from {
+            transform: scale(1, 1);
+          }
+          to {
+            transform: scale(1.5, 1.5);
+          }
+        }
 
-
+        .carousel-inner .item > img {
+          -webkit-animation: zoom 20s;
+          animation: zoom 20s;
+        }
 
         html
         {
@@ -234,65 +257,65 @@
         <button type="button" data-bs-target="#carousel_blog" data-bs-slide-to="5" aria-label="Slide 6"></button>
       </div>
 
-      <!-- Conteúdo -->
+      <!-- Conteúdo: Os slides terão 5 segundos mudar -->
       <div class="carousel-inner">
 
-        <!-- 1o Item -->
+        <!-- 1o Item: CIVIL -->
         <div class="carousel-item active" data-bs-interval="5000">
-          <div style="height: 40vh; background-image: url('./01-Figure/civil_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%);"></div>
-          <div class="carousel-caption d-none d-md-block">
+          <div style="height: 40vh; background-image: url('./01-Figure/civil_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%); animation: zoom 20s;"></div>
+          <div class="carousel-caption d-md-block">
             <h5 class="titulo_regular">Direito Civil</h5>
             <p>Leia os meus últimos posts sobre Direito Civil.</p>
             <a href="#" class="btn btn-lg btn-primary" style="margin-bottom: 1.5rem;">Leia mais</a>
           </div>
         </div>
 
-        <!-- 2o Item -->
+        <!-- 2o Item: PENAL -->
         <div class="carousel-item" data-bs-interval="5000">
-          <div style="height: 40vh; background-image: url('./01-Figure/criminal_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%);"></div>
-          <div class="carousel-caption d-none d-md-block">
+          <div style="height: 40vh; background-image: url('./01-Figure/criminal_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%); animation: zoom 20s;"></div>
+          <div class="carousel-caption d-md-block">
             <h5 class="titulo_regular">Direito Penal</h5>
             <p>Leia os meus últimos posts sobre Direito Penal.</p>
             <a href="#" class="btn btn-lg btn-primary" style="margin-bottom: 1.5rem;">Leia mais</a>
           </div>
         </div>
 
-        <!-- 3o Item -->
+        <!-- 3o Item: ARMAS -->
         <div class="carousel-item" data-bs-interval="5000">
-          <div style="height: 40vh; background-image: url('./01-Figure/gun_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%);"></div>
-          <div class="carousel-caption d-none d-md-block">
+          <div style="height: 40vh; background-image: url('./01-Figure/gun_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%); animation: zoom 20s;"></div>
+          <div class="carousel-caption d-md-block">
             <h5 class="titulo_regular">Regularização de Armas</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <p>Leia os meus últimos posts sobre Regularização de Armas.</p>
             <a href="#" class="btn btn-lg btn-primary" style="margin-bottom: 1.5rem;">Leia mais</a>
           </div>
         </div>
 
-        <!-- 4o Item -->
+        <!-- 4o Item: AMBIENTAL -->
         <div class="carousel-item" data-bs-interval="5000">
-          <div style="height: 40vh; background-image: url('./01-Figure/environment_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%);"></div>
-          <div class="carousel-caption d-none d-md-block">
+          <div style="height: 40vh; background-image: url('./01-Figure/environment_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%); animation: zoom 20s;"></div>
+          <div class="carousel-caption d-md-block">
             <h5 class="titulo_regular">Direito Ambiental</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <p>Leia os meus últimos posts sobre Direito Ambiental.</p>
             <a href="#" class="btn btn-lg btn-primary" style="margin-bottom: 1.5rem;">Leia mais</a>
           </div>
         </div>
 
-        <!-- 5o Item -->
+        <!-- 5o Item: IMOBILIÁRIO -->
         <div class="carousel-item" data-bs-interval="5000">
-          <div style="height: 40vh; background-image: url('./01-Figure/realstate_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%);"></div>
-          <div class="carousel-caption d-none d-md-block">
+          <div style="height: 40vh; background-image: url('./01-Figure/realstate_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%); animation: zoom 20s;"></div>
+          <div class="carousel-caption d-md-block">
             <h5 class="titulo_regular">Direito Imobiliário</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <p>Leia os meus últimos posts sobre Direito Imobiliário.</p>
             <a href="#" class="btn btn-lg btn-primary" style="margin-bottom: 1.5rem;">Leia mais</a>
           </div>
         </div>
 
-        <!-- 6o Item -->
+        <!-- 6o Item: TRABALHISTA -->
         <div class="carousel-item" data-bs-interval="5000">
-          <div style="height: 40vh; background-image: url('./01-Figure/labour_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%);"></div>
-          <div class="carousel-caption d-none d-md-block">
+          <div style="height: 40vh; background-image: url('./01-Figure/labour_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%); animation: zoom 20s;"></div>
+          <div class="carousel-caption d-md-block">
             <h5 class="titulo_regular">Direito do Trabalho</h5>
-            <p>Some representative placeholder content for the third slide.</p>
+            <p>Leia os meus últimos posts sobre Direito do Trabalho.</p>
             <a href="#" class="btn btn-lg btn-primary" style="margin-bottom: 1.5rem;">Leia mais</a>
           </div>
         </div>
@@ -317,45 +340,105 @@
     <div class="container-fluid" style="max-width:70vw;">
     
         <!-- Título da Seção -->
-        <h2 class="titulo_regular">Destaque</h2>
+        <h2 class="titulo_regular">Destaques</h2>
 
         <!-- Definindo uma "linha" -->
         <div class="row mb-2">
 
             <!-- Coluna da Esquerda -->
             <div class="col-md-6">
-              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
+                <div class="card mb-3">
 
-                  <!-- TAG -->
-                  <span class="badge rounded-pill text-bg-primary" style="margin:auto;">Civil</span>
-                  <h3 class="mb-0">Featured post</h3>
-                  <div class="mb-1 text-muted">Nov 12</div>
-                  <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="stretched-link">Continue reading</a>
+                    <!-- Imagem do Destaque 1 -->
+                    <img src="./01-Figure/hero.jpg" class="card-img-top" alt="...">
+
+                    <!-- Categoria do Destaque 1 -->
+                    <div class="card-img-overlay" style="height:25%;">
+                        <span class="badge rounded-pill text-bg-success" style="margin:auto; margin-left: 0;">Ambiental</span>
+                    </div>
+
+                    <!-- TEMPO de Leitura do Destaque 1 -->
+                    <div class="card-img-overlay" style="height:25%; text-align: right;">
+                        <span class="badge rounded-pill text-bg-light" style="margin:auto; margin-left: 0;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+                                <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
+                            </svg>
+                            1 minuto
+                        </span>
+                    </div>
+
+                    <!-- Corpo do Destaque 1 -->
+                    <div class="card-body">
+
+                        <!-- Título do Destaque 1 -->
+                        <h5 class="card-title">Card title</h5>
+
+                        <!-- Data do Destaque 1 -->
+                        <div class="mb-1 text-muted">01 Fev 2023</div>
+
+                        <!-- Teaser da Publicação do Destaque 1 -->
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer.</p>
+
+                    <!-- Autor do Destaque 1 -->
+                    <div class="row">
+                        <div class="col">
+                            
+                            <!-- Avatar e Nome do Autor do Destaque 1 -->
+                            <img src="./01-Figure/profile_carlos.jpg" class="img-fluid" alt="Avatar" style="border-radius: 50%; width: 50px; margin: auto; margin-right: 0.5rem;">
+                            <span class="card-text"><small class="text-muted" style="font-family: Book Antiqua;">José Carlos Garcez Filho</small></span>
+                        </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-auto d-none d-lg-block">
-                  <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                </div>
-              </div>
             </div>
 
             <!-- Coluna da Direita -->
             <div class="col-md-6">
-              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-                <div class="col p-4 d-flex flex-column position-static">
+                <div class="card mb-3">
 
-                  <!-- TAG -->
-                  <span class="badge rounded-pill text-bg-success" style="margin:auto;">Ambiental</span>
-                  <h3 class="mb-0">Post title</h3>
-                  <div class="mb-1 text-muted">Nov 11</div>
-                  <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="stretched-link">Continue reading</a>
+                    <!-- Imagem do Destaque 2 -->
+                    <img src="./01-Figure/hero.jpg" class="card-img-top" alt="...">
+
+                    <!-- Categoria do Destaque 2 -->
+                    <div class="card-img-overlay" style="height:25%;">
+                        <span class="badge rounded-pill text-bg-success" style="margin:auto; margin-left: 0;">Ambiental</span>
+                    </div>
+
+                    <!-- TEMPO de Leitura do Destaque 2 -->
+                    <div class="card-img-overlay" style="height:25%; text-align: right;">
+                        <span class="badge rounded-pill text-bg-light" style="margin:auto; margin-left: 0;">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
+                                <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
+                            </svg>
+                            1 minuto
+                        </span>
+                    </div>
+
+                    <!-- Corpo do Destaque 2 -->
+                    <div class="card-body">
+
+                        <!-- Título do Destaque 2 -->
+                        <h5 class="card-title">Card title</h5>
+
+                        <!-- Data do Destaque 2 -->
+                        <div class="mb-1 text-muted">01 Fev 2023</div>
+
+                        <!-- Teaser da Publicação do Destaque 2 -->
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                        content. This content is a little bit longer.</p>
+
+                    <!-- Autor do Destaque 2 -->
+                    <div class="row">
+                        <div class="col">
+                            
+                            <!-- Avatar e Nome do Autor do Destaque 2 -->
+                            <img src="./01-Figure/profile_carlos.jpg" class="img-fluid" alt="Avatar" style="border-radius: 50%; width: 50px; margin: auto; margin-right: 0.5rem;">
+                            <span class="card-text"><small class="text-muted" style="font-family: Book Antiqua;">José Carlos Garcez Filho</small></span>
+                        </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="col-auto d-none d-lg-block">
-                  <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                </div>
-              </div>
             </div>
         </div>
     </div>
@@ -433,9 +516,6 @@
 
     </div>
 </section>
-
-
-
 
 <!-- Rodapé -->
 <section class="reveal" style="background: #062a4e; color: #e4c84d;">
