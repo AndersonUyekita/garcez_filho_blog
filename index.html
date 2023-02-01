@@ -96,6 +96,11 @@
               <a class="nav-link" href="#localizacao">LOCALIZAÇÃO</a>
             </li>
 
+            <!-- Blog -->
+            <li class="nav-item px-3">
+                <a class="nav-link disabled" href="https://blog.garcezfilho.com.br">BLOG</a>
+            </li>
+
             <!-- Contatos -->
             <li class="nav-item px-3">
               <a class="nav-link" href="#contatos" tabindex="-1">CONTATOS</a>
@@ -166,6 +171,16 @@
           opacity: 1;
         }
 
+        .titulo_regular{
+            font-family:'Book Antiqua';
+            font-weight: bold;
+        }
+
+
+
+
+
+
         html
         {
           scroll-padding-top: 10vh; /* height of sticky header */
@@ -200,217 +215,145 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-
 </head>
 <body>
 
-<!-- Texto que fica sobre o Parallax. -->
-<div class="parallax-hero">
-    <h2 style="font-family:'Oswald'; text-align: right">Garcez Filho | Advocacia & Consultoria Jurídica</h2>
-    <h1 style="font-family:'Oswald'; text-align: right; font-size: 8vw;">PROTEGENDO<br>OS SEUS DIREITOS</ph1>
-    <h3 style="font-family:'Oswald'; text-align: right">Civil | Trabalhista | Ambiental</h3>
-</div>
+<!-- Carousel com as principais TAGS -->
+<section>
 
-<!-- Criando o Parallax -->
-<div class="parallax"></div>
+    <!-- Configurando o Carousel para: Transição automático -->
+    <div id="carousel_blog" class="carousel slide" data-bs-ride="carousel">
 
-<!-- Seção dos Serviços -->
-<section class="reveal">
+      <!-- Indicadores inferior -->
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carousel_blog" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carousel_blog" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carousel_blog" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carousel_blog" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button type="button" data-bs-target="#carousel_blog" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        <button type="button" data-bs-target="#carousel_blog" data-bs-slide-to="5" aria-label="Slide 6"></button>
+      </div>
 
-    <h1 style="margin-top: 5vh;padding-top: 5vh;text-align: center;font-family:'Oswald';">SERVIÇOS</h1>
-    <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding: 5vh; opacity:1"></hr>
+      <!-- Conteúdo -->
+      <div class="carousel-inner">
 
-    <!-- Listagem dos Serviços -->
-    <div class="container" style="max-width:70vw">
-
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-
-            <!-- Serviços: Civil -->
-            <div class="col">
-                <div id="civil" class="card h-100">
-                    <img src="./01-Figure/civil_law.jpg" class="card-img-top" alt="Imagem Direito Civil Card">
-                    <div class="card-body">
-                        <h5 class="card-title" style="text-align: center;font-family:'Book Antiqua';font-weight: bold;">Civil</h5>
-                        <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding-bottom: 10px; opacity:1"></hr>
-                        <ul>
-                            <li>Indenizações;</li>
-                            <li>Código de Proteção e Defesa do Consumidor;</li>
-                            <li>Ajuizamento e defesa em ações de cobranças;</li>
-                            <li>Recuperação de créditos;</li>
-                            <li>Responsabilidade civil;</li>
-                            <li>Casamento, Separação e Divórcio;</li>
-                            <li>Inventários e testamentos;</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Serviços: Penal -->
-            <div class="col">
-                <div id="criminal" class="card h-100">
-                    <img src="./01-Figure/criminal_law.jpg" class="card-img-top" alt="Imagem Direito Criminal Card">
-                    <div class="card-body">
-                        <h5 class="card-title" style="text-align: center;font-family:'Book Antiqua';font-weight: bold;">Criminal</h5>
-                        <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding-bottom: 10px; opacity:1"></hr>
-                        <ul>
-                            <li>Requerimento de habeas corpus;</li>
-                            <li>Pedido de relaxamento ou revogação de prisão;</li>
-                            <li>Defesa em ação penal e inquérito policial;</li>
-                            <li>Pedido de liberdade provisória;</li>
-                            <li>Entrada de recursos;</li>
-                            <li>Revisão criminal;</li>
-                            <li>Pedido de instauração de queixa de crime;</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Serviços: Regularização de Armas -->
-            <div class="col">
-                <div id="armas" class="card h-100">
-                    <img src="./01-Figure/gun_law.jpg" class="card-img-top" alt="Imagem Armas Card">
-                    <div class="card-body">
-                        <h5 class="card-title" style="text-align: center;font-family:'Book Antiqua';font-weight: bold;">Armas</h5>
-                        <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding-bottom: 10px; opacity:1"></hr>
-                        <ul>
-                            <li>Aquisição de Armas de uso permitido junto à Polícia Federal (SINARM);</li>
-                            <li>Aquisição de Armas de uso permitido e restrito junto ao Exército (SIGMA);</li>
-                            <li>Certificado de Registro (CR);</li>
-                            <li>Autorização de compra;</li>
-                            <li>Emissão de CRAF;</li>
-                            <li>Emissão de guia de trânsito;</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Serviços: Ambiental -->
-            <div class="col">
-                <div id="ambiental" class="card h-100">
-                    <img src="./01-Figure/environment_law.jpg" class="card-img-top" alt="Imagem Direito Ambiental Card">
-                    <div class="card-body">
-                        <h5 class="card-title" style="text-align: center;font-family:'Book Antiqua';font-weight: bold;">Ambiental</h5>
-                        <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding-bottom: 10px; opacity:1"></hr>
-                        <ul>
-                            <li>Regularização rural;</li>
-                            <li>Regularização ambiental;</li>
-                            <li>Regularização urbana;</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Serviços: Imobiliário -->
-            <div class="col">
-                <div id="imobiliario" class="card h-100">
-                    <img src="./01-Figure/realstate_law.jpg" class="card-img-top" alt="Imagem Imobiliário Card">
-                    <div class="card-body">
-                        <h5 class="card-title" style="text-align: center;font-family:'Book Antiqua';font-weight: bold;">Imobiliário</h5>
-                        <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding-bottom: 10px; opacity:1"></hr>
-                        <ul>
-                            <li>Assessoria jurídica;</li>
-                            <li>Análise e confecção de contratos;</li>
-                            <li>Cobrança de aluguéis;</li>
-                            <li>Locação, Compra e Venda;</li>
-                            <li>Posse e Usucapião;</li>
-                            <li>Registro de Imóveis;</li>
-                            <li>Regularização de Imóveis;</li>
-                            <li>Desapropriação;</li>
-                            <li>Reintegração de posse;</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Serviços: Trabalhista -->
-            <div class="col">
-                <div id="trabalhista" class="card h-100">
-                    <img src="./01-Figure/labour_law.jpg" class="card-img-top" alt="Imagem Direito Trabalhista Card">
-                    <div class="card-body">
-                        <h5 class="card-title" style="text-align: center;font-family:'Book Antiqua';font-weight: bold;">Trabalhista</h5>
-                        <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding-bottom: 10px; opacity:1"></hr>
-                        <ul>
-                            <li>Reconhecimento do vínculo trabalhista;</li>
-                            <li>Pagamento de horas extraordinárias;</li>
-                            <li>Recolhimento do FGTS;</li>
-                            <li>Intervalo intrajornada;</li>
-                            <li>Assédio moral;</li>
-                            <li>Verbas atrasadas;</li>
-                            <li>Acidente em serviço;</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-
-
-
+        <!-- 1o Item -->
+        <div class="carousel-item active" data-bs-interval="5000">
+          <div style="height: 40vh; background-image: url('./01-Figure/civil_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%);"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="titulo_regular">Direito Civil</h5>
+            <p>Leia os meus últimos posts sobre Direito Civil.</p>
+            <a href="#" class="btn btn-lg btn-primary" style="margin-bottom: 1.5rem;">Leia mais</a>
+          </div>
         </div>
-    </div>
+
+        <!-- 2o Item -->
+        <div class="carousel-item" data-bs-interval="5000">
+          <div style="height: 40vh; background-image: url('./01-Figure/criminal_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%);"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="titulo_regular">Direito Penal</h5>
+            <p>Leia os meus últimos posts sobre Direito Penal.</p>
+            <a href="#" class="btn btn-lg btn-primary" style="margin-bottom: 1.5rem;">Leia mais</a>
+          </div>
+        </div>
+
+        <!-- 3o Item -->
+        <div class="carousel-item" data-bs-interval="5000">
+          <div style="height: 40vh; background-image: url('./01-Figure/gun_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%);"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="titulo_regular">Regularização de Armas</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+            <a href="#" class="btn btn-lg btn-primary" style="margin-bottom: 1.5rem;">Leia mais</a>
+          </div>
+        </div>
+
+        <!-- 4o Item -->
+        <div class="carousel-item" data-bs-interval="5000">
+          <div style="height: 40vh; background-image: url('./01-Figure/environment_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%);"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="titulo_regular">Direito Ambiental</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+            <a href="#" class="btn btn-lg btn-primary" style="margin-bottom: 1.5rem;">Leia mais</a>
+          </div>
+        </div>
+
+        <!-- 5o Item -->
+        <div class="carousel-item" data-bs-interval="5000">
+          <div style="height: 40vh; background-image: url('./01-Figure/realstate_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%);"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="titulo_regular">Direito Imobiliário</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+            <a href="#" class="btn btn-lg btn-primary" style="margin-bottom: 1.5rem;">Leia mais</a>
+          </div>
+        </div>
+
+        <!-- 6o Item -->
+        <div class="carousel-item" data-bs-interval="5000">
+          <div style="height: 40vh; background-image: url('./01-Figure/labour_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%);"></div>
+          <div class="carousel-caption d-none d-md-block">
+            <h5 class="titulo_regular">Direito do Trabalho</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+            <a href="#" class="btn btn-lg btn-primary" style="margin-bottom: 1.5rem;">Leia mais</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Botões Laterais -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carousel_blog" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel_blog" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>    
 </section>
 
-<!-- Sobre -->
-<section class="reveal">
-    <div class="container-fluid" style="background-color: rgba(119,80,21,.1);padding-bottom: 5vh;">
-        <h1 id="sobre" style="margin-top: 5vh;padding-top: 5vh;text-align: center;font-family:'Oswald';">SOBRE</h1>
-        <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding: 5vh; opacity:1"></hr>
+<!-- Post em Destaques -->
+<section style="margin-top: 2vh;padding-top: 2vh;">
 
-        <div class="container-fluid" style="max-width:70vw">
+    <!-- Configurando os limites da página -->
+    <div class="container-fluid" style="max-width:70vw;">
+    
+        <!-- Título da Seção -->
+        <h2 class="titulo_regular">Destaque</h2>
 
-            <div class="container">
+        <!-- Definindo uma "linha" -->
+        <div class="row mb-2">
 
-              <div class="row row-cols-1 row-cols-md-2 g-4">
+            <!-- Coluna da Esquerda -->
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
 
-                <div class="col" style="margin:auto;">
-
-                    <div class="container-fluid">
-                        <h5 style="font-family:'Book Antiqua';font-weight: bold;">História</h5>
-                        <p>A Garcez Filho possui 11 anos de experiência, atuando em mais de 500 ações judiciais e extra judiciais,
-                           envolvendo: direito penal, direito do trabalho, direito do consumidor, direito civil, direito de família e sucessões,
-                           execuções fiscais, regularização rural, regularização urbana, regularização ambiental e serviços cartorários.</p>
-                    </div>
-
-                    <!-- 
-                    <div class="container-fluid">
-                        <h5>Missão</h5>
-                        <p>To organize the world's information and make it universally accessible and useful.</p>
-                    </div>
-                    
-                    <div class="container-fluid">
-                        <h5>Visão</h5>
-                        <p>To provide access to the world's information in one click</p>
-                    </div>
-
-                    <div class="container-fluid">
-                        <h5>Valores</h5>
-                        <p>Foco no sucesso do cliente, Transparência, Ética e Justiça.</p>
-                    </div>
-
-                    -->
-
-                    <!-- NavBar: Missão, Visão e Valores
-                    <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
-                          <li class="nav-item" role="presentation">
-                            <button class="nav-link active" id="missap-tab" data-bs-toggle="tab" data-bs-target="#missao" type="button" role="tab" aria-controls="missao" aria-selected="true">Missão</button>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="visao-tab" data-bs-toggle="tab" data-bs-target="#visao" type="button" role="tab" aria-controls="visao" aria-selected="true">Visão</button>
-                          </li>
-                          <li class="nav-item" role="presentation">
-                            <button class="nav-link" id="valores-tab" data-bs-toggle="tab" data-bs-target="#valores" type="button" role="tab" aria-controls="valores" aria-selected="true">Valores</button>
-                          </li>
-                    </ul>
-
-                    <div class="tab-content" id="myTabContent">
-                      <div class="tab-pane fade show active" id="missao" role="tabpanel" aria-labelledby="missao-tab">...</div>
-                      <div class="tab-pane fade" id="visao" role="tabpanel" aria-labelledby="visao-tab">...</div>
-                      <div class="tab-pane fade" id="valores" role="tabpanel" aria-labelledby="contact-tab">...</div>
-                    </div> -->
-
+                  <!-- TAG -->
+                  <span class="badge rounded-pill text-bg-primary" style="margin:auto;">Civil</span>
+                  <h3 class="mb-0">Featured post</h3>
+                  <div class="mb-1 text-muted">Nov 12</div>
+                  <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="stretched-link">Continue reading</a>
                 </div>
+                <div class="col-auto d-none d-lg-block">
+                  <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+                </div>
+              </div>
+            </div>
 
-                <!-- Figura -->
-                <div class="col">
-                    <img src="./01-Figure/sobre.jpg" alt="Figura do martelo." style="max-width:100%;">
+            <!-- Coluna da Direita -->
+            <div class="col-md-6">
+              <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+
+                  <!-- TAG -->
+                  <span class="badge rounded-pill text-bg-success" style="margin:auto;">Ambiental</span>
+                  <h3 class="mb-0">Post title</h3>
+                  <div class="mb-1 text-muted">Nov 11</div>
+                  <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
+                  <a href="#" class="stretched-link">Continue reading</a>
+                </div>
+                <div class="col-auto d-none d-lg-block">
+                  <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"></rect><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
                 </div>
               </div>
             </div>
@@ -418,162 +361,139 @@
     </div>
 </section>
 
-<!-- Equipe -->
-<section class="reveal">
-    <h1 id="equipe" style="margin-top: 5vh;text-align: center;font-family:'Oswald';">EQUIPE</h1>
-    <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding: 5vh; opacity:1"></hr>
+<!-- Últimas Postagens -->
+<section  class="reveal"  style="margin-top: 2vh; margin-bottom: 10vh; padding-top: 2vh;">
 
-    <div class="container" style="max-width:70vw">
+    <!-- Definindo um container para usar 70% da tela. -->
+    <div class="container-fluid" style="max-width:70vw;">
 
-        <div class="row row-cols-1 row-cols-md-2 justify-content-md-center g-5">
-            <div class="col">
-                <div class="card h-100" style="border-color: transparent;">
+    <!-- Criando uma "linha" -->
+    <div class="row g-5">
 
-                    <!-- Carlos -->
-                    <img src="./01-Figure/profile_carlos.jpg" class="card-img-top" alt="Foto do Carlos" style="border-radius: 50%;width: 50%;margin: auto;">
-                    <div class="card-body">
-                        <h4 class="card-title" style="text-align: center; font-family:'Book Antiqua';"><strong>José Carlos Garcez Filho</strong></h4>
-                        <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto; opacity:1;padding-bottom: 2vh"></hr>
-                        <h6 style="text-align: center; font-family:'Book Antiqua'; padding-bottom:5vh;"><strong>Sócio fundador</strong></h6>
-                        <p class="card-text">
-                            Advogado, formado em 2009 pela Universidade Braz Cubas, é conveniado a Defensoria Pública OAB/SP para prestação de
-                            Assistência Judiciária suplementar. Membro da Comissão de Estudos sobre a Legislação e Regulamentação de Controle de
-                            Armas – OAB/SP 17º Subseção – Mogi das Cruzes. Também é instrutor de Armamento e Tiro (IAT) formado pelo Clube de Tiro
-                            Red Delta – Cascavel/PR
-                        </p>
+        <!-- Coluna da Esquerda: Parte do Post -->
+        <div class="col-md-8">
 
-                        <!-- Colocar o Linkedin
-                        <div class="container-fluid" style="text-align: center;">
-                            <h1>
-                                <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                            </h1>
-                        </div>
-                        -->
+            <!-- Título da Seção -->
+            <h2 class="titulo_regular">Últimas publicações</h2>
 
-                    </div>
+            <hr>
+
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+        </div>
+
+        <!-- Coluna da Direita: Outras informações -->
+        <div class="col-md-4">
+
+            <div class="position-sticky" style="top: 12vh;">
+                <div class="p-4 mb-3 bg-light rounded">
+                  <h4 class="fst-italic">Sobre</h4>
+                  <p class="mb-0">Este blog tem o objetivo de fornece informações atualizadas sobre questões 
+                  jurídicas. Nossa equipe de especialistas em direito compartilha análises e opiniões informadas para 
+                  ajudá-lo a tomar decisões conscientes. Acompanhe-nos para ficar por dentro das tendências e desenvolvimentos 
+                  do mundo jurídico.</p>
                 </div>
-            </div>
 
-            <!-- Inserir o perfil da Fran
-            <div class="col">
-                <div class="card h-100" style="border-color: transparent;">
-
-                     
-                    <img src="./01-Figure/profile_fran.jpg" class="card-img-top" alt="Foto da Fran" style="border-radius: 50%;width: 50%;margin: auto;">
-                    <div class="card-body">
-                        <h4 class="card-title" style="text-align: center; font-family:'Book Antiqua';"><strong>Françoise Patriane de Souza</strong></h4>
-                        <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto; opacity:1;padding-bottom: 2vh"></hr>
-                        <h6 style="text-align: center; font-family:'Book Antiqua'; padding-bottom:5vh;"><strong>Sócia fundadora</strong></h6>
-                        <p class="card-text">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque lacinia sodales nibh, sed fermentum sem imperdiet et. Cras sit amet ex ut tellus molestie ultricies. Donec non quam id magna congue consectetur. Quisque euismod, ligula quis lobortis venenatis, massa leo luctus tortor, eget ullamcorper leo justo id eros. Vestibulum eu justo enim. Aenean pharetra libero risus, nec sollicitudin nisi aliquam nec. Aenean sed libero in enim facilisis viverra non sed ligula. Vestibulum eu mattis lectus.
-                        </p>
-                    </div>
+                <div class="p-4">
+                  <h4 class="fst-italic">Arquivos</h4>
+                  <ol class="list-unstyled mb-0">
+                    <li><a href="#">Fevereiro 2023</a></li>
+                  </ol>
                 </div>
-            </div>
-            -->
+
+                <div class="p-4">
+                  <h4 class="fst-italic">Categorias</h4>
+                  <ol class="list-unstyled">
+                    <li><span class="badge text-bg-primary">Civil</span></li>
+                    <li><span class="badge text-bg-secondary">Imobiliário</span></li>
+                    <li><span class="badge text-bg-success">Ambiental</span></li>
+                    <li><span class="badge text-bg-danger">Penal</span></li>
+                    <li><span class="badge text-bg-warning">Trabalhista</span></li>
+                    <li><span class="badge text-bg-dark">Armas</span></li>
+                  </ol>
+                </div>
+              </div>
+
+            
+
+        </div>
+    </div>
+
+
+
     </div>
 </section>
 
-<!-- Mapa -->
-<section class="reveal">
-    <div id="localizacao" class="container-fluid" style="margin-top: 5vh;padding-top: 5vh; padding-left: 0; padding-right: 0">
-        <iframe title="Localização a partir do Google Maps" style="width:100%; height:50vh;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.2949810449313!2d-46.19240448462983!3d-23.521890584702476!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cdd815ff1d3353%3A0xa4d7ba69bb02ec09!2sR.%20Cel.%20Souza%20Franco%2C%20771%20-%20Centro%2C%20Mogi%20das%20Cruzes%20-%20SP%2C%2008710-025!5e0!3m2!1sen!2sbr!4v1674654236741!5m2!1sen!2sbr" frameborder="0" style="pointer-events: none;" data-ll-status="loaded"></iframe>
+
+
+
+<!-- Rodapé -->
+<section class="reveal" style="background: #062a4e; color: #e4c84d;">
+    <div class="container-fluid" style="max-width:70vw">
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+            <!-- Coluna da Esquerda: Logo + Slogan -->
+            <div class="col col-lg-6 d-flex align-items-start">
+                <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-2">
+                    <img src="./01-Figure/logo_footnote.svg" alt="logotipo footnote">
+                </div>
+                <div>
+                    <h5 style="font-family:'Oswald'">Garcez Filho<br><small class="text-muted" style="color: white!important;">Advocacia & Consultoria Jurídica</small></h5>
+                </div>
+            </div>
+
+            <!-- Coluna do Meio: Links -->
+            <div class="col col-lg-3 d-flex align-items-start">
+                <div>
+                    <h5 style="font-family:'Book Antiqua';font-weight: bold;">Links</h5>
+
+                    <!-- Links -->
+                    <ul class="list-unstyled small">
+                      <li class="mb-2"><a href="#" style="color: white; text-decoration: none!important">Início</a></li>
+                      <li class="mb-2"><a href="#servicos" style="color: white; text-decoration: none!important">Serviços</a></li>
+                      <li class="mb-2"><a href="#sobre" style="color: white; text-decoration: none!important">Sobre</a></li>
+                      <li class="mb-2"><a href="#equipe" style="color: white; text-decoration: none!important">Equipe</a></li>
+                      <li class="mb-2"><a href="#localizacao" style="color: white; text-decoration: none!important">Localização</a></li>
+                      <li class="mb-2"><a href="/" style="color: white; text-decoration: none!important">Blog</a></li>
+                      <li class="mb-2"><a href="#contatos" style="color: white; text-decoration: none!important">Contatos</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Coluna da Direita: Aviso e Termos -->
+            <div class="col col-lg-3 d-flex align-items-start">
+                <div>
+                    <h5 style="font-family:'Book Antiqua';font-weight: bold;">Políticas, avisos e termos</h5>
+
+                    <!-- Links -->
+                    <ul class="list-unstyled small">
+                      <li class="mb-2"><a href="./pages/politica-de-privacidade.html" style="color: white; text-decoration: none!important">Política de Privacidade</a></li>
+                      <li class="mb-2"><a href="./pages/politica-de-cookies.html" style="color: white; text-decoration: none!important">Política de Cookies</a></li>
+                      <li class="mb-2"><a href="./pages/termos-de-uso.html" style="color: white; text-decoration: none!important">Termos de uso</a></li>
+                    </ul>
+                </div>
+            </div>
+
+
+
+        </div>
     </div>
+
+    <!-- Direitos Autorais -->
+    <p style="text-align:center; font-size:0.75rem; margin:auto; padding-bottom: 0.5rem;">
+        Garcez Filho | Copyright © 2023 All rights reserved - <a href="./pages/politica-de-privacidade.html" style="color: white; text-decoration: none!important">Política de Privacidade<a/>
+    </p>
 </section>
-
-<!-- Contatos -->
-<section class="reveal">
-
-<h1 id="contatos" style="margin-top: 5vh;text-align: center;font-family:'Oswald';">CONTATOS</h1>
-<hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding: 5vh; opacity:1"></hr>
-
-<div class="container-fluid" style="max-width:70vw">
-    <div class="row row-cols-1 row-cols-md-2 g-5">
-
-        <!-- Coluna da Esquerda -->
-        <div class="col">
-            <div class="card h-100" style="border-color: transparent;">
-                <div class="card-body">
-                    
-                    <!-- Endereços -->
-                    <h4 class="card-title" style="text-align: center; font-family:'Book Antiqua';"><strong>Endereço</strong></h4>
-                    <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto; opacity:1;padding-bottom: 2vh"></hr>
-                    <p class="card-text">
-                    <i class="fa fa-map-o" aria-hidden="true"></i>
-                    Rua Coronel Souza Franco, 771 - Centro, Mogi das Cruzes - SP, CEP 08710-020
-                    </p><br>
-
-                    <!-- Telefones -->
-                    <h4 class="card-title" style="text-align: center; font-family:'Book Antiqua';"><strong>Telefones</strong></h4>
-                    <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto; opacity:1;padding-bottom: 2vh"></hr>
-                    <p class="card-text">
-                        <i class="fa fa-whatsapp" aria-hidden="true"></i> +55 (11) 99977-6346
-                        <br>
-                        <i class="fa fa-mobile" aria-hidden="true"></i> +55 (11) 2629-2693
-                    </p> 
-
-                    <!-- Email -->
-                    <h4 class="card-title" style="text-align: center; font-family:'Book Antiqua';"><strong>Email</strong></h4>
-                    <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto; opacity:1;padding-bottom: 2vh"></hr>
-                    <p class="card-text">
-                        <i class="fa fa-envelope-o" aria-hidden="true"></i> garcez@adv.oabsp.org.br
-                    </p> 
-                </div>
-            </div>
-        </div>
-
-        <!-- Coluna da Direita -->
-        <div class="col">
-            <div class="card h-100" style="border-color: transparent;">
-                <div class="card-body">
-
-                    <!-- Call to Action Button -->
-                    <h4 class="card-title" style="text-align: center; font-family:'Book Antiqua';"><strong>Entre em contato</strong></h4>
-                    <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto; opacity:1;padding-bottom: 2vh"></hr>
-                    <p class="card-text">
-                    Envie-me uma mensagem pelo
-                    </p>
-                    <div class="container-fluid" style="text-align: center;">
-                        <a href="https://wa.me/5511999776346" class="btn btn-primary btn-lg" role="button" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
-                    </div>
-
-                    <br>
-
-                    <!-- Save o meu Contato -->
-                    <h4 class="card-title" style="text-align: center; font-family:'Book Antiqua';"><strong>Save o meu Contato</strong></h4>
-                    <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto; opacity:1;padding-bottom: 2vh"></hr>
-                    <p class="card-text">
-
-                        <div class="row row-cols-1 row-cols-md-2 g-1">
-
-                              <!-- QR Code -->  
-                              <div class="col">
-                                <div class="card h-100" style="border-color: transparent;">
-                                  <img src="./01-Figure/qr_code.png" class="card-img-top" alt="Código QR Code para salvar o contato" style="width:75%; margin: auto;">
-
-                                </div>
-                              </div>
-
-                              <!-- Texto sobre o QR Code --> 
-                              <div class="col" style="margin:auto;">
-                                <div class="card h-100" style="border-color: transparent;">
-                                  <div class="card-body">
-                                    <p class="card-text">Leia o QR code e me adicione a sua lista de contatos.</p>
-                                  </div>
-                                </div>
-                              </div>
-                    </p>
-                </div>
-            </div>
-        </div>
-
-</div>
-</section>
-
-<hr>
-<p style="text-align:center; font-size:0.75rem;">
-Garcez Filho | Copyright © 2023 All rights reserved
-</p>
 
 </body>
 </html>
