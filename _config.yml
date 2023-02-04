@@ -25,9 +25,6 @@ timezone: America/Sao_Paulo
 paginate: 5
 paginate_path: "/página/:num"
 
-# Configurações de Permalinks
-permalink: /:title
-
 # Criando um permalink padrão para os Posts
 permalink: /posts/:categories/:year/:month/:day/:title/
 
