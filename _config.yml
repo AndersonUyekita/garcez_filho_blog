@@ -1,2 +1,55 @@
-encoding: utf-8
+# Nome do site
+#name: Garcez Filho | Advocacia & Consultoria Jurídica
+
+# Descrição do site
+#description: Este é o meu site pessoal
+
+# Configurações de URL
+#baseurl: "" # Utilize "/nome_do_seu_site" se você estiver hospedando em uma sub-pasta
+#url: "http://localhost:4000" # Utilize "http://seu_domínio.com" ao publicar o site
+
+# Encoding padrão (opcional, mas recomendável)
+encoding: UTF-8
+
+# Configurações de Markdown
+markdown: kramdown
+highlighter: rouge
+
+# Definindo que os 
+locale: pt-BR
+
+# Configurações de Data
+timezone: America/Sao_Paulo
+
+# Configurações de Página Inicial
+paginate: 5
+paginate_path: "/página/:num"
+
+# Configurações de Permalinks
+permalink: /:title
+
+# Criando um permalink padrão para os Posts
 permalink: /posts/:categories/:year/:month/:day/:title/
+
+# Configurações de Plugins
+plugins:
+  - jekyll-feed
+
+# Configurações de Pastas
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - .bundle/
+  - .jekyll-cache/
+  - .sass-cache/
+  - .jekyll-metadata
+
+# Configurações de Build
+future: true
+limit_posts: 10
+
+# Configurações de Saída
+lsi: false
+strip_index_file: false
