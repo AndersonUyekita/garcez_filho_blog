@@ -21,6 +21,7 @@ Esse post foi escrito no dia {{ page.date | date: "%d" }}
 
 Data em extenso: {{ page.date | date: "%d de %B de %Y" }}
 
+## Exemplo
 
 {% raw  %}
 {% assign m = page.date | date: "%-m" %}
@@ -41,6 +42,11 @@ Data em extenso: {{ page.date | date: "%d de %B de %Y" }}
 {% endcase %}
 {{ page.date | date: " de %Y" }}
 {% endraw %}
+
+
+## Exemplo
+
+{{ page.date | date_to_long_string; }}
 
 
 O Autor foi: {{ page.author }}
