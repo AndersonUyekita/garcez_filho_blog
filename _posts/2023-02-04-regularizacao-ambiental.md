@@ -23,25 +23,25 @@ Data em extenso: {{ page.date | date: "%d de %B de %Y" }}
 
 ## Exemplo
 
-{% raw  %}
 {% assign m = page.date | date: "%-m" %}
-{{ page.date | date: "%-d de" }}
-{% case m %}
-  {% when '1' %}Janeiro
-  {% when '2' %}Fevereiro
-  {% when '3' %}Março
-  {% when '4' %}Abril
-  {% when '5' %}Maio
-  {% when '6' %}Junho
-  {% when '7' %}Julho
-  {% when '8' %}Agosto
-  {% when '9' %}Setembro
-  {% when '10' %}Outubro
-  {% when '11' %}Novembro
-  {% when '12' %}Dezembro
-{% endcase %}
-{{ page.date | date: " de %Y" }}
-{% endraw %}
+{% capture month_name_pt %}
+  {% case m %}
+    {% when '1' %}Janeiro
+    {% when '2' %}Fevereiro
+    {% when '3' %}Março
+    {% when '4' %}Abril
+    {% when '5' %}Maio
+    {% when '6' %}Junho
+    {% when '7' %}Julho
+    {% when '8' %}Agosto
+    {% when '9' %}Setembro
+    {% when '10' %}Outubro
+    {% when '11' %}Novembro
+    {% when '12' %}Dezembro
+  {% endcase %}
+{% endcapture %}
+
+{{ page.date | date: "%-d" }} de {{ month_name_pt }} de {{ page.date | date: "%Y" }}
 
 
 ## Exemplo
