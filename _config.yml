@@ -18,6 +18,9 @@ highlighter: rouge
 # Definindo que os 
 locale: pt-BR
 
+# Configuração para data em pt-BR
+date_format: "pt-BR"
+
 # Configurações de Data
 timezone: America/Sao_Paulo
 
