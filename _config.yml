@@ -17,8 +17,7 @@ highlighter: rouge
 
 # Definindo que os 
 locale: pt-BR
-
-# Configuração para data em pt-BR
+language: pt-BR
 date_format: "pt-BR"
 
 # Configurações de Data
