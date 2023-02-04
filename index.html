@@ -579,6 +579,13 @@
                     </div>
                 </article>
 
+                <!-- Listar as publicações -->
+                <ul>
+                    {% for post in site.posts %}
+                        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+                    {% endfor %}
+                </ul>
+
             </div>
 
             <!-- Coluna da Direita: Outras informações -->
