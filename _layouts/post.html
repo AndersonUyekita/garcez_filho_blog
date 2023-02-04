@@ -8,9 +8,71 @@
   <body>
 
     <section>
-        <div class="container-fluid" style="max-width: 70vw; min-height: 100vh">
-            {{ content }}
+        <!-- Texto que fica sobre o Parallax. -->
+<div class="container-fluid-g0">
+
+    <!-- Imagem do Hero -->
+    <img src="../assets/hero.jpg" width=100% />
+
+</div>
+
+<section class="reveal">
+    <!-- Criação do Card flutuante -->
+    <div class="container card" style="max-width:70vw; top:-10vh;">
+        
+        <!-- Delimita o corpo do texto -->
+        <div class="card-body" style="margin-left:5vw; margin-right:5vw;">
+
+            <!-- Título do Post -->
+            <div class="card-title">
+                <h1 style="margin-top: 5vh; padding-top: 5vh; padding-bottom: 2vh; text-align: left; font-family:'Oswald';">REGULARIZAÇÃO AMBIENTAL</h1>
+            </div>
+
+            <!-- Dados da Publicação e do Autor -->
+            <div class="container-g0">
+                <div class="row">
+
+                    <!-- Avatar do Autor -->
+                    <div class="col-md-6">
+                        <img src="../assets/profile_carlos.jpg" class="card-img-top" alt="Foto do Carlos" style="border-radius: 50%; width: 50px; margin: auto;" />
+                        <span style="text-align: right; font-family:'Antiqua Book'; margin: auto;">by José Carlos Garcez Filho </span>
+                    </div>
+
+                    <!-- Data -->
+                    <div class="col-md-6">
+                        <p style="text-align: right; font-family:'Antiqua Book'; margin: auto;">
+                            <i>Publicado em 25 de Janeiro de 2023.</i>
+                        </p>
+                    </div
+                </div>
+            </div>
+
+            <!-- Divisor -->
+            <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding-bottom: 10px; opacity:1; margin-bottom: 2vw;"></hr>
+
+
+            <!-- too long didn't read -->
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">asdas</h5>
+                    <p class="card-text">asdad</p>
+                </div>
+            </div>
+
+            <!-- Conteúdo do POST -->
+            <div class="card-body">
+                <p>O Direito Ambiental é o conjunto de normas e princípios jurídicos que regulam as relações entre as pessoas e o meio ambiente.Dentro desse contexto, a regularização rural é um tema de grande importância, pois trata da legalização de propriedades rurais e das atividades que são desenvolvidas nessas áreas.</p>
+                <p>A regularização rural é um processo que tem como objetivo garantir que as propriedades rurais estejam de acordo com as leis e regulamentos ambientais, além de promover a conservação dos recursos naturais e a preservação do meio ambiente. Esse processo inclui a regularização fundiária, que visa garantir a legalidade das propriedades rurais, e a regularização ambiental, que visa garantir que as atividades desenvolvidas nessas áreas estejam de acordo com as normas ambientais.</p>
+                <p>A regularização fundiária é um processo que visa garantir a legalidade das propriedades rurais, ou seja, garantir que essas propriedades estejam registradas e regularizadas perante o poder público. Esse processo pode incluir a regularização de documentação, a delimitação de áreas e a desapropriação de áreas irregularmente ocupadas.</p>
+                <p>Já a regularização ambiental é um processo que visa garantir que as atividades desenvolvidas em propriedades rurais estejam de acordo com as normas ambientais. Esse processo inclui a elaboração de planos de manejo, a realização de estudos de impacto ambiental e a fiscalização das atividades desenvolvidas.</p>
+                <p>Em resumo, a regularização rural é um processo fundamental para garantir a legalidade das propriedades rurais e assegurar que as atividades desenvolvidas nessas áreas estejam de acordo com as normas ambientais. É importante destacar que esse processo é essencial para a conservação dos recursos naturais e a preservação do meio ambiente.</p>
+
+                {{ content }}
+
+            </div>
         </div>
+    </div>
+</section>
     </section>
 
     <!-- Inserindo o Footer -->
