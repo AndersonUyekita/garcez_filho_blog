@@ -1,7 +1,7 @@
 ---
 title: Regularização Ambiental
 layout: post
-author: Jose Carlos Garcez Filho
+author: José Carlos Garcez Filho
 date: 2023-02-04 12:00:00 -0300
 ---
 
