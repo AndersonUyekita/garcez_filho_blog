@@ -46,7 +46,7 @@
                             <!-- Data -->
                             <div class="col-md-6" style="margin: auto;">
                                 <p style="text-align: right; font-family:'Antiqua Book'; margin: auto;">
-                                    <i>Publicado em 25 de Janeiro de 2023.</i>
+                                    <i>Publicado em {% include data_longa.html %}</i>
                                 </p>
                             </div
                         </div>
@@ -66,8 +66,6 @@
                     
                     <!-- Conteúdo do POST -->
                     <div class="card-body">
-
-                        {% include data_longa.html %}
 
                         {{ content }}
 
