@@ -1,9 +1,28 @@
 ---
-layout: default
 permalink: /404.html
-hero_url: /assets/404.jpg
 ---
-<!-- Inserir Hero -->
-{% include hero.html %}
+<!DOCTYPE html>
 
-Não foi possível encontrar a página.
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+
+  <!-- Inserindo o Header -->
+  {% include header.html %}
+
+  <body>
+
+    <section>
+
+        <!-- Inserir Hero -->
+        <div class="container-fluid-g0" style="height: 200px;background-image: url(/assets/404.jpg);background-position: center;background-size: cover;">
+        </div>
+
+        <div class="container-fluid" style="max-width: 70vw; min-height: 100vh">
+            <p>Não foi possível encontrar a página.</p>
+        </div>
+    </section>
+
+    <!-- Inserindo o Footer -->
+    {% include footer.html %}
+
+  </body>
+</html>
