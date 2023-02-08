@@ -5,13 +5,13 @@ author: José Carlos Garcez Filho
 date: 2023-02-07 12:00:00 -0300
 ---
 
-# O que é o Direito Civil?
+# O que é o Direito Civil?  
 
 O Direito Civil é uma área do direito que regulamenta as relações entre particulares e suas obrigações de direito privado, como contratos, propriedade, família e sucessões. Seu objetivo principal é proteger os direitos e garantir os deveres dos cidadãos em suas relações privadas e patrimoniais. Ele é uma das bases do sistema jurídico brasileiro e é regulado pelo Código Civil brasileiro.
 
 O Código Civil brasileiro, promulgado em 11 de janeiro de 2003, regulamenta o Direito Civil no Brasil. É a principal lei que define as relações entre particulares e estabelece seus direitos e obrigações. Além disso, outras leis complementares, como a lei de registros públicos, a lei de locações, e a lei de alienação fiduciária, regulamentam questões específicas. Estas leis trabalham juntas com o Código Civil para formar o sistema jurídico brasileiro de Direito Civil.
 
-# Quais são os principais temas do Direito Civil?
+# Quais são os principais temas do Direito Civil?  
 
 Além de contratos, propriedade, família e sucessões, o Direito Civil também regula outros temas importantes, como:
 
