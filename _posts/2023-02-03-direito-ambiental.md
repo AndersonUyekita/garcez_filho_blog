@@ -2,7 +2,7 @@
 title: Direito Ambiental
 layout: post
 author: José Carlos Garcez Filho
-date: 2023-02-04 12:00:00 -0300
+date: 2023-02-03 12:00:00 -0300
 tags: Ambiental
 ---
 
@@ -17,3 +17,7 @@ A regularização fundiária é um processo que visa garantir a legalidade das p
 Já a regularização ambiental é um processo que visa garantir que as atividades desenvolvidas em propriedades rurais estejam de acordo com as normas ambientais. Esse processo inclui a elaboração de planos de manejo, a realização de estudos de impacto ambiental e a fiscalização das atividades desenvolvidas.
 
 Em resumo, a regularização rural é um processo fundamental para garantir a legalidade das propriedades rurais e assegurar que as atividades desenvolvidas nessas áreas estejam de acordo com as normas ambientais. É importante destacar que esse processo é essencial para a conservação dos recursos naturais e a preservação do meio ambiente.
+
+## Teste para um Callout
+
+{{ include callout.html content="Em resumo, a regularização rural é um processo fundamental para garantir a legalidade das propriedades rurais e assegurar que as atividades desenvolvidas nessas áreas estejam de acordo com as normas ambientais. É importante destacar que esse processo é essencial para a conservação dos recursos naturais e a preservação do meio ambiente." color="#4285F4"}}
