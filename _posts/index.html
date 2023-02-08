@@ -49,6 +49,9 @@
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/d96daba58a.js" crossorigin="anonymous"></script>
 
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
     <!-- Todas as informações sobre o NavBar -->
     <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
@@ -253,22 +256,38 @@
                             <!-- Divisor -->
                             <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding-bottom: 10px; opacity:1; margin-bottom: 2vw;">
 
-
-                            <!-- too long didn't read -->
-                            <div class="card">
-                                <div class="card-body">
-                                    <h5 class="card-title">asdas</h5>
-                                    <p class="card-text">asdad</p>
-                                </div>
-                            </div>
-
                             <!-- Conteúdo do POST -->
                             <div class="card-body">
                                 <p>O Direito Ambiental é o conjunto de normas e princípios jurídicos que regulam as relações entre as pessoas e o meio ambiente.Dentro desse contexto, a regularização rural é um tema de grande importância, pois trata da legalização de propriedades rurais e das atividades que são desenvolvidas nessas áreas.</p>
                                 <p>A regularização rural é um processo que tem como objetivo garantir que as propriedades rurais estejam de acordo com as leis e regulamentos ambientais, além de promover a conservação dos recursos naturais e a preservação do meio ambiente. Esse processo inclui a regularização fundiária, que visa garantir a legalidade das propriedades rurais, e a regularização ambiental, que visa garantir que as atividades desenvolvidas nessas áreas estejam de acordo com as normas ambientais.</p>
                                 <p>A regularização fundiária é um processo que visa garantir a legalidade das propriedades rurais, ou seja, garantir que essas propriedades estejam registradas e regularizadas perante o poder público. Esse processo pode incluir a regularização de documentação, a delimitação de áreas e a desapropriação de áreas irregularmente ocupadas.</p>
                                 <p>Já a regularização ambiental é um processo que visa garantir que as atividades desenvolvidas em propriedades rurais estejam de acordo com as normas ambientais. Esse processo inclui a elaboração de planos de manejo, a realização de estudos de impacto ambiental e a fiscalização das atividades desenvolvidas.</p>
-                                <p>Em resumo, a regularização rural é um processo fundamental para garantir a legalidade das propriedades rurais e assegurar que as atividades desenvolvidas nessas áreas estejam de acordo com as normas ambientais. É importante destacar que esse processo é essencial para a conservação dos recursos naturais e a preservação do meio ambiente.</p>
+                                
+                                <!-- Callout funcionando -->
+                                <div class="position-relative">
+                                    <div class="position-absolute top-50 start-0 translate-middle-y">
+                                        <p style="border-radius: 100%;color: white;position: absolute;font-size: 1rem;font-weight: bold;text-align: center;background-color: black;width: 2rem;height: 2rem;left: -13px;line-height: 2rem;top: calc(50% - 1rem);">
+                                            !
+                                        </p>
+                                    </div>
+                                    <p style="border-left-width: 5px;border-left-style: solid;border-left-color: {{ include.color }};padding-left: 25px;">
+                                        Em resumo, a regularização rural é um processo fundamental para garantir a legalidade das propriedades rurais e assegurar que as atividades desenvolvidas nessas áreas estejam de acordo com as normas ambientais. É importante destacar que esse processo é essencial para a conservação dos recursos naturais e a preservação do meio ambiente.
+                                    </p>
+                                </div>
+
+                                <!-- Callout testando -->
+                                <div class="position-relative" style="background-color:#4285F410;">
+                                    <div class="position-absolute top-50 start-0 translate-middle-y">
+                                        <p style="border-radius: 100%;color: white;position: absolute;font-size: 1rem;font-weight: bold;text-align: center;background-color: #4285F4;width: 2rem;height: 2rem;left: -13px;line-height: 2rem;top: calc(50% - 1rem);">
+                                            <i class="bi bi-exclamation-triangle-fill"></i>
+                                        </p>
+                                    </div>
+                                    <p style="border-left-width: 5px;border-left-style: solid;border-left-color: #4285F4;padding-left: 25px;padding-top:1rem;padding-bottom:1rem;">
+                                        Em resumo, a regularização rural é um processo fundamental para garantir a legalidade das propriedades rurais e assegurar que as atividades desenvolvidas nessas áreas estejam de acordo com as normas ambientais. É importante destacar que esse processo é essencial para a conservação dos recursos naturais e a preservação do meio ambiente.
+                                    </p>
+                                </div>
+
+                                <p style="border-left-width: 5px;border-left-style: solid;border-left-color: {{ include.color }};padding-left: 10px;">Em resumo, a regularização rural é um processo fundamental para garantir a legalidade das propriedades rurais e assegurar que as atividades desenvolvidas nessas áreas estejam de acordo com as normas ambientais. É importante destacar que esse processo é essencial para a conservação dos recursos naturais e a preservação do meio ambiente.</p>
 
                             </div>
                         </div>
@@ -292,10 +311,7 @@
         <!-- Criando o Parallax -->
         <div class="parallax">
         </div>
-
     </section>
-
-
 
     <!-- Ficou Interessado -->
     <section class="reveal" style="padding-bottom: 10vh;">
@@ -356,14 +372,7 @@
 
             <div class="col d-none d-sm-block" style="max-width:7.5vw;">
             </div>
-
-
-
-
         </div>
-
-
-
     </section>
 
     <!-- Rodapé -->
@@ -422,6 +431,5 @@
         Garcez Filho | Copyright © 2023 All rights reserved - <a href="./pages/politica-de-privacidade.html" style="color: white; text-decoration: none!important">Política de Privacidade<a/>
         </p>
     </section>
-
 </body>
 </html>
