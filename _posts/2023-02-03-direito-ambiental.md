@@ -1,9 +1,12 @@
 ---
-title: Regularização Ambiental
+title: Direito Ambiental
 layout: post
 author: José Carlos Garcez Filho
 date: 2023-02-04 12:00:00 -0300
+tags: Ambiental
 ---
+
+## O que é o Direito Ambiental?
 
 O Direito Ambiental é o conjunto de normas e princípios jurídicos que regulam as relações entre as pessoas e o meio ambiente.Dentro desse contexto, a regularização rural é um tema de grande importância, pois trata da legalização de propriedades rurais e das atividades que são desenvolvidas nessas áreas.
 
