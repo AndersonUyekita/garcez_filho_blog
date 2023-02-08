@@ -148,12 +148,31 @@
           transform: translateY(-50vp);
         }
 
+        /* Parallax Hero com Carousel */
+
         .parallax-hero{
             position: absolute;
             z-index: 1000;
             top: 35vh;
             right: 5vw;
             color: white;
+        }
+
+        /* Parallax de Publicações Semelhantes */
+        .parallax-related-posts {
+          /* The image used */
+          background-image: url("/assets/publicacoes_semelhantes.jpg");
+
+          /* Set a specific height */
+          min-height: 40vh; 
+
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          margin: 0;
+          filter: brightness(65%);
         }
 
         /* Text Fade-up effect */
