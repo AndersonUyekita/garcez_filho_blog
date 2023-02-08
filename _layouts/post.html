@@ -18,76 +18,63 @@
         <!-- Corpo do POST -->
         <section>
 
-            <!-- Criação do Card flutuante -->
-            <div class="container card" style="max-width:70vw; top:-10vh;">
-        
-                <!-- Delimita o corpo do texto -->
-                <div class="card-body" style="margin-left:5vw; margin-right:5vw;">
+            <!-- Definição de Linha -->
+            <div class="row m-0">
 
-                    <!-- Título do Post -->
-                    <div class="card-title">
-                        <h1 style="margin-top: 5vh; padding-top: 5vh; padding-bottom: 2vh; text-align: left; font-family:'Oswald';">{{ page.title }}</h1>
-                    </div>
-
-                    <!-- Dados da Publicação e do Autor -->
-                    <div class="container-g0">
-                        <div class="row">
-
-                            <!-- Avatar do Autor -->
-                            <div class="col-md-6" style="margin: auto;">
-                                <img src="/assets/profile_carlos.jpg" class="card-img-top" alt="Foto do Carlos" style="border-radius: 50%; width: 50px; margin: auto;" />
-                                <span style="text-align: right; font-family:'Antiqua Book'; margin: auto;">{{ page.author }}</span>
-                            </div>
-
-                            <!-- Data -->
-                            <div class="col-md-6" style="margin: auto;">
-                                <p style="text-align: right; font-family:'Antiqua Book'; margin: auto;">
-                                    <i>Publicado em {% include data_longa.html %}</i>
-                                </p>
-                            </div
-                        </div>
-                    </div>
-
-                    <!-- Divisor -->
-                    <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding-bottom: 10px; opacity:1; margin-bottom: 2vw;"></hr>
-
-
-                    <!-- too long didn't read 
-                    <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">too long didn't read</h5>
-                            <p class="card-text">piriri porororo</p>
-                        </div>
-                    </div>-->
-                    
-                    <!-- Conteúdo do POST -->
-                    <div class="card-body">
-
-                        {{ content }}
-
-                    </div>
-
-                    <div class="card-body">
+                <!-- Definição de Coluna: Essa coluna será excluída na visualização pelo celular -->
+                <div class="col d-none d-sm-block" style="max-width:7.5vw;">
+                </div>
     
-                        <div class="row">
+                <!-- Definição de Coluna: Essa é a coluna quer armazenará o conteúdo do POSTS -->
+                <div class="col p-2 d-block" style="max-width:100vw; margin: auto;">
 
-                            <!-- Avatar do Autor -->
-                            <div class="col-md-6" style="margin: auto;">
-                                <img src="/assets/profile_carlos.jpg" class="card-img-top" alt="Foto do Carlos" style="border-radius: 5%;width: 100px;margin: auto;">
-                                <span style="text-align: right; font-family:'Antiqua Book'; margin: auto;">José Carlos Garcez Filho</span>
-                            </div>
+                        <!-- Criação do Card flutuante -->
+                        <div class="container-fluid p-0 card" style="top:-10vh;">
+        
+                            <!-- Delimita o corpo do texto -->
+                            <div class="card-body p-0" style="margin-left:5vw; margin-right:5vw;">
 
-                            <!-- Data -->
-                            <div class="col-md-6" style="margin: auto;">
-                                <p style="text-align: right; font-family:'Antiqua Book'; margin: auto;">
-                                <i>Publicado em 4 de Fevereiro de 2023</i>
-                                </p>
+                                <!-- Título do Post -->
+                                <div class="card-title">
+                                    <h1 style="margin-top: 5vh; padding-top: 5vh; padding-bottom: 2vh; text-align: left; font-family:'Oswald';">{{ page.title }}</h1>
+                                </div>
+
+                                <!-- Dados da Publicação e do Autor -->
+                                <div class="container-g0">
+                                    <div class="row">
+
+                                        <!-- Avatar do Autor -->
+                                        <div class="col-md-6">
+                                            <img src="/assets/profile_carlos.jpg" class="card-img-top" alt="Foto do Carlos" style="border-radius: 50%; width: 50px; margin: auto;">
+                                            <span style="text-align: right; font-family:'Antiqua Book'; margin: auto;">{{ page.author }}</span>
+                                        </div>
+
+                                        <!-- Data -->
+                                        <div class="col-md-6">
+                                            <p style="text-align: right; font-family:'Antiqua Book'; margin: auto;">
+                                                <i>Publicado em {% include data_longa.html %}.</i>
+                                            </p>
+                                        </div>
+                                </div>
+
+                                <!-- Divisor -->
+                                <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding-bottom: 10px; opacity:1; margin-bottom: 2vw;">
+
+                                <!-- Conteúdo do POST -->
+                                <div class="card-body">
+
+                                    {{ content }}
+
+                                </div>
                             </div>
                         </div>
-                    </div>
-
+                </div>
+ 
+                <!-- Definição de Coluna: Essa coluna será excluída na visualização pelo celular -->
+                </div><div class="col d-none d-sm-block" style="max-width:7.5vw;">
                 </div>
             </div>
+
         </section>
     
         {% include related_posts.html %}
