@@ -20,4 +20,4 @@ Em resumo, a regularização rural é um processo fundamental para garantir a le
 
 ## Teste para um Callout
 
-{{ include callout.html content="Em resumo, a regularização rural é um processo fundamental para garantir a legalidade das propriedades rurais e assegurar que as atividades desenvolvidas nessas áreas estejam de acordo com as normas ambientais. É importante destacar que esse processo é essencial para a conservação dos recursos naturais e a preservação do meio ambiente." color="#4285F4"}}
+{{% include callout.html content="Em resumo, a regularização rural é um processo fundamental para garantir a legalidade das propriedades rurais e assegurar que as atividades desenvolvidas nessas áreas estejam de acordo com as normas ambientais. É importante destacar que esse processo é essencial para a conservação dos recursos naturais e a preservação do meio ambiente." color="#4285F4" %}}
