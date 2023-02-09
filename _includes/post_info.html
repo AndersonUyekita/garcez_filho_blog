@@ -12,62 +12,17 @@ Esse include insere o cabeçalho da publicação com:
 
 
 
-{% if include.id_author == 1 %}
+{% if page.id_author == null %}
+  <!-- Conteúdo a ser exibido caso id_author não esteja definido -->
+  <p>Entrei no NULL</p>
+{% else %}
+  {% if page.id_author == 1 %}
+    <!-- Conteúdo a ser exibido se id_author for igual a 1 -->
+    <p>Entrei no id_author = 1</p>
+  {% endif %}
 
-    <!-- Título do Post -->
-    <div class="card-title">
-        <h1 style="margin-top: 5vh; padding-top: 5vh; padding-bottom: 2vh; text-align: left; font-family:'Oswald';">{{ include.title }}</h1>
-    </div>
-
-    <!-- Dados da Publicação e do Autor -->
-    <div class="container-g0">
-        <div class="row">
-
-            <!-- Avatar do Autor -->
-            <div class="col-md-6">
-                <img src="/assets/profile_carlos.jpg" class="card-img-top" alt="Foto do Carlos" style="border-radius: 50%; width: 50px; margin: auto;">
-                <span style="text-align: right; font-family:'Antiqua Book'; margin: auto;">José Carlos Garcez Filho</span>
-            </div>
-
-            <!-- Data -->
-            <div class="col-md-6">
-                <p style="text-align: right; font-family:'Antiqua Book'; margin: auto;">
-                    <i>
-                        {% comment %} Gera a data de maneira longa {% endcomment %}
-                        {% include data_longa.html %}.
-                    </i>
-                </p>
-            </div>
-    </div>
-
-{% endif %}
-
-{% if include.id_author == 2 %}
-
-    <!-- Título do Post -->
-    <div class="card-title">
-        <h1 style="margin-top: 5vh; padding-top: 5vh; padding-bottom: 2vh; text-align: left; font-family:'Oswald';">{{ include.title }}</h1>
-    </div>
-
-    <!-- Dados da Publicação e do Autor -->
-    <div class="container-g0">
-        <div class="row">
-
-            <!-- Avatar do Autor -->
-            <div class="col-md-6">
-                <img src="/assets/profile_fran.jpg" class="card-img-top" alt="Foto da Fran" style="border-radius: 50%; width: 50px; margin: auto;">
-                <span style="text-align: right; font-family:'Antiqua Book'; margin: auto;">Françoise Patriane de Souza</span>
-            </div>
-
-            <!-- Data -->
-            <div class="col-md-6">
-                <p style="text-align: right; font-family:'Antiqua Book'; margin: auto;">
-                    <i>
-                        {% comment %} Gera a data de maneira longa {% endcomment %}
-                        {% include data_longa.html %}.
-                    </i>
-                </p>
-            </div>
-    </div>
-
+  {% if page.id_author == 2 %}
+    <!-- Conteúdo a ser exibido se id_author for igual a 2 -->
+    <p> Entrei no id_author = 2</p>
+  {% endif %}
 {% endif %}
