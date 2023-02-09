@@ -1,0 +1,73 @@
+{% comment %}
+Esse include insere o cabeçalho da publicação com:
+    
+    1. Miniavatar
+    2. Nome do Autor
+    3. Data da publicação
+    4. Compartilhar nas redes sociais
+
+{% endcomment %}
+
+
+
+
+
+{% if include.id_author == 1 %}
+
+    <!-- Título do Post -->
+    <div class="card-title">
+        <h1 style="margin-top: 5vh; padding-top: 5vh; padding-bottom: 2vh; text-align: left; font-family:'Oswald';">{{ include.title }}</h1>
+    </div>
+
+    <!-- Dados da Publicação e do Autor -->
+    <div class="container-g0">
+        <div class="row">
+
+            <!-- Avatar do Autor -->
+            <div class="col-md-6">
+                <img src="/assets/profile_carlos.jpg" class="card-img-top" alt="Foto do Carlos" style="border-radius: 50%; width: 50px; margin: auto;">
+                <span style="text-align: right; font-family:'Antiqua Book'; margin: auto;">José Carlos Garcez Filho</span>
+            </div>
+
+            <!-- Data -->
+            <div class="col-md-6">
+                <p style="text-align: right; font-family:'Antiqua Book'; margin: auto;">
+                    <i>
+                        {% comment %} Gera a data de maneira longa {% endcomment %}
+                        {% include data_longa.html %}.
+                    </i>
+                </p>
+            </div>
+    </div>
+
+{% endif %}
+
+{% if include.id_author == 2 %}
+
+    <!-- Título do Post -->
+    <div class="card-title">
+        <h1 style="margin-top: 5vh; padding-top: 5vh; padding-bottom: 2vh; text-align: left; font-family:'Oswald';">{{ include.title }}</h1>
+    </div>
+
+    <!-- Dados da Publicação e do Autor -->
+    <div class="container-g0">
+        <div class="row">
+
+            <!-- Avatar do Autor -->
+            <div class="col-md-6">
+                <img src="/assets/profile_fran.jpg" class="card-img-top" alt="Foto da Fran" style="border-radius: 50%; width: 50px; margin: auto;">
+                <span style="text-align: right; font-family:'Antiqua Book'; margin: auto;">Françoise Patriane de Souza</span>
+            </div>
+
+            <!-- Data -->
+            <div class="col-md-6">
+                <p style="text-align: right; font-family:'Antiqua Book'; margin: auto;">
+                    <i>
+                        {% comment %} Gera a data de maneira longa {% endcomment %}
+                        {% include data_longa.html %}.
+                    </i>
+                </p>
+            </div>
+    </div>
+
+{% endif %}

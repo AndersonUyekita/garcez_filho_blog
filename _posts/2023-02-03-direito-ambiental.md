@@ -1,7 +1,7 @@
 ---
 title: Direito Ambiental
 layout: post
-author: José Carlos Garcez Filho
+id_author: 1
 date: 2023-02-03 12:00:00 -0300
 tags: Ambiental
 ---

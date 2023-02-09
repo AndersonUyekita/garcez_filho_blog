@@ -2,7 +2,7 @@
 
 <html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
 
-    {% comment %}Insere a tag head{% endcomment %}
+    {% comment %} Insere a tag head {% endcomment %}
     {% include header.html %}
 
     <body>
@@ -34,28 +34,9 @@
                             <!-- Delimita o corpo do texto -->
                             <div class="card-body p-0" style="margin-left:5vw; margin-right:5vw;">
 
-                                <!-- Título do Post -->
-                                <div class="card-title">
-                                    <h1 style="margin-top: 5vh; padding-top: 5vh; padding-bottom: 2vh; text-align: left; font-family:'Oswald';">{{ page.title }}</h1>
-                                </div>
-
-                                <!-- Dados da Publicação e do Autor -->
-                                <div class="container-g0">
-                                    <div class="row">
-
-                                        <!-- Avatar do Autor -->
-                                        <div class="col-md-6">
-                                            <img src="/assets/profile_carlos.jpg" class="card-img-top" alt="Foto do Carlos" style="border-radius: 50%; width: 50px; margin: auto;">
-                                            <span style="text-align: right; font-family:'Antiqua Book'; margin: auto;">{{ page.author }}</span>
-                                        </div>
-
-                                        <!-- Data -->
-                                        <div class="col-md-6">
-                                            <p style="text-align: right; font-family:'Antiqua Book'; margin: auto;">
-                                                <i>Publicado em {% include data_longa.html %}.</i>
-                                            </p>
-                                        </div>
-                                </div>
+                                <!-- Informações do POST -->
+                                {% comment %} Gera o TOC automaticamente{% endcomment %}
+                                {% include post_info.html id_author = "page.id_author" title = "page.title" %}
 
                                 <!-- Divisor -->
                                 <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding-bottom: 10px; opacity:1; margin-bottom: 2vw;">
