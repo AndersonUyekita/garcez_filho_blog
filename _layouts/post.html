@@ -2,7 +2,7 @@
 
 <html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
 
-    <!-- Inserindo o Header -->
+    {% comment %}Insere a tag head{% endcomment %}
     {% include header.html %}
 
     <body>
@@ -98,12 +98,14 @@
             </div>
 
         </section>
-    
+        
+        {% comment %}Insere seção de Publicações Semelhantes{% endcomment %}
         {% include related_posts.html %}
 
+        {% comment %}Insere a seção "Ficou Interessado?"{% endcomment %}
         {% include call_action.html %}
 
-        <!-- Inserindo o Footer -->
+        {% comment %}Footer genérico{% endcomment %}
         {% include footer.html %}
 
   </body>
