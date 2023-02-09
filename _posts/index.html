@@ -572,13 +572,36 @@
                                             </div>
                                         </div>
 
-                                        <!-- Cometários -->
+                                        <!-- Comentários -->
                                         <div class="col-sm-12 col-md-6 col-lg-4 p-0 pb-4">
 
                                             <h5 style="font-family:Oswald; text-align: center;">Comentar</h5>
 
                                             <div class="container-fluid" style="text-align: center;">
-                                                <a class="btn btn-primary" href="#" role="button"><i class="bi bi-chat-left-dots-fill"></i> Faça o seu comentário</a>
+
+                                                <!-- Botão do Offcanvas -->
+                                                <button class="btn btn-primary btn-lg" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                                                    <i class="bi bi-chat-left-dots-fill"></i> Faça o seu comentário
+                                                </button>
+
+                                                <!-- Conteúdo do Offcanvas -->
+                                                <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+                                                    
+                                                    <!-- Título do Canvas + Botão de Fechar -->
+                                                    <div class="offcanvas-header">
+                                                        <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel" style="margin:auto;">Comentários</h5>
+                                                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                                    </div>
+
+                                                    <!-- Corpo do Canvas -->
+                                                    <div class="offcanvas-body">
+                                                        <p style="text-align: justify;">Lamentamos informar que a seção de comentários do nosso blog está <strong>temporariamente indisponível</strong>. 
+                                                        <p style="text-align: justify;">Pedimos desculpas pelo inconveniente causado e garantimos que estamos trabalhando para solucionar o 
+                                                        problema o mais rápido possível.</p>
+                                                        <p style="text-align: justify;">Agradecemos sua paciência e compreensão.</p>
+                                                    </div>
+                                                </div>
+
                                             </div>
                                         </div>
 
