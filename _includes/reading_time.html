@@ -1,0 +1,12 @@
+{% comment %}
+Esse include faz o cálculo de quanto tempo a publicação será lida tendo como base 200 palavras por minuto.
+{% endcomment %}
+
+{% capture words %}
+{{ page.content | number_of_words }}
+{% endcapture %}
+        
+<span>
+	<i class="bi bi-clock"></i>
+	{{ words | divided_by: 200 | append: ' minutos' }}
+</span>
