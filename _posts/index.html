@@ -180,6 +180,106 @@
           opacity: 1;
         }
 
+        /* Definição da classe social-icon */
+        .social-icon {
+          font-size: 1.5rem; /* Define o tamanho inicial da fonte */
+          color: #00000090;
+          display: inline-block; /* Mantém os ícones alinhados */
+        }
+
+        /* Hover effect nos ícones de redes sociais */
+        .social-icon:hover {
+          color: #000000; /* Altera para preto */
+          -webkit-transform: scale(1.2); /* Aumenta 20% */
+          -moz-transform: scale(1.2); /* Aumenta 20% */
+          -ms-transform: scale(1.2); /* Aumenta 20% */
+          transform: scale(1.2) translateZ(0); /* Aumenta 20% */
+          transition: 0.4s all ease;
+        }
+
+        /* TOC text-formatting */
+        .toc-topics {
+          color: #00000090;
+          text-decoration: none;
+        }
+
+        /* Define a classe Rating */
+        .rating {
+
+          /* Faz o elemento ser exibido como um bloco inline */
+          display: inline-block;
+
+          /* Define o tamanho da fonte */
+          font-size: 1.5rem;
+
+          /* Define a cor das estrelas */
+          color: #c5c5c5;
+        }
+
+        /* Oculta o input */
+        .rating input {
+          display: none;
+        }
+
+        /* Define a classe de estrela */
+        .rating .star {
+          /* Define a posição relativa */
+          position: relative;
+
+          /* Define o cursor como ponteiro para indicar a interatividade */
+          cursor: pointer;
+
+          /* Alinha a estrela à direita */
+          float: right;
+
+          /* Adiciona uma margem à direita */
+          margin-right: 3px;
+        }
+
+        /* Define o conteúdo da estrela como o caractere estrela */
+        .rating .star:before {
+          content: '\2605';
+          position: absolute;
+        }
+
+        /* Define o conteúdo de meia estrela como duas estrelas */
+        .rating .star.half:before {
+          content: '\2605\2605';
+          position: absolute;
+
+          /* Define a largura */
+          width: 5px;
+
+          /* Faz a estrela ser exibida como bloco */
+          display: block;
+
+          /* Esconde o conteúdo excessivo */
+          overflow: hidden;
+
+          /* Impede que o conteúdo seja quebrado em uma nova linha */
+          white-space: nowrap;
+        }
+
+        /* Define a cor da label */
+        .rating label {
+          color: #c5c5c5;
+        }
+
+        /* Define a cor da estrela selecionada ou em hover */
+        .rating input:checked ~ label,
+        .rating:not(:checked) > label:hover,
+        .rating:not(:checked) > label:hover ~ label {
+          color: #ffc107;
+        }
+
+        /* Define a cor da estrela selecionada ao ser clicada ou em hover */
+        .rating input:checked + label:hover,
+        .rating input:checked ~ label:hover,
+        .rating label:hover ~ input:checked ~ label,
+        .rating input:checked ~ label:hover ~ label {
+          color: #e0ab1b;
+        }
+
         html
         {
           scroll-padding-top: 10vh; /* height of sticky header */
@@ -358,11 +458,11 @@
 
                             <!-- Conteúdo do POST -->
                             <div class="card-body">
-
-                                <div class="row gx-5">
+                                
+                                <div class="row gx-5 mb-4">
 
                                     <!-- Coluna do conteúdo -->
-                                    <div id="content" class="col-md-9" style="text-align:justify;">
+                                    <div id="content" class="col-sm-12 col-md-12 col-lg-9 p-2 d-block" style="text-align:justify; max-width: 100%;">
                                         
                                         <h2 id="Início">Início</h2>
                                         <p>O Direito Ambiental é o conjunto de normas e princípios jurídicos que regulam as relações entre as pessoas e o meio ambiente.Dentro desse contexto, a regularização rural é um tema de grande importância, pois trata da legalização de propriedades rurais e das atividades que são desenvolvidas nessas áreas.</p>
@@ -402,7 +502,7 @@
                                     </div>
 
                                     <!-- Coluna do TOC -->
-                                    <div class="col-md-3 reveal-rl">
+                                    <div id="TOC-COL" class="d-none d-lg-block reveal-rl" style="max-width: 25%;">
                                         <div class="position-sticky" style="top: 12vh;">
                                             <div class="row">
                                                 <h4>Sumário</h4>
@@ -414,7 +514,83 @@
                                     </div>
                                 </div>
 
+                                <!-- Linha: Redes sociais -->
+                                <div class="container-fluid row gx-5 mx-0">
+
+                                    <!-- Compartilhe -->
+                                    <div class="col-sm-12 col-md-6 col-lg-4 p-0 pb-4">
+                                            
+                                        <h5 style="font-family:Oswald; text-align: center;">Compartilhar</h5>
+                                            
+                                        <div class="container-fluid" style="word-spacing:10px; text-align: center;">
+
+                                                <i class="bi bi-facebook social-icon"></i>
+                                                <i class="bi bi-whatsapp social-icon"></i>
+                                                <i class="bi bi-twitter social-icon"></i>
+                                                <i class="bi bi-linkedin social-icon"></i>
+                                                <i class="bi bi-link-45deg social-icon"></i>
+                                        </div>
+                                    </div>
+
+                                    <!-- Cometários -->
+                                    <div class="col-sm-12 col-md-6 col-lg-4 p-0 pb-4">
+
+                                        <h5 style="font-family:Oswald; text-align: center;">Comentar</h5>
+
+                                        <div class="container-fluid" style="text-align: center;">
+                                            <a class="btn btn-primary" href="#" role="button"><i class="bi bi-chat-left-dots-fill"></i> Faça o seu comentário</a>
+                                        </div>
+                                    </div>
+
+                                    <!-- Avalie -->
+                                    <div class="col-sm-12 col-md-12 col-lg-4 p-0 pb-4">
+
+                                        <h5 style="font-family:Oswald; text-align: center;">Avaliar</h5>
+
+                                        <div class="container-fluid" style="text-align: center;">
+
+                                          <div class="rating">
+                                            <input type="radio" id="star5" name="rating" value="5" />
+                                            <label for="star5" class="star" title="5 estrelas">&#9733;</label>
+                                            <input type="radio" id="star4" name="rating" value="4" />
+                                            <label for="star4" class="star" title="4 estrelas">&#9733;</label>
+                                            <input type="radio" id="star3" name="rating" value="3" />
+                                            <label for="star3" class="star" title="3 estrelas">&#9733;</label>
+                                            <input type="radio" id="star2" name="rating" value="2" />
+                                            <label for="star2" class="star" title="2 estrelas">&#9733;</label>
+                                            <input type="radio" id="star1" name="rating" value="1" />
+                                            <label for="star1" class="star" title="1 estrela">&#9733;</label>
+                                          </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
+
+                            <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding-bottom: 10px; opacity:1; margin-bottom: 2vw;">
+
+                            <!-- Autor -->
+                            <div class="container-fluid row align-items-center">
+
+
+                                <!-- Avatar Grande -->
+                                <div class="col-sm-12 col-md-12 col-lg-2 mb-3" style="text-align: center;">
+                                    <img src="../assets/profile_carlos.jpg" class="card-img-top" alt="Foto do Carlos" style="border-radius: 5%; margin: auto; max-width: 150px;">
+                                </div>
+
+                                <!-- Minibio -->
+                                <div class="col-sm-12 col-md-12 col-lg-10 mb-3">
+                                    <h4>José Carlos Garcez Filho</h4>
+                                    <p style="text-align: justify;">Advogado, formado em 2009 pela Universidade Braz Cubas, é conveniado a Defensoria Pública OAB/SP para 
+                                    prestação de Assistência Judiciária suplementar. Membro da Comissão de Estudos sobre a Legislação e Regulamentação 
+                                    de Controle de Armas – OAB/SP 17º Subseção – Mogi das Cruzes. Também é instrutor de Armamento e Tiro (IAT) formado 
+                                    pelo Clube de Tiro Red Delta – Cascavel/PR</p>
+                                </div>
+
+
+
+                             </div>
                         </div>
                     </div>
             </div>
@@ -460,7 +636,7 @@
                             <h3 style="text-align: center;font-family:'Oswald';">NEWSLETTER</h3>
                             <hr style="max-width: 25px;border-width: 2px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding: 1vh; opacity:1"></hr>
 
-                            <p style="text-align: center;">Fique por dentro das novidades do blog da <strong>Garcez Filho | Advogados & Consultoria
+                            <p style="text-align: center;">Fique por dentro das novidades do blog da <strong>Garcez Filho | Advocacia & Consultoria
                             Jurídica</strong>, assinando a nossa newsletter.</p>
 
                             <!-- Formulário para inscrição da newsletter -->
@@ -482,7 +658,7 @@
                         <h3 style="text-align: center;font-family:'Oswald';">MENSAGEM</h3>
                         <hr style="max-width: 25px;border-width: 2px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding: 1vh; opacity:1"></hr>
 
-                        <p style="text-align: center;">Envie uma mensagem pelo WhatsApp e logo alguém da equipe de <strong>Garcez Filho | Advogados & Consultoria Jurídica</strong>
+                        <p style="text-align: center;">Envie uma mensagem pelo WhatsApp e logo alguém da equipe de <strong>Garcez Filho | Advocacia & Consultoria Jurídica</strong>
                         entrará em contato com você.</p>
 
                         <!-- Entre em contato -->
@@ -506,7 +682,7 @@
             <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
 
                 <!-- Coluna da Esquerda: Logo + Slogan -->
-                <div class="col col-lg-6 d-flex align-items-start">
+                <div class="col-lg-6 col-md-6 col-sm-12 align-items-start">
                     <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-2">
                         <img src="../01-Figure/logo_footnote.svg" alt="logotipo footnote">
                     </div>
@@ -516,7 +692,7 @@
                 </div>
 
                 <!-- Coluna do Meio: Links -->
-                <div class="col col-lg-3 d-flex align-items-start">
+                <div class="col-lg-3 col-md-6 col-sm-12 align-items-start">
                     <div>
                         <h5 style="font-family:'Book Antiqua';font-weight: bold;">Links</h5>
 
@@ -534,7 +710,7 @@
                 </div>
 
                 <!-- Coluna da Direita: Aviso e Termos -->
-                <div class="col col-lg-3 d-flex align-items-start">
+                <div class="col-lg-3 col-md-6 col-sm-12 align-items-start">
                     <div>
                         <h5 style="font-family:'Book Antiqua';font-weight: bold;">Políticas, avisos e termos</h5>
 

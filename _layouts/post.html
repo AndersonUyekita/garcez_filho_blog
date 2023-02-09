@@ -63,7 +63,30 @@
                                 <!-- Conteúdo do POST -->
                                 <div class="card-body">
 
-                                    {{ content }}
+                                    <div class="row gx-5 mb-4">
+
+                                        <!-- CONTENT -->
+                                        <div id="content" class="col-sm-12 col-md-12 col-lg-9 p-2 d-block" style="text-align:justify; max-width: 100%;">
+
+                                            {{ content }}
+
+                                        </div>
+
+                                        <!-- TOC -->
+                                        <div id="TOC-COL" class="d-none d-lg-block reveal-rl" style="max-width: 25%;">
+                                            <div class="position-sticky" style="top: 12vh;">
+                                                <div class="row">
+                                                    <h4>Sumário</h4>
+                                                </div>
+                                                <div class="row">
+                                                    <div id="TOC" style="margin-bottom: 16px;"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    {% include social_media.html %}
 
                                 </div>
                             </div>
