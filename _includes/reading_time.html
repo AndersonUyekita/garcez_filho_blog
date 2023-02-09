@@ -11,6 +11,6 @@ Esse include faz o cálculo de quanto tempo a publicação será lida tendo como
 	{% if words | divided_by: 200 | ceil < 1 %}
 		1 minuto
 	{% else %}
-		{{ words | divided_by: 200 | ceil |append: ' minutos' }}
+		{{ words | divided_by: 200 | ceil | append: ' minutos' }}
 	{% endif %}
 </span>
