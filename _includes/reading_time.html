@@ -3,7 +3,7 @@ Esse include faz o cálculo de quanto tempo a publicação será lida tendo como
 {% endcomment %}
 
 {% capture words %}
-{{ page.content | number_of_words }}
+	{{ page.content | split: "<div id=\"content\">" | last | split: "</div>" | first | strip_html | number_of_words }}
 {% endcapture %}
     
 <span>
