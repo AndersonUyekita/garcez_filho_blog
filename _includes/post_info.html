@@ -8,60 +8,98 @@ Esse include insere o cabeçalho da publicação com:
 
 {% endcomment %}
 
-{% comment %} Dados do Carlos {% endcomment %}
-{% if page.id_author == 1 %}
-    <!-- Título do Post -->
-    <div class="card-title">
-        <h1 style="margin-top: 5vh; padding-top: 5vh; padding-bottom: 2vh; text-align: left; font-family:'Oswald';">{{ page.title }}</h1>
+
+<style>
+    /* Definição da classe social-icon-top */
+    .social-icon-top {
+	    font-size: 1.5rem; /* Define o tamanho inicial da fonte */
+	    color: #00000040;
+	    display: inline-block; /* Mantém os ícones alinhados */
+    }
+
+    /* Hover effect nos ícones de redes sociais */
+    .social-icon-top:hover {
+	    color: #00000080; /* Altera para cinza escuro */
+	    -webkit-transform: scale(1.2); /* Aumenta 20% */
+	    -moz-transform: scale(1.2); /* Aumenta 20% */
+	    -ms-transform: scale(1.2); /* Aumenta 20% */
+	    transform: scale(1.2) translateZ(0); /* Aumenta 20% */
+	    transition: 0.4s all ease;
+    }
+</style>
+
+<!-- Social Media -- Top do Site -->
+<div class="position-relative">
+    <div class="position-absolute top-0 end-0">
+
+        <div class="container-fluid" style="word-spacing:10px; text-align: center; padding-top: 1.5vh; margin-top: 1.5vh;">
+			<i class="bi bi-facebook social-icon-top"></i>
+			<i class="bi bi-whatsapp social-icon-top"></i>
+			<i class="bi bi-twitter social-icon-top"></i>
+			<i class="bi bi-linkedin social-icon-top"></i>
+			<i class="bi bi-link-45deg social-icon-top"></i>
+		</div>
+    </div>
+</div>
+
+<!-- Título do Post -->
+<div class="card-title">
+    <h1 style="margin-top: 5vh; padding-top: 5vh; padding-bottom: 2vh; text-align: left; font-family:'Oswald';">
+        {% comment %} Insere o title do Front Matter {% endcomment %}
+        {{ page.title }}
+    </h1>
+</div>
+
+<div class="container-fluid row align-items-center justify-content-center row-cols-auto">
+
+    <!-- Autor -->
+    {% comment %} Insere os dados do Carlos {% endcomment %}
+    {% if page.id_author == 1 %}
+
+    <div class="col pb-3" style="white-space: nowrap;">
+        <span>
+            <img src="../assets/profile_carlos.jpg" class="card-img-top" alt="Foto do Carlos" style="border-radius: 50%; width: 35px;">
+            José Carlos Garcez Filho
+        </span>
     </div>
 
-    <!-- Dados da Publicação e do Autor -->
-    <div class="container-g0">
-        <div class="row">
+    {% endif %}
 
-            <!-- Avatar do Autor -->
-            <div class="col-md-6">
-                <img src="/assets/profile_carlos.jpg" class="card-img-top" alt="Foto do Carlos" style="border-radius: 50%; width: 50px; margin: auto;">
-                <span style="text-align: right; font-family:'Antiqua Book'; margin: auto;">José Carlos Garcez Filho</span>
-            </div>
+    {% comment %} Insere do dados da Fran {% endcomment %}
+    {% if page.id_author == 2 %}
 
-            <!-- Data -->
-            <div class="col-md-6">
-                <p style="text-align: right; font-family:'Antiqua Book'; margin: auto;">
-                    <i>
-                        {% comment %} Gera a data de maneira longa {% endcomment %}
-                        {% include data_longa.html %}.
-                    </i>
-                </p>
-            </div>
-    </div>
-{% endif %}
-
-{% comment %} Dados da Fran {% endcomment %}
-{% if page.id_author == 2 %}
-    <!-- Título do Post -->
-    <div class="card-title">
-        <h1 style="margin-top: 5vh; padding-top: 5vh; padding-bottom: 2vh; text-align: left; font-family:'Oswald';">{{ page.title }}</h1>
+    <div class="col pb-3" style="white-space: nowrap;">
+        <span>
+            <img src="../assets/profile_fran.jpg" class="card-img-top" alt="Foto do Carlos" style="border-radius: 50%; width: 35px;">
+            Françoise Patriane de Souza
+        </span>
     </div>
 
-    <!-- Dados da Publicação e do Autor -->
-    <div class="container-g0">
-        <div class="row">
+    {% endif %}
 
-            <!-- Avatar do Autor -->
-            <div class="col-md-6">
-                <img src="/assets/profile_fran.jpg" class="card-img-top" alt="Foto da Fran" style="border-radius: 50%; width: 50px; margin: auto;">
-                <span style="text-align: right; font-family:'Antiqua Book'; margin: auto;">Françoise Patriane de Souza</span>
-            </div>
-
-            <!-- Data -->
-            <div class="col-md-6">
-                <p style="text-align: right; font-family:'Antiqua Book'; margin: auto;">
-                    <i>
-                        {% comment %} Gera a data de maneira longa {% endcomment %}
-                        {% include data_longa.html %}.
-                    </i>
-                </p>
-            </div>
+    <!-- Categoria -->
+    <div class="col pb-3">
+        <span class="badge text-bg-success">
+            Ambiental
+        </span>
     </div>
-{% endif %}
+
+    <!-- Data da Publicação -->
+    <div class="col pb-3">
+        <span>
+            <i class="bi bi-calendar3"></i>
+            {% comment %} Insere a data do artigo de acordo com o front matter {% endcomment %}
+            {% include data_longa.html %}
+        </span>
+    </div>
+
+    <!-- Tempo de Leitura -->
+    <div class="col pb-3">
+        <span>
+            <i class="bi bi-clock"></i>
+            {% comment %} Falta criar o include que faz o cálculo da leitura {% endcomment %}
+            7 minutos
+        </span>
+    </div>
+
+</div>
