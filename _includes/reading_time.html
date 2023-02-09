@@ -8,8 +8,8 @@ Esse include faz o cálculo de quanto tempo a publicação será lida tendo como
     
 <span>
 	<i class="bi bi-clock"></i>
-	{% if words | divided_by: 200 == 1 %}
-		{{ words | divided_by: 200 | append: ' minuto' }}
+	{% if words | divided_by: 200 < 1 %}
+		1 minuto
 	{% else %}
 		{{ words | divided_by: 200 | append: ' minutos' }}
 	{% endif %}
