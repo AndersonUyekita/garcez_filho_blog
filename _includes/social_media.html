@@ -1,4 +1,37 @@
+{% comment %}
+Esse include concentra toda a parte de mídias socias e CSAT.
+
+Foram inseridos efeitos:
+
+    1. Criei uma classe social-icon para concentrar as edições nessa classe.
+	2. Criação da classe rating para concentrar as edições de avaliaçao.
+
+Os dois JavaScripts são necessários para:
+
+    1. Criar o TOC automaticamente
+    2. Criar o efeito de fade-up
+{% endcomment %}
+
+
 <style>
+
+/* Definição da classe social-icon */
+.social-icon {
+	font-size: 1.5rem; /* Define o tamanho inicial da fonte */
+	color: #00000090;
+	display: inline-block; /* Mantém os ícones alinhados */
+}
+
+/* Hover effect nos ícones de redes sociais */
+.social-icon:hover {
+	color: #000000; /* Altera para preto */
+	-webkit-transform: scale(1.2); /* Aumenta 20% */
+	-moz-transform: scale(1.2); /* Aumenta 20% */
+	-ms-transform: scale(1.2); /* Aumenta 20% */
+	transform: scale(1.2) translateZ(0); /* Aumenta 20% */
+	transition: 0.4s all ease;
+}
+
 /* Define a classe Rating */
 .rating {
 
