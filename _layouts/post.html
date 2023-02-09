@@ -73,13 +73,21 @@
                                         </div>
 
                                         <!-- TOC -->
+                                        {% comment %} Gera o TOC automaticamente{% endcomment %}
                                         {% include toc.html %}
 
                                     </div>
 
+                                    {% comment %}Social Media & Rating{% endcomment %}
                                     {% include social_media.html %}
 
                                 </div>
+
+                                <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding-bottom: 10px; opacity:1; margin-bottom: 2vw;">
+
+                                {% comment %}Minibio do Autor da Publicação{% endcomment %}
+                                {% include minibio.html %}
+
                             </div>
                         </div>
                 </div>
