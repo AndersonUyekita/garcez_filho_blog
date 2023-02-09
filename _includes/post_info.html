@@ -8,12 +8,8 @@ Esse include insere o cabeçalho da publicação com:
 
 {% endcomment %}
 
-
-
-
-
+{% comment %} Dados do Carlos {% endcomment %}
 {% if page.id_author == 1 %}
-
     <!-- Título do Post -->
     <div class="card-title">
         <h1 style="margin-top: 5vh; padding-top: 5vh; padding-bottom: 2vh; text-align: left; font-family:'Oswald';">{{ page.title }}</h1>
@@ -39,11 +35,10 @@ Esse include insere o cabeçalho da publicação com:
                 </p>
             </div>
     </div>
-
 {% endif %}
 
+{% comment %} Dados da Fran {% endcomment %}
 {% if page.id_author == 2 %}
-
     <!-- Título do Post -->
     <div class="card-title">
         <h1 style="margin-top: 5vh; padding-top: 5vh; padding-bottom: 2vh; text-align: left; font-family:'Oswald';">{{ page.title }}</h1>
@@ -69,5 +64,4 @@ Esse include insere o cabeçalho da publicação com:
                 </p>
             </div>
     </div>
-
 {% endif %}

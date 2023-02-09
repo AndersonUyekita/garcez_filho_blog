@@ -2,25 +2,55 @@
 Esse include faz a inserção de uma minibio do autor da publicação.
 {% endcomment %}
 
-<!-- Informações sobre o Autor -->
-<div class="container-fluid row align-items-center">
 
-    <!-- Coluna de Imagem: Avatar Grande -->
-    <div class="col-sm-12 col-md-12 col-lg-2 mb-3" style="text-align: center;">
-        <img src="/assets/profile_carlos.jpg" class="card-img-top" alt="Foto do Carlos" style="border-radius: 5%; margin: auto; max-width: 150px;">
-    </div>
+{% comment %} Dados do Carlos {% endcomment %}
+{% if page.id_author == 1 %}
+    <!-- Informações sobre o Autor -->
+    <div class="container-fluid row align-items-center">
 
-    <!-- Coluna de Texto -->
-    <div class="col-sm-12 col-md-12 col-lg-10 mb-3">
+        <!-- Coluna de Imagem: Avatar Grande -->
+        <div class="col-sm-12 col-md-12 col-lg-2 mb-3" style="text-align: center;">
+            <img src="/assets/profile_carlos.jpg" class="card-img-top" alt="Foto do Carlos" style="border-radius: 5%; margin: auto; max-width: 150px;">
+        </div>
 
-        <!-- Nome completo do Autor -->
-        <h4>José Carlos Garcez Filho</h4>
+        <!-- Coluna de Texto -->
+        <div class="col-sm-12 col-md-12 col-lg-10 mb-3">
 
-        <!-- Minibio -->
-        <p style="text-align: justify;">Advogado, formado em 2009 pela Universidade Braz Cubas, é conveniado a Defensoria Pública OAB/SP para 
-        prestação de Assistência Judiciária suplementar. Membro da Comissão de Estudos sobre a Legislação e Regulamentação 
-        de Controle de Armas – OAB/SP 17º Subseção – Mogi das Cruzes. Também é instrutor de Armamento e Tiro (IAT) formado 
-        pelo Clube de Tiro Red Delta – Cascavel/PR</p>
-    </div>
+            <!-- Nome completo do Autor -->
+            <h4>José Carlos Garcez Filho</h4>
 
- </div>
+            <!-- Minibio -->
+            <p style="text-align: justify;">Advogado, formado em 2009 pela Universidade Braz Cubas, é conveniado a Defensoria Pública OAB/SP para 
+            prestação de Assistência Judiciária suplementar. Membro da Comissão de Estudos sobre a Legislação e Regulamentação 
+            de Controle de Armas – OAB/SP 17º Subseção – Mogi das Cruzes. Também é instrutor de Armamento e Tiro (IAT) formado 
+            pelo Clube de Tiro Red Delta – Cascavel/PR</p>
+        </div>
+     </div>
+ {% endif %}
+
+ {% comment %} Dados da Fran {% endcomment %}
+ {% if page.id_author == 2 %}
+    <!-- Informações sobre o Autor -->
+    <div class="container-fluid row align-items-center">
+
+        <!-- Coluna de Imagem: Avatar Grande -->
+        <div class="col-sm-12 col-md-12 col-lg-2 mb-3" style="text-align: center;">
+            <img src="/assets/profile_fran.jpg" class="card-img-top" alt="Foto da Fran" style="border-radius: 5%; margin: auto; max-width: 150px;">
+        </div>
+
+        <!-- Coluna de Texto -->
+        <div class="col-sm-12 col-md-12 col-lg-10 mb-3">
+
+            <!-- Nome completo do Autor -->
+            <h4>Françoise Patriane de Souza</h4>
+
+            <!-- Minibio -->
+            <p style="text-align: justify;">
+                A advogada formada pela Universidade de Mogi das Cruzes (UMC) é uma profissional dedicada e comprometida com a justiça. Com sua
+                graduação em Direito, ela adquiriu conhecimentos sólidos na área e está capacitada a atuar em diversas frentes, sejam elas consultivas
+                ou contenciosas. Além disso, a advogada possui uma habilidade ímpar na análise de questões complexas e na busca por soluções eficientes
+                para seus clientes.
+            </p>
+        </div>
+     </div>
+ {% endif %}
