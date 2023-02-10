@@ -1,8 +1,9 @@
 ---
 title: Política de Comentários
-layout: post
+layout: default
 permalink: /politica-de-comentarios
 date: 2023-02-01 12:00:00 -0300
+hero_url: /assets/hero.jpg
 ---
 
 ## {{ page.title }}

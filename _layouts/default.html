@@ -2,19 +2,50 @@
 
 <html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
 
-  <!-- Inserindo o Header -->
-  {% include header.html %}
+	{% comment %} Insere a tag head {% endcomment %}
+	{% include header.html %}
 
-  <body>
 
-    <section>
-        <div class="container-fluid" style="max-width: 70vw; min-height: 100vh">
-            {{ content }}
-        </div>
-    </section>
+	<style>
+		/* Definindo estilo para a ID corpo-artigo */
+		/* Aplicação: col */
+		#corpo-artigo {
+		  max-width: 70vw;
+		  display: flex;
+		  flex-direction: column;
+		  justify-content: center;
+		  margin: 0;
+		  padding: 0;
+		}
 
-    <!-- Inserindo o Footer -->
-    {% include footer.html %}
+		@media (max-width: 767px) {
+		  #corpo-artigo {
+			max-width: 90vw;
+		  }
+		}
 
-  </body>
+	</style>
+
+	<body>
+
+		{% comment %} Insere o Hero {% endcomment %}
+		{% include hero.html hero_url: page.hero_url %}
+
+		<!-- Corpo da página -->
+		<section>
+			<div class="row">
+				<div id="corpo-artigo" class="col">
+
+					{{ content }}
+				</div>
+			</div>
+		</section>
+
+		{% comment %}Insere a seção "Ficou Interessado?"{% endcomment %}
+		{% include call_action.html %}
+
+		{% comment %}Footer genérico{% endcomment %}
+		{% include footer.html %}
+
+	</body>
 </html>
