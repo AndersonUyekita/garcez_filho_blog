@@ -6,22 +6,10 @@ Ess include insere um Hero no início da página Full width.
 
 <style>
 	.hero-default {
-	  height: {{ include.height }}px;
+	  height: {{ include.height }};
 	  background-position: center;
 	  background-size: cover;
 	  background-image: url({{ page.hero_url}});
-	}
-
-	@media only screen and (orientation: portrait) {
-	  .hero-default {
-	    height: {{ include.height }}px;
-	  }
-	}
-
-	@media only screen and (orientation: landscape) {
-	  .hero-default {
-	    height: 200px;
-	  }
 	}
 </style>
 
