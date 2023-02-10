@@ -3,7 +3,7 @@ layout: default
 title: Blog Page
 ---
 
-## Example 1
+<h2>Somente os nomes das publicações</h2>
 
 <ul>
 {% for post in site.posts %}
@@ -13,9 +13,8 @@ title: Blog Page
 
 <hr>
 
-## Example 2
+<h2>Publicações< + Datas</h2>
 
-<h1 class="col-header dark-orange">All posts</h1>
 {% for post in site.posts %}
 <div class="post-preview">
   <img class="post-preview__left" src="{{ post.image }}" alt="{{ page.image_alt }}">

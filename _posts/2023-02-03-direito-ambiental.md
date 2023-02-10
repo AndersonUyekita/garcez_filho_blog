@@ -4,6 +4,8 @@ layout: post
 id_author: 1
 date: 2023-02-03 12:00:00 -0300
 tags: Ambiental
+categories: ambiental
+comments: true
 ---
 
 ## O que é o Direito Ambiental?
