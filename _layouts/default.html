@@ -10,7 +10,7 @@
 		/* Definindo estilo para a ID corpo-artigo */
 		/* Aplicação: col */
 		#corpo-artigo {
-		  max-width: 70vw;
+		  max-width: 85vw;
 		  display: flex;
 		  flex-direction: column;
 		  justify-content: center;
@@ -35,8 +35,12 @@
 		<section>
 			<div class="row justify-content-center m-0 p-0">
 				<div id="corpo-artigo" class="col m-0 p-0">
+					<div class="container-fluid m-0 p-0" style="text-align: justify;">
+						<div class="card px-5" style="margin-top: -10vh; padding-top: 5vh; padding-bottom: 5vh;">
 
-					{{ content }}
+							{{ content }}
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
