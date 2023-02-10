@@ -4,6 +4,8 @@ layout: post
 id_author: 1
 date: 2023-02-06 12:00:00 -0300
 categories: penal
+hero_url: /assets/images/posts/2023-02-06-penal.jpg
+comments: true
 ---
 
 ## O que é o Direito Penal?

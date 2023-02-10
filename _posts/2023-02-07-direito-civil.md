@@ -4,6 +4,8 @@ layout: post
 id_author: 1
 date: 2023-02-07 12:00:00 -0300
 categories: civil
+hero_url: /assets/images/posts/2023-02-01-civil-hero.jpg
+comments: true
 ---
 
 ## O que é o Direito Civil?  
