@@ -29,16 +29,19 @@
 	<body>
 
 		{% comment %} Insere o Hero {% endcomment %}
-		{% include hero.html %}
+		{% include hero.html height="400" %}
 
 		<!-- Corpo da página -->
 		<section>
 			<div class="row justify-content-center m-0 p-0">
+				<!-- Responsividade no corpo do artigo -->
 				<div id="corpo-artigo" class="col m-0 p-0">
 					<div class="container-fluid m-0 p-0" style="text-align: justify;">
-						<div class="card px-5" style="margin-top: -10vh; padding-top: 5vh; padding-bottom: 5vh;">
-
-							{{ content }}
+						<!-- Cria um card sobreposto da Imagem Hero -->
+						<div class="card mx-0 p-0" style="margin-top: -10vh; padding-top: 5vh; padding-bottom: 5vh;">
+							<div class="card-body mx-2">
+								{{ content }}
+							</div>
 						</div>
 					</div>
 				</div>
