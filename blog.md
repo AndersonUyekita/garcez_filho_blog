@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Blog Page
+title: Todas as publicações do site
+hero_url: /assets/blog-hero.jpg
 ---
 
 <h2>Somente os nomes das publicações</h2>
