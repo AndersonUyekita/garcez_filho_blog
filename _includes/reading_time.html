@@ -9,8 +9,8 @@ Esse include faz o cálculo de quanto tempo a publicação será lida tendo como
 <span>
 	<i class="bi bi-clock"></i>
 	{% assign reading_time = words | divided_by: 200 | round %}
-	{% if reading_time == 1 %}
-		{{ reading_time }} minuto
+	{% if reading_time == 1 or reading_time == 0 %}
+		1 minuto
 	{% else %}
 		{{ reading_time }} minutos
 	{% endif %}
