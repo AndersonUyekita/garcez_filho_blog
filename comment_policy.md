@@ -8,6 +8,8 @@ hero_url: /assets/politica-de-comentarios.jpg
 
 {% include post_info.html %}
 
+<hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding-bottom: 10px; opacity:1; margin-bottom: 2vw;">
+
 Obrigado por participar da nossa comunidade e compartilhar suas opiniões e pensamentos conosco. Nós apreciamos a diversidade de opiniões e gostaríamos de incentivar uma discussão saudável e respeitosa.
 
 Lembre-se de que nós moderamos todos os comentários e reservamos o direito de excluir ou editar qualquer comenário sem aviso prévio caso ela viole as seguintes regras:
