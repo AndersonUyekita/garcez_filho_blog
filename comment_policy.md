@@ -9,7 +9,7 @@ date: 2023-02-01 12:00:00 -0300
 
 Obrigado por participar da nossa comunidade e compartilhar suas opiniões e pensamentos conosco. Nós apreciamos a diversidade de opiniões e gostaríamos de incentivar uma discussão saudável e respeitosa.
 
-Por favor, lembre-se de que nós moderamos todos os comentários e reservamos o direito de remover qualquer conteúdo que viole as seguintes regras:
+Lembre-se de que nós moderamos todos os comentários e reservamos o direito de excluir ou editar qualquer comenário sem aviso prévio caso ela viole as seguintes regras:
 
 1. Não é permitido o uso de linguagem ofensiva, discriminatória, ameaçadora ou caluniosa.
 
@@ -20,7 +20,5 @@ Por favor, lembre-se de que nós moderamos todos os comentários e reservamos o 
 4. Não é permitido compartilhar informações pessoais ou sensíveis de terceiros sem sua permissão.
 
 5. Mantenha seus comentários relevantes ao tópico em discussão.
-
-Ademais, observe que nos reservamos o direito de excluir ou editar qualquer mensagem sem aviso prévio caso ela infrinja quaisquer das regras descritas nesta Política de Comentários.
 
 Agradecemos sua colaboração para manter nossa comunidade saudável e respeitosa. Se você tiver dúvidas ou precisar de ajuda, não hesite em entrar em contato conosco.

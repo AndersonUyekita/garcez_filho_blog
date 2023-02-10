@@ -12,102 +12,100 @@ Os dois JavaScripts são necessários para:
     2. Criar o efeito de fade-up
 {% endcomment %}
 
-
 <style>
+	/* Definição da classe social-icon */
+	.social-icon {
+		font-size: 1.5rem; /* Define o tamanho inicial da fonte */
+		color: #00000090;
+		display: inline-block; /* Mantém os ícones alinhados */
+	}
 
-/* Definição da classe social-icon */
-.social-icon {
-	font-size: 1.5rem; /* Define o tamanho inicial da fonte */
-	color: #00000090;
-	display: inline-block; /* Mantém os ícones alinhados */
-}
+	/* Hover effect nos ícones de redes sociais */
+	.social-icon:hover {
+		color: #000000; /* Altera para preto */
+		-webkit-transform: scale(1.2); /* Aumenta 20% */
+		-moz-transform: scale(1.2); /* Aumenta 20% */
+		-ms-transform: scale(1.2); /* Aumenta 20% */
+		transform: scale(1.2) translateZ(0); /* Aumenta 20% */
+		transition: 0.4s all ease;
+	}
 
-/* Hover effect nos ícones de redes sociais */
-.social-icon:hover {
-	color: #000000; /* Altera para preto */
-	-webkit-transform: scale(1.2); /* Aumenta 20% */
-	-moz-transform: scale(1.2); /* Aumenta 20% */
-	-ms-transform: scale(1.2); /* Aumenta 20% */
-	transform: scale(1.2) translateZ(0); /* Aumenta 20% */
-	transition: 0.4s all ease;
-}
+	/* Define a classe Rating */
+	.rating {
 
-/* Define a classe Rating */
-.rating {
+	  /* Faz o elemento ser exibido como um bloco inline */
+	  display: inline-block;
 
-  /* Faz o elemento ser exibido como um bloco inline */
-  display: inline-block;
+	  /* Define o tamanho da fonte */
+	  font-size: 1.5rem;
 
-  /* Define o tamanho da fonte */
-  font-size: 1.5rem;
+	  /* Define a cor das estrelas */
+	  color: #c5c5c5;
+	}
 
-  /* Define a cor das estrelas */
-  color: #c5c5c5;
-}
+	/* Oculta o input */
+	.rating input {
+	  display: none;
+	}
 
-/* Oculta o input */
-.rating input {
-  display: none;
-}
+	/* Define a classe de estrela */
+	.rating .star {
+	  /* Define a posição relativa */
+	  position: relative;
 
-/* Define a classe de estrela */
-.rating .star {
-  /* Define a posição relativa */
-  position: relative;
+	  /* Define o cursor como ponteiro para indicar a interatividade */
+	  cursor: pointer;
 
-  /* Define o cursor como ponteiro para indicar a interatividade */
-  cursor: pointer;
+	  /* Alinha a estrela à direita */
+	  float: right;
 
-  /* Alinha a estrela à direita */
-  float: right;
+	  /* Adiciona uma margem à direita */
+	  margin-right: 3px;
+	}
 
-  /* Adiciona uma margem à direita */
-  margin-right: 3px;
-}
+	/* Define o conteúdo da estrela como o caractere estrela */
+	.rating .star:before {
+	  content: '\2605';
+	  position: absolute;
+	}
 
-/* Define o conteúdo da estrela como o caractere estrela */
-.rating .star:before {
-  content: '\2605';
-  position: absolute;
-}
+	/* Define o conteúdo de meia estrela como duas estrelas */
+	.rating .star.half:before {
+	  content: '\2605\2605';
+	  position: absolute;
 
-/* Define o conteúdo de meia estrela como duas estrelas */
-.rating .star.half:before {
-  content: '\2605\2605';
-  position: absolute;
+	  /* Define a largura */
+	  width: 5px;
 
-  /* Define a largura */
-  width: 5px;
+	  /* Faz a estrela ser exibida como bloco */
+	  display: block;
 
-  /* Faz a estrela ser exibida como bloco */
-  display: block;
+	  /* Esconde o conteúdo excessivo */
+	  overflow: hidden;
 
-  /* Esconde o conteúdo excessivo */
-  overflow: hidden;
+	  /* Impede que o conteúdo seja quebrado em uma nova linha */
+	  white-space: nowrap;
+	}
 
-  /* Impede que o conteúdo seja quebrado em uma nova linha */
-  white-space: nowrap;
-}
+	/* Define a cor da label */
+	.rating label {
+	  color: #c5c5c5;
+	}
 
-/* Define a cor da label */
-.rating label {
-  color: #c5c5c5;
-}
+	/* Define a cor da estrela selecionada ou em hover */
+	.rating input:checked ~ label,
+	.rating:not(:checked) > label:hover,
+	.rating:not(:checked) > label:hover ~ label {
+	  color: #ffc107;
+	}
 
-/* Define a cor da estrela selecionada ou em hover */
-.rating input:checked ~ label,
-.rating:not(:checked) > label:hover,
-.rating:not(:checked) > label:hover ~ label {
-  color: #ffc107;
-}
-
-/* Define a cor da estrela selecionada ao ser clicada ou em hover */
-.rating input:checked + label:hover,
-.rating input:checked ~ label:hover,
-.rating label:hover ~ input:checked ~ label,
-.rating input:checked ~ label:hover ~ label {
-  color: #e0ab1b;
-}
+	/* Define a cor da estrela selecionada ao ser clicada ou em hover */
+	.rating input:checked + label:hover,
+	.rating input:checked ~ label:hover,
+	.rating label:hover ~ input:checked ~ label,
+	.rating input:checked ~ label:hover ~ label {
+	  color: #e0ab1b;
+	}
 </style>
 
 <!-- Social Media & Rating -->
@@ -150,14 +148,9 @@ Os dois JavaScripts são necessários para:
 
 				<!-- Corpo do Canvas -->
 				<div class="offcanvas-body">
-					<p style="text-align: justify;">Lamentamos informar que a seção de comentários do nosso blog está <strong>temporariamente indisponível</strong>. 
-					<p style="text-align: justify;">Pedimos desculpas pelo inconveniente causado e garantimos que estamos trabalhando para solucionar o 
-					problema o mais rápido possível.</p>
-					<p style="text-align: justify;">Agradecemos sua paciência e compreensão.</p>
-					
-					<!-- Testando o Disqus -->
-					{% include comments_disqus.html %}
 
+					{% comment %} Inserindo o include do Disqus {% endcomment %}
+					{% include comments_disqus.html %}
 				</div>
 			</div>
 		</div>
