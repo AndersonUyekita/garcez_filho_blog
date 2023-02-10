@@ -4,8 +4,28 @@ Ess include insere um Hero no início da página Full width.
 
 {% endcomment %}
 
+<style>
+	.hero-default {
+	  /* Modo retrato */
+	  @media only screen and (orientation: portrait) {
+	  	height: {{ include.height }}px;
+	    background-position: center;
+	    background-size: cover;
+	    background-image: url({{ page.hero_url}});
+	  }
+
+	  /* Modo paisagem */
+	  @media only screen and (orientation: landscape) {
+	    height: {{ include.height }}px;
+	    background-position: center;
+	    background-size: cover;
+	    background-image: url({{ page.hero_url}});
+	  }
+	}
+</style>
+
 <!-- Imagem do Hero -->
 <section>
-	<div class="container-fluid-g0" style="height: {{ include.height }}px;background-image: url({{ page.hero_url}});background-position: center;background-size: cover;">
+	<div class="container-fluid-g0 hero-default">
 	</div>
 </section>
