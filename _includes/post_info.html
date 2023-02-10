@@ -79,9 +79,8 @@ Esse include insere o cabeçalho da publicação com:
 
     <!-- Categoria -->
     <div class="col pb-3">
-        <span class="badge text-bg-success">
-            Ambiental
-        </span>
+        {% comment %} Adiciona todos os badge de acordo com as categorias {% endcomment %}
+        {% include badge.html %}
     </div>
 
     <!-- Data da Publicação -->

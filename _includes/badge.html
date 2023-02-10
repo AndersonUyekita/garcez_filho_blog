@@ -1,0 +1,42 @@
+{% comment %}
+
+Esse include cria um badge ou mais de acordo com a categoria da publicação.
+
+Ele faz uso de um switch case.
+
+{% endcomment %}
+
+
+{% for cat in page.categories %}
+
+	{% case cat %}
+
+		{% when "ambiental" %}
+
+			<span class="badge text-bg-success">Ambiental</span>
+
+		{% when "civil" %}
+
+			<span class="badge text-bg-primary">Civil</span>
+
+		{% when "imobiliario" %}
+
+			<span class="badge text-bg-secondary">Imobiliário</span>
+
+		{% when "penal" %}
+
+			<span class="badge text-bg-danger">Penal</span>
+
+		{% when "trabalhista" %}
+
+			<span class="badge text-bg-warning">Trabalhista</span>
+
+		{% when "armas" %}
+
+			<span class="badge text-bg-dark">Armas</span>
+
+	{% endcase %}
+
+{% endfor %}
+
+
