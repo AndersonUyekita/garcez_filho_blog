@@ -6,7 +6,7 @@ date: 2023-02-01 12:00:00 -0300
 hero_url: /assets/politica-de-comentarios.jpg
 ---
 
-## {{ page.title }}
+{% include post_info.html %}
 
 Obrigado por participar da nossa comunidade e compartilhar suas opiniões e pensamentos conosco. Nós apreciamos a diversidade de opiniões e gostaríamos de incentivar uma discussão saudável e respeitosa.
 
