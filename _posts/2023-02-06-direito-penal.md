@@ -3,7 +3,7 @@ title: O que é o Direito Penal?
 layout: post
 id_author: 1
 date: 2023-02-06 12:00:00 -0300
-tags: Penal
+categories: penal
 ---
 
 ## O que é o Direito Penal?
