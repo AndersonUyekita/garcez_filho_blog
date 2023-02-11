@@ -117,4 +117,6 @@ Em caso de dúvidas sobre esta Política de Cookies, entre em contato conosco pe
 Meio de contato: email, telefone ou outra forma
 Meio de contato: email, telefone ou outra forma
 
-Esta Política de Cookies foi atualizada pela última vez: {{ page.date }}
+<hr>
+
+Esta {{ page.title }} foi atualizada pela última vez em {{ page.date }} e é efetiva a partir desta mesma data.

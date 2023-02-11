@@ -10,13 +10,11 @@ hero_url: /assets/politica-de-comentarios.jpg
 
 <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding-bottom: 10px; opacity:1; margin-bottom: 2vw;">
 
-# Política Privacidade
-
-A sua privacidade é importante para nós. É política do Garcez Filho | Advocacia & Consultoria Jurídica respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site Garcez Filho | Advocacia & Consultoria Jurídica, e outros sites que possuímos e operamos.
+A sua privacidade é importante para nós. É política do Garcez Filho \| Advocacia & Consultoria Jurídica respeitar a sua privacidade em relação a qualquer informação sua que possamos coletar no site Garcez Filho \| Advocacia & Consultoria Jurídica, e outros sites que possuímos e operamos.
 
 Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço. Fazemo-lo por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por que estamos coletando e como será usado.
 
-Apenas retemos as informações coletadas pelo tempo necessário para fornecer o serviço solicitado. Quando armazenamos dados, protegemos dentro de meios comercialmente aceitáveis ​​para evitar perdas e roubos, bem como acesso, divulgação, cópia, uso ou modificação não autorizados.
+Apenas retemos as informações coletadas pelo tempo necessário para fornecer o serviço solicitado. Quando armazenamos dados, protegemos dentro de meios comercialmente aceitáveis para evitar perdas e roubos, bem como acesso, divulgação, cópia, uso ou modificação não autorizados.
 
 Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto quando exigido por lei.
 
@@ -29,17 +27,21 @@ O uso continuado de nosso site será considerado como aceitação de nossas prá
 
 * O serviço Google AdSense que usamos para veicular publicidade usa um cookie DoubleClick para veicular anúncios mais relevantes em toda a Web e limitar o número de vezes que um determinado anúncio é exibido para você.
 * Para mais informações sobre o Google AdSense, consulte as FAQs oficiais sobre privacidade do Google AdSense.
-* Utilizamos anúncios para compensar os custos de funcionamento deste site e fornecer financiamento para futuros desenvolvimentos. Os cookies de publicidade comportamental usados ​​por este site foram projetados para garantir que você forneça os anúncios mais relevantes sempre que possível, rastreando anonimamente seus interesses e apresentando coisas semelhantes que possam ser do seu interesse.
+* Utilizamos anúncios para compensar os custos de funcionamento deste site e fornecer financiamento para futuros desenvolvimentos. Os cookies de publicidade comportamental usados por este site foram projetados para garantir que você forneça os anúncios mais relevantes sempre que possível, rastreando anonimamente seus interesses e apresentando coisas semelhantes que possam ser do seu interesse.
 * Vários parceiros anunciam em nosso nome e os cookies de rastreamento de afiliados simplesmente nos permitem ver se nossos clientes acessaram o site através de um dos sites de nossos parceiros, para que possamos creditá-los adequadamente e, quando aplicável, permitir que nossos parceiros afiliados ofereçam qualquer promoção que pode fornecê-lo para fazer uma compra.
 
+## Compromisso do Usuário
 
-Compromisso do Usuário
-O usuário se compromete a fazer uso adequado dos conteúdos e da informação que o Garcez Filho | Advocacia & Consultoria Jurídica oferece no site e com caráter enunciativo, mas não limitativo:
+O usuário se compromete a fazer uso adequado dos conteúdos e da informação que o Garcez Filho \| Advocacia & Consultoria Jurídica oferece no site e com caráter enunciativo, mas não limitativo:
 
-A) Não se envolver em atividades que sejam ilegais ou contrárias à boa fé a à ordem pública;
-B) Não difundir propaganda ou conteúdo de natureza racista, xenofóbica, pix bet365 ou azar, qualquer tipo de pornografia ilegal, de apologia ao terrorismo ou contra os direitos humanos;
-C) Não causar danos aos sistemas físicos (hardwares) e lógicos (softwares) do Garcez Filho | Advocacia & Consultoria Jurídica, de seus fornecedores ou terceiros, para introduzir ou disseminar vírus informáticos ou quaisquer outros sistemas de hardware ou software que sejam capazes de causar danos anteriormente mencionados.
-Mais informações
+A. Não se envolver em atividades que sejam ilegais ou contrárias à boa fé a à ordem pública;
+B. Não difundir propaganda ou conteúdo de natureza racista, xenofóbica, pix bet365 ou azar, qualquer tipo de pornografia ilegal, de apologia ao terrorismo ou contra os direitos humanos;
+C. Não causar danos aos sistemas físicos (hardwares) e lógicos (softwares) do Garcez Filho \| Advocacia & Consultoria Jurídica, de seus fornecedores ou terceiros, para introduzir ou disseminar vírus informáticos ou quaisquer outros sistemas de hardware ou software que sejam capazes de causar danos anteriormente mencionados.
+
+## Mais informações
+
 Esperemos que esteja esclarecido e, como mencionado anteriormente, se houver algo que você não tem certeza se precisa ou não, geralmente é mais seguro deixar os cookies ativados, caso interaja com um dos recursos que você usa em nosso site.
 
-Esta política é efetiva a partir de 1 February 2023 14:44
+<hr>
+
+Esta {{ page.title }} foi atualizada pela última vez em {{ page.date }} e é efetiva a partir desta mesma data.

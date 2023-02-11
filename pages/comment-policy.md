@@ -25,3 +25,7 @@ Lembre-se de que nós moderamos todos os comentários e reservamos o direito de 
 5. Mantenha seus comentários relevantes ao tópico em discussão.
 
 Agradecemos sua colaboração para manter nossa comunidade saudável e respeitosa. Se você tiver dúvidas ou precisar de ajuda, não hesite em entrar em contato conosco.
+
+<hr>
+
+Esta {{ page.title }} foi atualizada pela última vez em {{ page.date }} e é efetiva a partir desta mesma data.
