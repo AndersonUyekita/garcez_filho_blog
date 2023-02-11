@@ -1,15 +1,33 @@
 <style>
     /* Botão customizado na Cor AZUL*/
     .btn-default {
-      background-color: #062A4E; /* cor desejada */
+      background-color: #062A4E; /* Cor do Logotipo */
       color: white; /* cor da fonte */
       border: none; /* sem borda */
       transition: all 0.2s ease-in-out; /* efeito de transição */
+      display: inline-block;
+      white-space: nowrap;
     }
 
     /* Botão customizado ao passar o mouse */
     .btn-default:hover {
       background-color: #062A4E30; /* cor ao passar o mouse */
+      cursor: pointer; /* cursor de clique */
+    }
+
+    /* Botão customizado do WhatsApp*/
+    .btn-whatsapp {
+      background-color: #25D366; /* cor do WhatsApp */
+      color: white; /* cor da fonte */
+      border: none; /* sem borda */
+      transition: all 0.2s ease-in-out; /* efeito de transição */
+      display: inline-block;
+      white-space: nowrap;
+    }
+
+    /* Botão customizado ao passar o mouse */
+    .btn-whatsapp:hover {
+      background-color: #25D36630; /* cor ao passar o mouse */
       cursor: pointer; /* cursor de clique */
     }
 </style>
@@ -47,7 +65,7 @@
                                 <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                                     <label for="newsletter1" class="visually-hidden">Email address</label>
                                     <input id="newsletter1" type="text" class="form-control" placeholder="Endereço de email">
-                                    <button class="btn btn-default" type="button" style="display: inline-block; white-space: nowrap;">
+                                    <button class="btn btn-default" type="button">
                                         <i class="bi bi-send"></i> Assinar
                                     </button>
                                 </div>
@@ -68,7 +86,7 @@
 
                         <!-- Entre em contato -->
                         <div class="container-fluid" style="text-align: center;">
-                            <a href="https://wa.me/5511999776346" class="btn btn-primary" role="button" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+                            <a href="https://wa.me/5511999776346" class="btn btn-whatsapp" role="button" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
                         </div>
 
                     </div>
