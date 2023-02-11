@@ -38,7 +38,7 @@ Ele faz uso de um switch case.
 	}
 
 	/* Badge ARMAS */
-	.badge-arma {
+	.badge-armas {
 	  background-color: #1D1E2C;
 	  color: white;
 	}
@@ -50,27 +50,27 @@ Ele faz uso de um switch case.
 
 		{% when "ambiental" %}
 
-			<span class="badge text-bg-success">Ambiental</span>
+			<span class="badge badge-ambiental">Ambiental</span>
 
 		{% when "civil" %}
 
-			<span class="badge text-bg-primary">Civil</span>
+			<span class="badge badge-civil">Civil</span>
 
 		{% when "imobiliario" %}
 
-			<span class="badge text-bg-secondary">Imobiliário</span>
+			<span class="badge badge-imobiliario">Imobiliário</span>
 
 		{% when "penal" %}
 
-			<span class="badge text-bg-danger">Penal</span>
+			<span class="badge badge-penal">Penal</span>
 
 		{% when "trabalhista" %}
 
-			<span class="badge text-bg-warning">Trabalhista</span>
+			<span class="badge badge-trabalhista">Trabalhista</span>
 
 		{% when "armas" %}
 
-			<span class="badge text-bg-dark">Armas</span>
+			<span class="badge badge-armas">Armas</span>
 
 	{% endcase %}
 
