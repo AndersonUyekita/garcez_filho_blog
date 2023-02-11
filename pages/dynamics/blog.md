@@ -1,10 +1,10 @@
 ---
 layout: default
 title: Todas as publicações do site
-hero_url: /assets/blog-hero.jpg
+hero_url: /assets/images/pages/blog.jpg
 ---
 
-<h2>Somente os nomes das publicações</h2>
+{% include post_info.html %}
 
 <ul>
 {% for post in site.posts %}
@@ -14,7 +14,7 @@ hero_url: /assets/blog-hero.jpg
 
 <hr>
 
-<h2>Publicações< + Datas</h2>
+<h2>Publicações + Datas</h2>
 
 {% for post in site.posts %}
 <div class="post-preview">
