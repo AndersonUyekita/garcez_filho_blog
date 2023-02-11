@@ -4,7 +4,7 @@ layout: post
 id_author: 1
 date: 2023-02-05 12:00:00 -0300
 categories: trabalhista
-hero_url: /assets/images/posts/
+hero_url: /assets/images/posts/2023-02-05-direito-trabalhista.jpg
 comments: true
 ---
 
