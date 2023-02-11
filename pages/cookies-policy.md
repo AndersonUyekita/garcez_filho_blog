@@ -3,7 +3,7 @@ title: Política de Cookies
 layout: default
 permalink: /politica-de-cookies
 date: 2023-02-01 12:00:00 -0300
-hero_url: /assets/politica-de-cookies.jpg
+hero_url: /assets/images/pages/cookies-policy.jpg
 ---
 
 {% include post_info.html %}
@@ -55,28 +55,32 @@ Além disso, uma vez que os Cookies capturam dados sobre você, aconselhamos a l
 
 ### 3.1. Cookies necessários
 
-Cookie	Tempo	Propriedade	Descrição
-Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição
-Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição
-Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição
+|Cookie|Tempo                   |Propriedade                |Descrição|
+|:-:   |:-:                     |:-:                        |:-:      |
+|Cookie|Permanente ou temporário|Proprietário ou de terceiro|Descrição|
+|Cookie|Permanente ou temporário|Proprietário ou de terceiro|Descrição|
+|Cookie|Permanente ou temporário|Proprietário ou de terceiro|Descrição|
 
 ### 3.2. Cookies de desempenho 
 
-Cookie	Tempo	Propriedade	Descrição
-Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição
-Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição
+|Cookie|Tempo                   |Propriedade                |Descrição|
+|:-:   |:-:                     |:-:                        |:-:      |
+|Cookie|Permanente ou temporário|Proprietário ou de terceiro|Descrição|
+|Cookie|Permanente ou temporário|Proprietário ou de terceiro|Descrição|
 
 ### 3.3. Cookies de funcionalidade
 
-Cookie	Tempo	Propriedade	Descrição
-Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição
-Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição
+|Cookie|Tempo                   |Propriedade                |Descrição|
+|:-:   |:-:                     |:-:                        |:-:      |
+|Cookie|Permanente ou temporário|Proprietário ou de terceiro|Descrição|
+|Cookie|Permanente ou temporário|Proprietário ou de terceiro|Descrição|
 
 ### 3.4. Cookies de publicidade
 
-Cookie	Tempo	Propriedade	Descrição
-Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição
-Cookie	Permanente ou temporário	Proprietário ou de terceiro	Descrição
+|Cookie|Tempo                   |Propriedade                |Descrição|
+|:-:   |:-:                     |:-:                        |:-:      |
+|Cookie|Permanente ou temporário|Proprietário ou de terceiro|Descrição|
+|Cookie|Permanente ou temporário|Proprietário ou de terceiro|Descrição|
 
 ## 4. Gerenciamento dos Cookies
 
@@ -92,17 +96,12 @@ Para gerenciar os cookies do seu navegador, basta fazê-lo diretamente nas confi
 
 Você pode acessar tutoriais sobre o tema diretamente nos links abaixo:
 
-Se você usa o Internet Explorer.
-
-Se você usa o Firefox.
-
-Se você usa o Safari.
-
-Se você usa o Google Chrome.
-
-Se você usa o Microsoft Edge.
-
-Se você usa o Opera.
+* Se você usa o Internet Explorer.
+* Se você usa o Firefox.
+* Se você usa o Safari.
+* Se você usa o Google Chrome.
+* Se você usa o Microsoft Edge.
+* Se você usa o Opera.
 
 ## 5. Disposições finais
 
@@ -114,8 +113,8 @@ Ao continuar a navegação nas nossas aplicações após essa mudança se tornar
 
 Em caso de dúvidas sobre esta Política de Cookies, entre em contato conosco pelos seguintes meios:
 
-Meio de contato: email, telefone ou outra forma
-Meio de contato: email, telefone ou outra forma
+* Meio de contato: email, telefone ou outra forma
+* Meio de contato: email, telefone ou outra forma
 
 <hr>
 

@@ -3,7 +3,7 @@ title: Termos de Uso
 layout: default
 permalink: /termo-de-uso
 date: 2023-02-01 12:00:00 -0300
-hero_url: /assets/politica-de-comentarios.jpg
+hero_url: /assets/images/pages/terms-of-use.jpg
 ---
 
 {% include post_info.html %}
