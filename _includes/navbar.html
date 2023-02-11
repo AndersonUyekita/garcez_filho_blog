@@ -5,23 +5,29 @@ Esse include faz a criação de um navbar.
 
 
 <style>
+
+    /* Estabelece as cores das letras do Navbar como Brancas */
     .navbar-nav .nav-link {
       color: white;
     }
 
+    /* Cor do navbar quando não está no TOPO */
     .bg-light-added {
       background-color: rgb(248,249,250); !important;
       transition: background-color 1.0s ease;
     }
 
-    #mainNavbar {
-      transition: background-color 1.0s ease;
-    }
-
+    /* Cor do texto do Navbar quando não está no TOPO */
     .bg-light-added .navbar-nav .nav-link {
       color: black;
       transition: background-color 1.0s ease;
     }
+
+    /* Retorno ao TOPO com transição de transparência */
+    #mainNavbar {
+      transition: background-color 1.0s ease;
+    }
+
 </style>
 
 
@@ -31,7 +37,7 @@ Esse include faz a criação de um navbar.
 
         <!-- Ajustando o Logo do canto superior esquerdo -->
         <a class="navbar-brand" href="#" style="font-family: 'Oswald';font-size: 1.75rem;font-weight: bold;word-spacing: 1px;letter-spacing: 2px; padding-top:15px;">
-          <img src="../01-Figure/logo.svg" alt="Logotipo no canto superior esquerdo" class="d-inline-block">
+          <img src="/assets/logo.svg" alt="Logotipo no canto superior esquerdo" class="d-inline-block">
           | Garcez Filho |</a>
         
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
