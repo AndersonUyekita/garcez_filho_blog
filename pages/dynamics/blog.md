@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Todas as publicações do site
+permalink: /blog
 hero_url: /assets/images/pages/blog.jpg
 ---
 
