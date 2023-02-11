@@ -33,11 +33,39 @@ Esse include insere o cabeçalho da publicação com:
     <div class="position-absolute top-0 end-0">
 
         <div class="container-fluid" style="word-spacing:10px; text-align: center; padding-top: 1.5vh; margin-top: 1.5vh;">
-			<i class="bi bi-facebook social-icon-top"></i>
-			<i class="bi bi-whatsapp social-icon-top"></i>
-			<i class="bi bi-twitter social-icon-top"></i>
-			<i class="bi bi-linkedin social-icon-top"></i>
-			<i class="bi bi-link-45deg social-icon-top"></i>
+
+            <!-- Share: Facebook -->
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank" style="text-decoration: none;">
+                <button style="background: transparent; border: none;">
+                    <i class="bi bi-facebook social-icon-top"></i>
+                </button>
+            </a>
+			
+            <!-- Share: WhatsApp -->
+            <a href="whatsapp://send?text={{ page.url | absolute_url }}" data-action="share/whatsapp/share">
+                <i class="bi bi-whatsapp social-icon-top"></i>
+            </a>
+
+            <!-- Share: Twitter -->
+            <a href="https://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.title | escape }}" target="_blank" style="text-decoration: none;">
+                <button style="background: transparent; border: none;">
+                    <i class="bi bi-twitter social-icon-top"></i>
+                </button>
+            </a>
+
+            <!-- Share: LinkedIn -->
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}" target="_blank" style="text-decoration: none;">
+                <button style="background: transparent; border: none;">
+                    <i class="bi bi-linkedin social-icon-top"></i>
+                </button>
+            </a>
+
+            <!-- Share: Copia URL na área de transferência -->
+            <button onclick="copyToClipboard('#url-da-publicacao')">
+                <i class="bi bi-link-45deg social-icon-top"></i>
+            </button>
+            <p id="url-da-publicacao" style="display: none;">{{ site.url }}{{ page.url }}</p>
+
 		</div>
     </div>
 </div>
@@ -98,3 +126,15 @@ Esse include insere o cabeçalho da publicação com:
     </div>
 
 </div>
+
+
+<script>
+    function copyToClipboard(element) {
+      var $temp = $("<input>");
+      $("body").append($temp);
+      $temp.val($(element).text()).select();
+      document.execCommand("copy");
+      $temp.remove();
+      alert("URL copiada para a área de transferência");
+    }
+</script>
