@@ -24,8 +24,8 @@ date_format: "pt-BR"
 timezone: America/Sao_Paulo
 
 # Configurações de Página Inicial
-paginate: 5
-paginate_path: "/página/:num"
+#paginate: 5
+#paginate_path: "/página/:num"
 
 # Criando um permalink padrão para os Posts
 permalink: /posts/:categories/:year/:month/:day/:title/
@@ -33,6 +33,7 @@ permalink: /posts/:categories/:year/:month/:day/:title/
 # Configurações de Plugins
 plugins:
   - jekyll-feed
+  - jekyll-paginate
 
 # Configurações de Pastas
 exclude:
