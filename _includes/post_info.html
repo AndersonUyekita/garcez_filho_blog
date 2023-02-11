@@ -42,7 +42,7 @@ Esse include insere o cabeçalho da publicação com:
             </a>
 			
             <!-- Share: WhatsApp -->
-            <a href="whatsapp://send?text={{ page.url | absolute_url }}" data-action="share/whatsapp/share">
+            <a href="whatsapp://send?text={{ page.url | absolute_url }}" data-action="share/whatsapp/share" style="text-decoration: none;">
                 <i class="bi bi-whatsapp social-icon-top"></i>
             </a>
 
@@ -61,11 +61,23 @@ Esse include insere o cabeçalho da publicação com:
             </a>
 
             <!-- Share: Copia URL na área de transferência -->
-            <button onclick="copyToClipboard('#url-da-publicacao')">
+            <button style="background: transparent; border: none;" id="copy-button">
                 <i class="bi bi-link-45deg social-icon-top"></i>
             </button>
             <p id="url-da-publicacao" style="display: none;">{{ site.url }}{{ page.url }}</p>
 
+            <!-- Toast de Confirmação - A URL foi Copiada na área de transferência -->
+            <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="3000">
+                <div class="toast-header">
+                    <strong class="mr-auto">Mensagem</strong>
+                    <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="toast-body">
+                    URL copiada para a área de transferência
+                </div>
+            </div>
 		</div>
     </div>
 </div>
@@ -129,12 +141,24 @@ Esse include insere o cabeçalho da publicação com:
 
 
 <script>
-    function copyToClipboard(element) {
-      var $temp = $("<input>");
-      $("body").append($temp);
-      $temp.val($(element).text()).select();
-      document.execCommand("copy");
-      $temp.remove();
-      alert("URL copiada para a área de transferência");
-    }
+    // Essa função é chamada quando o documento HTML estiver completamente carregado.
+    $(document).ready(function () {
+      // Adiciona um evento click ao elemento com o id "copy-button".
+      $("#copy-button").click(function () {
+        // Cria um elemento temporário de input.
+        var $temp = $("<input>");
+        // Adiciona o elemento temporário ao corpo do documento HTML.
+        $("body").append($temp);
+        // Atribui o texto do elemento com id "url-da-publicacao" ao valor do elemento temporário.
+        // Seleciona o texto no elemento temporário.
+        $temp.val($("#url-da-publicacao").text()).select();
+        // Executa o comando "copy" para copiar o texto selecionado para a área de transferência.
+        document.execCommand("copy");
+        // Remove o elemento temporário.
+        $temp.remove();
+
+        // Mostra o componente Toast com o id "toast".
+        $('#toast').toast('show');
+      });
+    });
 </script>
