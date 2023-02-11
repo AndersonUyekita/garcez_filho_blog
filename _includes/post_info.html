@@ -36,7 +36,7 @@ Esse include insere o cabeçalho da publicação com:
 
             <!-- Share: Facebook -->
             <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url }}" target="_blank" style="text-decoration: none;">
-                <button style="background: transparent; border: none;">
+                <button style="background: transparent; border: none; padding: 0;">
                     <i class="bi bi-facebook social-icon-top"></i>
                 </button>
             </a>
@@ -48,31 +48,30 @@ Esse include insere o cabeçalho da publicação com:
 
             <!-- Share: Twitter -->
             <a href="https://twitter.com/share?url={{ site.url }}{{ page.url }}&text={{ page.title | escape }}" target="_blank" style="text-decoration: none;">
-                <button style="background: transparent; border: none;">
+                <button style="background: transparent; border: none; padding: 0;">
                     <i class="bi bi-twitter social-icon-top"></i>
                 </button>
             </a>
 
             <!-- Share: LinkedIn -->
             <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url }}" target="_blank" style="text-decoration: none;">
-                <button style="background: transparent; border: none;">
+                <button style="background: transparent; border: none; padding: 0;">
                     <i class="bi bi-linkedin social-icon-top"></i>
                 </button>
             </a>
 
             <!-- Share: Copia URL na área de transferência -->
-            <button style="background: transparent; border: none;" id="copy-button">
+            <button id="copy-button" style="background: transparent; border: none; padding: 0;">
                 <i class="bi bi-link-45deg social-icon-top"></i>
             </button>
             <p id="url-da-publicacao" style="display: none;">{{ site.url }}{{ page.url }}</p>
 
             <!-- Toast de Confirmação - A URL foi Copiada na área de transferência -->
-            <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="3000">
-                <div class="toast-header">
-                    <button type="button" class="btn-close" data-dismiss="toast" aria-label="Close"></button>
-                </div>
-                <div class="toast-body">
-                    URL copiada para a área de transferência
+            <div class="toast-container position-fixed bottom-0 end-0 p-3">
+                <div id="toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="3000">
+                    <div class="toast-body">
+                        URL copiada para a área de transferência
+                    </div>
                 </div>
             </div>
 		</div>
