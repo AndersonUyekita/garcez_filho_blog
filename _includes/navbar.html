@@ -5,6 +5,11 @@ Esse include faz a criação de um navbar.
 
 
 <style>
+    /* Efeito de sombra inicial do navbar */
+    .navbar-init {
+        background: linear-gradient(to bottom, black, #00000000);
+    }
+
     /* Letras do Logotipo brancas quando está no TOPO */
     .navbar-brand {
       color: white;
@@ -102,8 +107,12 @@ window.addEventListener('scroll', function() {
   // Verifica a posição do scroll
 if (window.scrollY > 0) {
   document.getElementById("mainNavbar").classList.add("bg-light-added");
+  document.getElementById("mainNavbar").classList.remove("navbar-init");
 } else {
   document.getElementById("mainNavbar").classList.remove("bg-light-added");
+  document.getElementById("mainNavbar").classList.add("navbar-init");
 }
 });
 </script>
+
+
