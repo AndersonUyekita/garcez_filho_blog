@@ -1,3 +1,19 @@
+<style>
+    /* Botão customizado na Cor AZUL*/
+    .btn-default {
+      background-color: #062A4E; /* cor desejada */
+      color: white; /* cor da fonte */
+      border: none; /* sem borda */
+      transition: all 0.2s ease-in-out; /* efeito de transição */
+    }
+
+    /* Botão customizado ao passar o mouse */
+    .btn-default:hover {
+      background-color: #062A4E30; /* cor ao passar o mouse */
+      cursor: pointer; /* cursor de clique */
+    }
+</style>
+
 <!-- Ficou Interessado -->
 <section class="reveal" style="padding-bottom: 10vh;">
 
@@ -31,7 +47,9 @@
                                 <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                                     <label for="newsletter1" class="visually-hidden">Email address</label>
                                     <input id="newsletter1" type="text" class="form-control" placeholder="Endereço de email">
-                                    <button class="btn btn-primary" type="button">Assinar</button>
+                                    <button class="btn btn-default" type="button" style="display: inline-block; white-space: nowrap;">
+                                        <i class="bi bi-send"></i> Assinar
+                                    </button>
                                 </div>
                             </form>
                         </div>

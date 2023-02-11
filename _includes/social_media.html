@@ -107,24 +107,17 @@ Os dois JavaScripts são necessários para:
 	  color: #e0ab1b;
 	}
 
-
 	/* Botão customizado na Cor AZUL*/
-	.button-default {
+	.btn-default {
 	  background-color: #062A4E; /* cor desejada */
 	  color: white; /* cor da fonte */
-	  padding: 10px 20px; /* espaçamento interno */
-	  border-radius: 20px; /* borda arredondada */
-	  font-size: 14px; /* tamanho da fonte */
 	  border: none; /* sem borda */
-	  text-transform: uppercase; /* letras maiúsculas */
-	  letter-spacing: 2px; /* espaçamento entre letras */
-	  font-weight: bold; /* fonte em negrito */
 	  transition: all 0.2s ease-in-out; /* efeito de transição */
 	}
 
 	/* Botão customizado ao passar o mouse */
-	.button-default:hover {
-	  background-color: #062A4E90; /* cor ao passar o mouse */
+	.btn-default:hover {
+	  background-color: #062A4E30; /* cor ao passar o mouse */
 	  cursor: pointer; /* cursor de clique */
 	}
 </style>
@@ -154,7 +147,7 @@ Os dois JavaScripts são necessários para:
 
 		<div class="container-fluid" style="text-align: center;">
 			<!-- Botão do Offcanvas -->
-			<button class="btn button-default" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+			<button class="btn btn-default" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
 				<i class="bi bi-chat-left-dots-fill"></i> Faça o seu comentário
 			</button>
 
