@@ -8,18 +8,32 @@ featured_section: true
 call_action_section: true
 ---
 
+<style>
+
+  /* Criando um classe */
+  .card-hover {
+  }
+
+  /* Adicionando um efeito para a classe criada */
+  .card-hover:hover {
+  box-shadow: 0 .5rem 1rem rgba(var(--bs-body-color-rgb),.15)!important;
+}
+
+</style>
+
+
+
 <h1 style="font-family:Oswald; margin-top: 5vh; text-align: center;">{{ page.title | upcase }}</h1>
 
 <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding-bottom: 10px; opacity:1; margin-bottom: 2vw;">
 
-<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 gx-0 gy-5">
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 mx-1 gx-2 gy-2 h-100">
 
   {% assign last_ambiental = site.categories['ambiental'][0] %}
   <div class="col">
-    <div class="card mb-3 h-100" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="{{ last_ambiental.hero_url }}" class="img-fluid rounded-start" alt="...">
+    <div class="card card-hover mb-3 h-100" style="margin:auto; border-radius: 0px;">
+      <div class="row g-0 h-100">
+        <div class="col-md-4" style="background-image: url('{{ last_ambiental.hero_url }}'); background-size: cover; background-position: center; min-height: 25vh; object-fit: cover;">
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -34,10 +48,9 @@ call_action_section: true
 
   {% assign last_civil = site.categories['civil'][0] %}
   <div class="col">
-    <div class="card mb-3 h-100" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="{{ last_civil.hero_url }}" class="img-fluid rounded-start" alt="...">
+    <div class="card card-hover mb-3 h-100" style="margin:auto; border-radius: 0px;">
+      <div class="row g-0 h-100">
+        <div class="col-md-4" style="background-image: url('{{ last_civil.hero_url }}'); background-size: cover; background-position: center; min-height: 25vh; object-fit: cover;">
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -52,10 +65,9 @@ call_action_section: true
 
   {% assign last_penal = site.categories['penal'][0] %}
   <div class="col">
-    <div class="card mb-3 h-100" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="{{ last_penal.hero_url }}" class="img-fluid rounded-start" alt="...">
+    <div class="card card-hover mb-3 h-100" style="margin:auto; border-radius: 0px;">
+      <div class="row g-0 h-100">
+        <div class="col-md-4" style="background-image: url('{{ last_penal.hero_url }}'); background-size: cover; background-position: center; min-height: 25vh; object-fit: cover;">
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -70,10 +82,9 @@ call_action_section: true
 
   {% assign last_trabalhista = site.categories['trabalhista'][0] %}
   <div class="col">
-    <div class="card mb-3 h-100" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="{{ last_trabalhista.hero_url }}" class="img-fluid rounded-start" alt="...">
+    <div class="card card-hover mb-3 h-100" style="margin:auto; border-radius: 0px;">
+      <div class="row g-0 h-100">
+        <div class="col-md-4" style="background-image: url('{{ last_trabalhista.hero_url }}'); background-size: cover; background-position: center; min-height: 25vh; object-fit: cover;">
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -88,10 +99,9 @@ call_action_section: true
 
   {% assign last_imobiliario = site.categories['imobiliario'][0] %}
   <div class="col">
-    <div class="card mb-3 h-100" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="{{ last_imobiliario.hero_url }}" class="img-fluid rounded-start" alt="...">
+    <div class="card card-hover mb-3 h-100" style="margin:auto; border-radius: 0px;">
+      <div class="row g-0 h-100">
+        <div class="col-md-4" style="background-image: url('{{ last_imobiliario.hero_url }}'); background-size: cover; background-position: center; min-height: 25vh; object-fit: cover;">
         </div>
         <div class="col-md-8">
           <div class="card-body">
@@ -106,10 +116,9 @@ call_action_section: true
 
   {% assign last_armas = site.categories['armas'][0] %}
   <div class="col">
-    <div class="card mb-3 h-100" style="max-width: 540px;">
-      <div class="row g-0">
-        <div class="col-md-4">
-          <img src="{{ last_armas.hero_url }}" class="img-fluid rounded-start" alt="...">
+    <div class="card card-hover mb-3 h-100" style="margin:auto; border-radius: 0px;">
+      <div class="row g-0 h-100">
+        <div class="col-md-4" style="background-image: url('{{ last_armas.hero_url }}'); background-size: cover; background-position: center; min-height: 25vh; object-fit: cover;">
         </div>
         <div class="col-md-8">
           <div class="card-body">
