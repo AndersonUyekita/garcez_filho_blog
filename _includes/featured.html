@@ -9,7 +9,7 @@
         <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding: 3vh; opacity:1"></hr>
 
         <!-- Definindo uma "linha" -->
-        <div class="row mb-2">
+        <div class="row mb-2 g-3">
 
             {% assign featured_0 = site.tags['featured'][0] reversed %}
 
@@ -18,8 +18,10 @@
                 <div class="card mb-3 shadow h-100">
 
                     <!-- Imagem do Destaque 1 -->
-                    <div style="background-image: url('{{ featured_0.hero_url }}'); min-height: 30vh; background-clip: ; background-size: cover;background-repeat: no-repeat; border-top-left-radius: 5px; border-top-right-radius: 5px;">
-                    </div>
+                    <a href="{{ featured_0.url }}">
+                        <div class="img-hover-link" style="background-image: url('{{ featured_0.hero_url }}'); min-height: 30vh; background-clip: ; background-size: cover;background-repeat: no-repeat; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                        </div>
+                    </a>
 
                     <!-- Categoria do Destaque 1 -->
                     <div class="card-img-overlay" style="height:25%;">
@@ -49,15 +51,14 @@
                         <!-- Teaser da Publicação do Destaque 1 -->
                         <p class="card-text">{{ featured_0.content | strip_html | truncatewords: 30 }}</p>
 
-                    <!-- Autor do Destaque 1 -->
-                    <div class="row">
-                        <div class="col">
-                            
-                            <!-- Avatar e Nome do Autor do Destaque 1 -->
-                            <img src="/assets/profile_carlos.jpg" class="img-fluid" alt="Avatar" style="border-radius: 50%; width: 50px; margin: auto; margin-right: 0.5rem;">
-                            <span class="card-text"><small class="text-muted" style="font-family: Book Antiqua;">José Carlos Garcez Filho</small></span>
+                        <!-- LEIA MAIS -->
+                        <div class="container-fluid m-0 p-0 g-0" style="text-align: right;">
+                            <a class="btn btn-default"  href="{{ featured_0.url }}"><i class="bi bi-book"></i> Leia mais</a>
                         </div>
-                    </div>
+
+                        <!-- Autor do Destaque 1 -->
+                        {% include author.html id_author = featured_0.id_author %}
+
                   </div>
                 </div>
             </div>
@@ -69,8 +70,10 @@
                 <div class="card mb-3 shadow h-100">
 
                     <!-- Imagem do Destaque 2 -->
-                    <div style="background-image: url('{{ featured_1.hero_url }}'); min-height: 30vh; background-clip: ; background-size: cover;background-repeat: no-repeat; border-top-left-radius: 5px; border-top-right-radius: 5px;">
-                    </div>
+                    <a href="{{ featured_1.url }}">
+                        <div style="background-image: url('{{ featured_1.hero_url }}'); min-height: 30vh; background-clip: ; background-size: cover;background-repeat: no-repeat; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                        </div>
+                    </a>
 
                     <!-- Categoria do Destaque 2 -->
                     <div class="card-img-overlay" style="height:25%;">
@@ -100,24 +103,20 @@
                         <!-- Teaser da Publicação do Destaque 2 -->
                         <p class="card-text">{{ featured_1.content | strip_html | truncatewords: 30 }}</p>
 
-                    <!-- Autor do Destaque 2 -->
-                    <div class="row">
-                        <div class="col">
-                            
-                            <!-- Avatar e Nome do Autor do Destaque 2 -->
-                            <img src="/assets/profile_carlos.jpg" class="img-fluid" alt="Avatar" style="border-radius: 50%; width: 50px; margin: auto; margin-right: 0.5rem;">
-                            <span class="card-text"><small class="text-muted" style="font-family: Book Antiqua;">José Carlos Garcez Filho</small></span>
+                        <!-- LEIA MAIS -->
+                        <div class="container-fluid m-0 p-0 g-0" style="text-align: right;">
+                            <a class="btn btn-default"  href="{{ featured_1.url }}"><i class="bi bi-book"></i> Leia mais</a>
                         </div>
-                    </div>
+
+                    <!-- Autor do Destaque 2 -->
+                    {% include author.html id_author = featured_1.id_author %}
+
                   </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-
-
 
 
 

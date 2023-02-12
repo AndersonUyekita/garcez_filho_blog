@@ -1,0 +1,30 @@
+{% comment %}
+Esse include faz a inserção do autor do post
+{% endcomment %}
+
+
+{% if include.id_author == 1 %}
+
+    {% assign author = "José Carlos Garcez Filho" %}
+    {% assign avatar = "carlos" %}
+
+{% elsif include.id_author == 2 %}
+
+    {% assign author = "Françoise Patriane de Souza" %}
+    {% assign avatar = "fran" %}
+
+{% else %}
+
+    {% assign author = "" %}
+    {% assign avatar = "" %}
+
+{% endif %}
+
+<div class="row">
+    <div class="col">
+        
+        <!-- Avatar e Nome do Autor do Destaque 1 -->
+        <img src="/assets/profile_{{ avatar }}.jpg" class="img-fluid" alt="Avatar" style="border-radius: 50%; width: 35px; margin: auto; margin-right: 0.5rem;">
+        <span class="card-text"><small class="text-muted" style="font-family: Book Antiqua;">{{ author }}</small></span>
+    </div>
+</div>

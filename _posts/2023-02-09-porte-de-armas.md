@@ -1,8 +1,8 @@
 ---
-title: Armas
+title: Porte de Armas
 layout: post
 id_author: 1
-date: 2023-02-08 12:00:00 -0300
+date: 2023-02-09 12:00:00 -0300
 categories: armas
 tags:
 hero_url: /assets/images/posts/2023-02-08-armas.jpg

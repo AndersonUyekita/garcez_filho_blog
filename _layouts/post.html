@@ -73,6 +73,13 @@
             </div>
 
         </section>
+
+        {% if page.featured_section %}
+
+            {% comment %}Insere a seção "Destaques"{% endcomment %}
+            {% include featured.html %}
+
+        {% endif %}
         
         {% comment %}Insere seção de Publicações Semelhantes{% endcomment %}
         {% include related_posts.html %}

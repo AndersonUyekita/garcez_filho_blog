@@ -7,6 +7,8 @@ categories: civil
 tags: featured
 hero_url: /assets/images/posts/2023-02-07-direito-civil.jpg
 comments: true
+featured_section: true
+call_action_section: true
 ---
 
 ## O que é o Direito Civil?  
