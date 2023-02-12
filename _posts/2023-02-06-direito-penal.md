@@ -4,6 +4,7 @@ layout: post
 id_author: 1
 date: 2023-02-06 12:00:00 -0300
 categories: penal
+tags: featured
 hero_url: /assets/images/posts/2023-02-06-direito-penal.jpg
 comments: true
 ---

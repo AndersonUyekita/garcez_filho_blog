@@ -4,6 +4,7 @@ layout: post
 id_author: 1
 date: 2023-02-07 12:00:00 -0300
 categories: civil
+tags: featured
 hero_url: /assets/images/posts/2023-02-07-direito-civil.jpg
 comments: true
 ---

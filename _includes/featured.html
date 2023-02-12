@@ -5,30 +5,34 @@
     <div class="container-fluid" style="max-width:70vw;">
     
         <!-- Título da Seção -->
-        <h2 class="titulo_regular">Destaques</h2>
+        <h1 style="margin-top: 5vh;padding-top: 5vh;text-align: center;font-family:'Oswald';">DESTAQUES</h1>
+        <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding: 3vh; opacity:1"></hr>
 
         <!-- Definindo uma "linha" -->
         <div class="row mb-2">
 
+            {% assign featured_0 = site.tags['featured'][0] reversed %}
+
             <!-- Coluna da Esquerda -->
             <div class="col-md-6">
-                <div class="card mb-3 shadow">
+                <div class="card mb-3 shadow h-100">
 
                     <!-- Imagem do Destaque 1 -->
-                    <img src="/assets/hero.jpg" class="card-img-top" alt="...">
+                    <img src="{{ featured_0.hero_url }}" class="card-img-top" alt="...">
 
                     <!-- Categoria do Destaque 1 -->
                     <div class="card-img-overlay" style="height:25%;">
-                        <span class="badge rounded-pill text-bg-success" style="margin:auto; margin-left: 0;">Ambiental</span>
+                        {% include badge.html categories = featured_0.categories %}
                     </div>
 
                     <!-- TEMPO de Leitura do Destaque 1 -->
                     <div class="card-img-overlay" style="height:25%; text-align: right;">
                         <span class="badge rounded-pill text-bg-light" style="margin:auto; margin-left: 0;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
-                                <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
-                            </svg>
-                            1 minuto
+
+                            {% comment %} Conta a quantidade de palavras {% endcomment %}
+                            {% assign words = featured_0.content | strip_html | number_of_words %}
+                            {% include reading_time.html content = words %}
+
                         </span>
                     </div>
 
@@ -36,21 +40,20 @@
                     <div class="card-body">
 
                         <!-- Título do Destaque 1 -->
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">{{ featured_0.title }}</h5>
 
                         <!-- Data do Destaque 1 -->
-                        <div class="mb-1 text-muted">01 Fev 2023</div>
+                        <div class="mb-1 text-muted">{{ featured_0.date | date: "%d %b %Y" }}</div>
 
                         <!-- Teaser da Publicação do Destaque 1 -->
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                        content. This content is a little bit longer.</p>
+                        <p class="card-text">{{ featured_0.content | strip_html | truncatewords: 30 }}</p>
 
                     <!-- Autor do Destaque 1 -->
                     <div class="row">
                         <div class="col">
                             
                             <!-- Avatar e Nome do Autor do Destaque 1 -->
-                            <img src="/assetsFigure/profile_carlos.jpg" class="img-fluid" alt="Avatar" style="border-radius: 50%; width: 50px; margin: auto; margin-right: 0.5rem;">
+                            <img src="/assets/profile_carlos.jpg" class="img-fluid" alt="Avatar" style="border-radius: 50%; width: 50px; margin: auto; margin-right: 0.5rem;">
                             <span class="card-text"><small class="text-muted" style="font-family: Book Antiqua;">José Carlos Garcez Filho</small></span>
                         </div>
                     </div>
@@ -58,25 +61,28 @@
                 </div>
             </div>
 
+            {% assign featured_1 = site.tags['featured'][1] reversed %}
+
             <!-- Coluna da Direita -->
             <div class="col-md-6">
-                <div class="card mb-3 shadow">
+                <div class="card mb-3 shadow h-100">
 
                     <!-- Imagem do Destaque 2 -->
-                    <img src="/assets/hero.jpg" class="card-img-top" alt="...">
+                    <img src="{{ featured_1.hero_url }}" class="card-img-top" alt="...">
 
                     <!-- Categoria do Destaque 2 -->
                     <div class="card-img-overlay" style="height:25%;">
-                        <span class="badge rounded-pill text-bg-success" style="margin:auto; margin-left: 0;">Ambiental</span>
+                        {% include badge.html categories = featured_1.categories %}
                     </div>
 
                     <!-- TEMPO de Leitura do Destaque 2 -->
                     <div class="card-img-overlay" style="height:25%; text-align: right;">
                         <span class="badge rounded-pill text-bg-light" style="margin:auto; margin-left: 0;">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hourglass-split" viewBox="0 0 16 16">
-                                <path d="M2.5 15a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11zm2-13v1c0 .537.12 1.045.337 1.5h6.326c.216-.455.337-.963.337-1.5V2h-7zm3 6.35c0 .701-.478 1.236-1.011 1.492A3.5 3.5 0 0 0 4.5 13s.866-1.299 3-1.48V8.35zm1 0v3.17c2.134.181 3 1.48 3 1.48a3.5 3.5 0 0 0-1.989-3.158C8.978 9.586 8.5 9.052 8.5 8.351z"/>
-                            </svg>
-                            1 minuto
+
+                            {% comment %} Conta a quantidade de palavras {% endcomment %}
+                            {% assign words = featured_1.content | strip_html | number_of_words %}
+                            {% include reading_time.html content = words %}
+
                         </span>
                     </div>
 
@@ -84,14 +90,13 @@
                     <div class="card-body">
 
                         <!-- Título do Destaque 2 -->
-                        <h5 class="card-title">Card title</h5>
+                        <h5 class="card-title">{{ featured_1.title }}</h5>
 
                         <!-- Data do Destaque 2 -->
-                        <div class="mb-1 text-muted">01 Fev 2023</div>
+                        <div class="mb-1 text-muted">{{ featured_1.date | date: "%d %b %Y" }}</div>
 
                         <!-- Teaser da Publicação do Destaque 2 -->
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
-                        content. This content is a little bit longer.</p>
+                        <p class="card-text">{{ featured_1.content | strip_html | truncatewords: 30 }}</p>
 
                     <!-- Autor do Destaque 2 -->
                     <div class="row">
@@ -108,3 +113,9 @@
         </div>
     </div>
 </section>
+
+
+
+
+
+

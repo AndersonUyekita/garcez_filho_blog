@@ -51,8 +51,19 @@
 			</div>
 		</section>
 
-		{% comment %}Insere a seção "Ficou Interessado?"{% endcomment %}
-		{% include call_action.html %}
+		{% if page.featured_section %}
+
+			{% comment %}Insere a seção "Destaques"{% endcomment %}
+			{% include featured.html %}
+
+		{% endif %}
+
+		{% if page.call_action_section %}
+
+			{% comment %}Insere a seção "Ficou Interessado?"{% endcomment %}
+			{% include call_action.html %}
+
+		{% endif %}
 
 		{% comment %}Footer genérico{% endcomment %}
 		{% include footer.html %}

@@ -116,7 +116,7 @@ Esse include insere o cabeçalho da publicação com:
     <!-- Categoria -->
     <div class="col pb-3">
         {% comment %} Adiciona todos os badge de acordo com as categorias {% endcomment %}
-        {% include badge.html %}
+        {% include badge.html categories = page.categories %}
     </div>
 
     <!-- Data da Publicação -->
@@ -130,7 +130,14 @@ Esse include insere o cabeçalho da publicação com:
 
     <!-- Tempo de Leitura -->
     <div class="col pb-3">
-        {% include reading_time.html %}
+
+        {% comment %} Conta a quantidade de palavras {% endcomment %}
+        {% capture words %}
+            {{ content | number_of_words }}
+        {% endcapture %}
+
+        {% include reading_time.html content = words %}
+        
     </div>
 
 </div>
