@@ -1,6 +1,6 @@
 ---
 title: Política de Comentários
-layout: default
+layout: post
 permalink: /politica-de-comentarios
 date: 2023-02-01 12:00:00 -0300
 hero_url: /assets/images/pages/comment-policy.jpg
@@ -28,4 +28,6 @@ Agradecemos sua colaboração para manter nossa comunidade saudável e respeitos
 
 <hr>
 
-Esta {{ page.title }} foi atualizada pela última vez em {{ page.date }} e é efetiva a partir desta mesma data.
+{% assign post_date = page.date %}
+
+<p>Esta {{ page.title }} foi atualizada pela última vez em {% include date_long.html post_date = post_date %} e é efetivo a partir desta mesma data.</p>

@@ -1,6 +1,6 @@
 ---
 title: Política de Cookies
-layout: default
+layout: post
 permalink: /politica-de-cookies
 date: 2023-02-01 12:00:00 -0300
 hero_url: /assets/images/pages/cookies-policy.jpg
@@ -118,4 +118,6 @@ Em caso de dúvidas sobre esta Política de Cookies, entre em contato conosco pe
 
 <hr>
 
-Esta {{ page.title }} foi atualizada pela última vez em {{ page.date }} e é efetiva a partir desta mesma data.
+{% assign post_date = page.date %}
+
+<p>Esta {{ page.title }} foi atualizada pela última vez em {% include date_long.html post_date = post_date %} e é efetivo a partir desta mesma data.</p>

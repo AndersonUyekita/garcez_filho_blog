@@ -97,8 +97,12 @@
 
         {% endif %}
         
-        {% comment %}Insere seção de Publicações Semelhantes{% endcomment %}
-        {% include related_posts.html %}
+        {% if page.related_section %}
+
+            {% comment %}Insere seção de Publicações Semelhantes{% endcomment %}
+            {% include related_posts.html %}
+
+        {% endif %}
 
         {% comment %}Insere a seção "Ficou Interessado?"{% endcomment %}
         {% include call_action.html %}

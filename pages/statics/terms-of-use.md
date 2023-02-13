@@ -1,14 +1,10 @@
 ---
 title: Termos de Uso
-layout: default
+layout: post
 permalink: /termos-de-uso
 date: 2023-02-01 12:00:00 -0300
 hero_url: /assets/images/pages/terms-of-use.jpg
 ---
-
-{% include post_info.html %}
-
-<hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding-bottom: 10px; opacity:1; margin-bottom: 2vw;">
 
 ## 1. Termos
 
@@ -54,4 +50,6 @@ Estes termos e condições são regidos e interpretados de acordo com as leis do
 
 <hr>
 
-Este {{ page.title }} foi atualizadi pela última vez em {{ page.date }} e é efetivo a partir desta mesma data.
+{% assign post_date = page.date %}
+
+<p>Este {{ page.title }} foi atualizado pela última vez em {% include date_long.html post_date = post_date %} e é efetivo a partir desta mesma data.</p>

@@ -1,0 +1,40 @@
+{% assign dia = include.post_date | date: "%d" %}
+{% assign mes = include.post_date | date: "%B" | string | downcase %}
+{% assign ano = include.post_date | date: "%Y" %}
+
+{% if mes == "january" %}
+  {{ dia }} de Janeiro de {{ ano }}
+{% endif%}
+{% if mes == "february" %}
+  {{ dia }} de Fevereiro de {{ ano }}
+{% endif%}
+{% if mes == "march" %}
+  {{ dia }} de Março de {{ ano }}
+{% endif%}
+{% if mes == "april" %}
+  {{ dia }} de Abril de {{ ano }}
+{% endif%}
+{% if mes == "may" %}
+  {{ dia }} de Maio de {{ ano }}
+{% endif%}
+{% if mes == "june" %}
+  {{ dia }} de Junho de {{ ano }}
+{% endif%}
+{% if mes == "july" %}
+  {{ dia }} de Julho de {{ ano }}
+{% endif%}
+{% if mes == "august" %}
+  {{ dia }} de Agosto de {{ ano }}
+{% endif%}
+{% if mes == "september" %}
+  {{ dia }} de Setembro de {{ ano }}
+{% endif%}
+{% if mes == "october" %}
+  {{ dia }} de Outubro de {{ ano }}
+{% endif%}
+{% if mes == "november" %}
+  {{ dia }} de Novembro de {{ ano }}
+{% endif%}
+{% if mes == "december" %}
+  {{ dia }} de Dezembro de {{ ano }}
+{% endif%}

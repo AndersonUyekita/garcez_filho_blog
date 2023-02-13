@@ -1,5 +1,5 @@
 ---
-title: TESTE
+title: index
 layout: shell
 date: 2023-02-03 12:00:00 -0300
 permalink: /index
@@ -27,22 +27,22 @@ call_action_section: true
 	            <!-- Coluna da Direita: Outras informações -->
 	            <div class="col-md-4">
 	                <div class="position-sticky" style="top: 12vh;">
-	                    <div class="p-4 mb-3 bg-light rounded">
-	                      <h4 class="fst-italic" style="text-align: right;">Sobre</h4>
+	                    <div class="p-4 mb-3 px-3 bg-light rounded">
+	                      <h4 class="fst-italic" style="text-align: center;">Sobre</h4>
 	                      <p class="mb-0"  style="text-align: justify;">Este blog tem o objetivo de fornece informações atualizadas sobre questões 
 	                      jurídicas. Nossa equipe de especialistas em direito compartilha análises e opiniões informadas para 
 	                      ajudá-lo a tomar decisões conscientes. Acompanhe-nos para ficar por dentro das tendências e desenvolvimentos 
 	                      do mundo jurídico.</p>
 	                    </div>
-	                    <div class="p-4" style="text-align: right;">
+	                    <div class="p-4" style="text-align: center;">
 	                      <h4 class="fst-italic">Arquivos</h4>
 	                      <ol class="list-unstyled mb-0">
 	                        <li><a href="#">Fevereiro 2023</a></li>
 	                      </ol>
 	                    </div>
-	                    <div class="p-4" style="text-align: right;">
+	                    <div class="p-4" style="text-align: center;">
 	                      <h4 class="fst-italic">Categorias</h4>
-	                      <ol class="list-unstyled">
+	                      <ol class="list-unstyled" style="font-size: 1.1rem;">
 	                        <li><a href="{{ site.url }}/categorias/civil"><span class="badge badge-civil">Civil</span></a></li>
 	                        <li><a href="{{ site.url }}/categorias/imobiliario"><span class="badge badge-imobiliario">Imobiliário</span></a></li>
 	                        <li><a href="{{ site.url }}/categorias/ambiental"><span class="badge badge-ambiental">Ambiental</span></a></li>
