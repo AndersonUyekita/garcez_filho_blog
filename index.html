@@ -1571,9 +1571,9 @@ if (window.scrollY > 0) {
                             <!-- Formulário para inscrição da newsletter -->
                             <form>
                                 <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                                    <label for="newsletter1" class="visually-hidden">Email address</label>
-                                    <input id="newsletter1" type="text" class="form-control" placeholder="Endereço de email">
-                                    <button class="btn btn-default" type="button">
+                                    <label for="clique_input" class="visually-hidden">Email address</label>
+                                    <input id="clique_input" type="text" class="form-control" placeholder="Endereço de email">
+                                    <button id="clique_assinar" class="btn btn-default" type="button">
                                         <i class="bi bi-send"></i> Assinar
                                     </button>
                                 </div>
@@ -1600,9 +1600,48 @@ if (window.scrollY > 0) {
                     </div>
                 </div>
             </div>
-
         </div>
+
+    <!-- Toast de Confirmação: Sucesso -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toast-success" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="3000">
+            <div class="toast-body">
+                Email registrado com sucesso!!
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast de Confirmação: Problema -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toast-fail" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="3000">
+            <div class="toast-body">
+                Houve algum problema no cadastro do seu email.
+            </div>
+        </div>
+    </div>
+
 </section>
+
+<script>
+  // Adiciona um event listener ao botão "clique_assinar"
+  document.getElementById("clique_assinar").addEventListener("click", async function() {
+    
+    // Pega o valor do input com id "clique_input"
+    const email = document.getElementById("clique_input").value;
+
+    try {
+      // Chama a função saveToAirtable com o email do input
+      await saveToAirtable(email);
+      // Adiciona a classe "show" ao toast de sucesso
+      document.getElementById("toast-success").classList.add("show");
+    } catch (error) {
+      // Adiciona a classe "show" ao toast de erro
+      document.getElementById("toast-fail").classList.add("show");
+    }
+  });
+</script>
+
+<script src="/assets/js/saveToAirtable.js"></script>
 
 		
 

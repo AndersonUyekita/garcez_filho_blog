@@ -5,6 +5,26 @@
     {% comment %} Insere a tag head {% endcomment %}
     {% include header.html %}
 
+    <style>
+        /* Criando sections responsivos para cada tipo de dispositivo */
+        /* Aplicação: col */
+        .section-responsive {
+          max-width: 85vw;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          margin: 0;
+          padding: 0;
+        }
+
+        @media (max-width: 767px) {
+          .section-responsive {
+            max-width: 95vw;
+          }
+        }
+
+    </style>
+
     <body>
 
         {% comment %} Insere o Navbar {% endcomment %}
@@ -17,59 +37,55 @@
         <section>
 
             <!-- Definição de Linha -->
-            <div class="row m-0">
-
-                <!-- Definição de Coluna: Essa coluna será excluída na visualização pelo celular -->
-                <div class="col d-none d-sm-block" style="max-width:7.5vw;">
-                </div>
+            <div class="row justify-content-center m-0 p-0">
+                <div class="col m-0 p-0 section-responsive">
     
-                <!-- Definição de Coluna: Essa é a coluna quer armazenará o conteúdo do POSTS -->
-                <div class="col p-2 d-block" style="max-width:100vw; margin: auto;">
+                    <!-- Definição de Coluna: Essa é a coluna quer armazenará o conteúdo do POSTS -->
+                    <div class="col p-2 d-block" style="max-width:100vw; margin: auto;">
 
-                        <!-- Criação do Card flutuante -->
-                        <div class="container-fluid p-0 card shadow" style="top:-10vh;">
-        
-                            <!-- Delimita o corpo do texto -->
-                            <div class="card-body p-0" style="margin-left:5vw; margin-right:5vw;">
+                            <!-- Criação do Card flutuante -->
+                            <div class="container-fluid p-0 card shadow" style="top:-10vh;">
+            
+                                <!-- Delimita o corpo do texto -->
+                                <div class="card-body p-0" style="margin-left:5vw; margin-right:5vw;">
 
-                                <!-- Informações do POST -->
-                                {% comment %} Insere um título e as Informações gerais da publicação {% endcomment %}
-                                {% include post_info.html %}
+                                    <!-- Informações do POST -->
+                                    {% comment %} Insere um título e as Informações gerais da publicação {% endcomment %}
+                                    {% include post_info.html %}
 
-                                <!-- Divisor -->
-                                <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding-bottom: 10px; opacity:1; margin-bottom: 2vw;">
+                                    <!-- Divisor -->
+                                    <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding-bottom: 10px; opacity:1; margin-bottom: 2vw;">
 
-                                <!-- Conteúdo do POST -->
-                                <div class="card-body">
+                                    <!-- Conteúdo do POST -->
+                                    <div class="card-body">
 
-                                    <div class="row gx-5 mb-4">
+                                        <div class="row gx-5 mb-4">
 
-                                        <!-- CONTENT -->
-                                        <div id="content" class="col-sm-12 col-md-12 col-lg-9 p-2 d-block" style="text-align:justify; max-width: 100%;">
+                                            <!-- CONTENT -->
+                                            <div id="content" class="col-sm-12 col-md-12 col-lg-9 p-2 d-block" style="text-align:justify; max-width: 100%;">
 
-                                            {{ content }}
+                                                {{ content }}
+                                            </div>
+
+                                            <!-- TOC -->
+                                            {% comment %} Gera o TOC automaticamente {% endcomment %}
+                                            {% include toc.html %}
                                         </div>
 
-                                        <!-- TOC -->
-                                        {% comment %} Gera o TOC automaticamente {% endcomment %}
-                                        {% include toc.html %}
+                                        {% comment %}Social Media & Rating{% endcomment %}
+                                        {% include social_media.html %}
                                     </div>
 
-                                    {% comment %}Social Media & Rating{% endcomment %}
-                                    {% include social_media.html %}
+                                    <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding-bottom: 10px; opacity:1; margin-bottom: 5vh;">
+
+                                    {% comment %}Minibio do Autor da Publicação{% endcomment %}
+                                    {% include minibio.html %}
                                 </div>
-
-                                <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding-bottom: 10px; opacity:1; margin-bottom: 5vh;">
-
-                                {% comment %}Minibio do Autor da Publicação{% endcomment %}
-                                {% include minibio.html %}
                             </div>
-                        </div>
+                    </div>
+
                 </div>
  
-                <!-- Definição de Coluna: Essa coluna será excluída na visualização pelo celular -->                
-                <div class="col d-none d-sm-block" style="max-width:7.5vw;">
-                </div>
             </div>
 
         </section>
