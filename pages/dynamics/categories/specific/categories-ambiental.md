@@ -34,13 +34,13 @@ call_action_section: true
         	<a href="{{ post.url }}">
         		<div class="container-fluid h-100 w-100" style="background-image: url('{{ post.hero_url }}'); background-size: cover; background-position: center; min-height: 25vh; object-fit: cover;" title="Clique e leia mais publicações sobre {{ post.title }}">
         		</div>
+            <!-- Insere a DATA sobre a Imagem -->
+            <div class="card-img-overlay" style="height:25%;">
+              <div class="badge badge-data"><i class="bi bi-calendar3"></i> {{ post.date | date: "%d %b %Y" }}
+              </div>
+            </div>
         	</a>
         </div>
-        <!-- Insere a DATA sobre a Imagem -->
-    		<div class="card-img-overlay" style="height:25%;">
-    			<div class="badge badge-data"><i class="bi bi-calendar3"></i> {{ post.date | date: "%d %b %Y" }}
-    			</div>
-    		</div>
 		    <!-- CORPO do CARD -->
         <div class="col-md-8">
           <div class="card-body pb-0">

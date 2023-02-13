@@ -1,0 +1,159 @@
+{% comment %}
+Esse include faz a criação de um navbar.
+
+{% endcomment %}
+
+
+<style>
+    /* Efeito de sombra inicial do navbar */
+    .navbar-init {
+        background: linear-gradient(to bottom, black, #00000000);
+    }
+
+    /* Letras do Logotipo brancas quando está no TOPO */
+    .navbar-brand {
+      color: white;
+    }
+
+    /* Letras do Logotipo pretas quando está fora do TOPO */
+    .bg-light-added .navbar-brand {
+      color: black;
+    }
+
+    /* Estabelece as cores das letras do Navbar como Brancas */
+    .navbar-nav .nav-link {
+      color: white;
+    }
+
+    /* Cor do navbar quando não está no TOPO */
+    .bg-light-added {
+      background-color: rgb(248,249,250); !important;
+      transition: background-color 1.0s ease;
+    }
+
+    /* Cor do texto do Navbar quando não está no TOPO */
+    .bg-light-added .navbar-nav .nav-link {
+      color: black;
+      transition: background-color 1.0s ease;
+    }
+
+    /* Retorno ao TOPO com transição de transparência */
+    #mainNavbar {
+      transition: background-color 1.0s ease;
+    }
+
+</style>
+
+
+    <!-- Todas as informações sobre o NavBar -->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+
+        <!-- Ajustando o Logo do canto superior esquerdo -->
+        <a class="navbar-brand" href="{{ site.url }}" style="font-family: 'Oswald';font-size: 1.75rem;font-weight: bold;word-spacing: 1px;letter-spacing: 2px; padding-top:15px; --bs-navbar-brand-hover-color: white">
+          <img src="/assets/logo.svg" alt="Logotipo no canto superior esquerdo" class="d-inline-block" />
+            | Garcez Filho |
+            <small style="font-size: 1rem;">BLOG</small>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" style="text-align: center;font-family:'Book Antiqua';font-weight: bold;">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            
+            <!-- Dropdown de Categorias -->
+            <li class="nav-item dropdown px-3">
+              <a class="nav-link dropdown-toggle" href="{{ site.url }}/categorias" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                CATEGORIAS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="{{ site.url }}/categorias/civil">Civil</a></li>
+                <li><a class="dropdown-item" href="{{ site.url }}/categorias/penal">Penal</a></li>
+                <li><a class="dropdown-item" href="{{ site.url }}/categorias/armas">Armas</a></li>
+                <li><a class="dropdown-item" href="{{ site.url }}/categorias/ambiental">Ambiental</a></li>
+                <li><a class="dropdown-item" href="{{ site.url }}/categorias/trabalhista">Trabalhista</a></li>
+                <li><a class="dropdown-item" href="{{ site.url }}/categorias/imobiliario">Imobiliário</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="{{ site.url }}/categorias">Todas categorias</a></li>
+              </ul>
+            </li>
+
+            <!-- Dropdown de Serviços -->
+            <li class="nav-item dropdown px-3">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                SERVIÇOS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="https://www.garcezfilho.com.br/#civil">Civil</a></li>
+                <li><a class="dropdown-item" href="https://www.garcezfilho.com.br/#criminal">Penal</a></li>
+                <li><a class="dropdown-item" href="https://www.garcezfilho.com.br/#armas">Armas</a></li>
+                <li><a class="dropdown-item" href="https://www.garcezfilho.com.br/#ambiental">Ambiental</a></li>
+                <li><a class="dropdown-item" href="https://www.garcezfilho.com.br/#trabalhista">Trabalhista</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="https://www.garcezfilho.com.br/#imobiliario">Imobiliário</a></li>
+              </ul>
+            </li>
+
+            <!-- Dropdown mais info -->
+            <li class="nav-item dropdown px-3">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                INFORMAÇÕES
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="https://www.garcezfilho.com.br/#sobre">Sobre</a></li>
+                <li><a class="dropdown-item" href="https://www.garcezfilho.com.br/#equipe">Equipe</a></li>
+                <li><a class="dropdown-item" href="https://www.garcezfilho.com.br/#localizacao">Localização</a></li>
+                <li><a class="dropdown-item" href="https://www.garcezfilho.com.br/#contatos">Contatos</a></li>
+              </ul>
+            </li>
+
+            <!-- Botão BUSCAR com trigger de um modal -->
+            <button type="button" class="btn btn-default" data-bs-toggle="modal" data-bs-target="#buscar_site">
+              <i class="bi bi-search"></i>
+            </button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- Modal -->
+<div class="modal fade" id="buscar_site" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <!-- Pesquisar no Site -->
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-default" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+// Escuta o evento de scroll
+window.addEventListener('scroll', function() {
+  // Verifica a posição do scroll
+if (window.scrollY > 0) {
+  document.getElementById("mainNavbar").classList.add("bg-light-added");
+  document.getElementById("mainNavbar").classList.remove("navbar-init");
+} else {
+  document.getElementById("mainNavbar").classList.remove("bg-light-added");
+  document.getElementById("mainNavbar").classList.add("navbar-init");
+}
+});
+</script>
+
+
+<script>
+  var searchButton = document.getElementById("search-button");
+  var searchForm = document.querySelector("form.form-inline");
+  
+  searchButton.addEventListener("click", function() {
+    searchForm.style.display = (searchForm.style.display === "none") ? "inline" : "none";
+  });
+</script>
