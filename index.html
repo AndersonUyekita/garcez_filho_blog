@@ -1,0 +1,1666 @@
+<!DOCTYPE html>
+
+<html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
+
+	
+	<!-- Header -->
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="canonical" href="https://blog.garcezfilho.com.br/" />
+
+    <!-- Título do Site -->
+    <title>Garcez Filho</title>
+
+    <!-- Configuração da Metadata: SEO -->
+    <meta name="description" content="A Garcez Filho possui 11 anos de experiência, atuando em mais de 500 ações judiciais e extra judiciais, envolvendo: direito penal, direito do trabalho, direito do consumidor, direito civil, direito de família e sucessões, execuções fiscais, regularização rural, regularização urbana, regularização ambiental e serviços cartorários." />
+    <meta name="keywords" content="Direito Civil, Direito da Família, Direito Trabalhista, Direito Ambiental e Direito Tributário." />
+    <meta name="author" content="Garcez Filho | Advocacia & Consultoria Jurídica" />
+
+    <!-- Configuração da Metadata: Open Graph - WhatsApp -->
+    <meta property="og:url" content="https://blog.garcezfilho.com.br/" />
+    <meta property="og:title" content="Garcez Filho | Advocacia & Consultoria Jurídica" />
+    <meta property="og:description" content="A Garcez Filho possui 11 anos de experiência, atuando em mais de 500 ações judiciais e extra judiciais, envolvendo: direito penal, direito do trabalho, direito do consumidor, direito civil, direito de família e sucessões, execuções fiscais, regularização rural, regularização urbana, regularização ambiental e serviços cartorários." />
+    <meta property="og:image" content="https://blog.garcezfilho.com.br/og_image.jpg?w=615" />
+    <meta property="og:image:secure_url" content="https://blog.garcezfilho.com.br/og_image.jpg?w=615" />
+    <meta property="og:image:alt" content="Justice is to be meted out impartially, without regard to the identity of the individual being tried." />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:site_name" content="Garcez Filho | Advocacia & Consultoria Jurídica" />
+    <meta property="og:see_also" content="https://blog.garcezfilho.com.br/" />
+
+    <!-- Configuração da Metadata: Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://blog.garcezfilho.com.br/" />
+    <meta name="twitter:title" content="Garcez Filho | Advocacia & Consultoria Jurídica" />
+    <meta name="twitter:description" content="A Garcez Filho possui 11 anos de experiência, atuando em mais de 500 ações judiciais e extra judiciais, envolvendo: direito penal, direito do trabalho, direito do consumidor, direito civil, direito de família e sucessões, execuções fiscais, regularização rural, regularização urbana, regularização ambiental e serviços cartorários." />
+    <meta name="twitter:image" content="https://blog.garcezfilho.com.br/og_image.jpg?w=615" />
+    <meta name="twitter:image:secure_url" content="https://blog.garcezfilho.com.br/og_image.jpg?w=615" />
+    <meta name="twitter:image:alt" content="Justice is to be meted out impartially, without regard to the identity of the individual being tried." />
+    <meta name="twitter:image:type" content="image/jpeg" />
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald&display=swap">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/d96daba58a.js" crossorigin="anonymous"></script>
+
+    <style>
+        .parallax {
+          /* The image used */
+          background-image: url("/01-Figure/bg.jpg");
+
+          /* Set a specific height */
+          min-height: 100vh; 
+
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          margin: 0;
+          filter: brightness(65%);
+        }
+
+        #header{
+          position: absolute;
+          z-index: 1000;
+          top: 50vh;
+          right: 5vw;
+          color: white;
+        }
+        .text-box{
+	        height: 50vh;
+	        padding: 10px;
+        }
+        @media only screen and (max-device-width: 1024px) {
+            .parallax {
+                background-attachment: scroll;
+            }
+        }
+        #header{
+         position: absolute;
+          top: 50vp;
+          -webkit-transform: translateY(-50vp);
+          -ms-transform: translateY(-50vp);
+          transform: translateY(-50vp);
+        }
+
+        /* Parallax Hero: Texto sobre o Parallax */
+
+        .parallax-hero{
+            position: absolute;
+            z-index: 1000;
+            top: 35vh;
+            right: 5vw;
+            color: white;
+        }
+
+        /* Parallax Hero: Texto sobre o Parallax - Publicações Semelhantes */
+
+        .parallax-hero-related-posts {
+            position: absolute;
+            z-index: 1000;
+            color: white;
+        }
+
+        /* Parallax de Publicações Semelhantes */
+        .parallax-related-posts {
+          /* The image used */
+          background-image: url("/assets/publicacoes_semelhantes.jpg");
+
+          /* Set a specific height */
+          min-height: 40vh; 
+
+          /* Create the parallax scrolling effect */
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          margin: 0;
+          filter: brightness(65%);
+        }
+
+        /* Text Fade-up effect */
+        .reveal{
+          position: relative;
+          transform: translateY(100px);
+          opacity: 0;
+          transition: 0.5s all ease;
+        }
+
+        .reveal.active{
+          transform: translateY(0);
+          opacity: 1;
+        }
+
+        .titulo_regular{
+            font-family:'Book Antiqua';
+            font-weight: bold;
+        }
+
+        .corpo_regular{
+            font-family:'Book Antiqua';
+        }
+
+        /* Zoom Animation */
+        @-webkit-keyframes zoom {
+          from {
+            -webkit-transform: scale(1, 1);
+          }
+          to {
+            -webkit-transform: scale(1.5, 1.5);
+          }
+        }
+
+        @keyframes zoom {
+          from {
+            transform: scale(1, 1);
+          }
+          to {
+            transform: scale(1.5, 1.5);
+          }
+        }
+
+        .carousel-inner .item > img {
+          -webkit-animation: zoom 20s;
+          animation: zoom 20s;
+        }
+
+        html
+        {
+          scroll-padding-top: 10vh; /* height of sticky header */
+        }
+    </style>
+
+    <!-- Inserindo o JS para fazer o efeito do fade-up -->
+    <!-- Referência: https://alvarotrigo.com/blog/css-animations-scroll/ -->
+    <script>
+        function reveal() {
+          var reveals = document.querySelectorAll(".reveal");
+
+          for (var i = 0; i < reveals.length; i++) {
+            var windowHeight = window.innerHeight;
+            var elementTop = reveals[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+
+            if (elementTop < windowHeight - elementVisible) {
+              reveals[i].classList.add("active");
+            } else {
+              reveals[i].classList.remove("active");
+            }
+          }
+        }
+
+        window.addEventListener("scroll", reveal);
+
+    </script>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+
+
+	<style>
+		/* Criando sections responsivos para cada tipo de dispositivo */
+		/* Aplicação: col */
+		.section-responsive {
+		  max-width: 85vw;
+		  display: flex;
+		  flex-direction: column;
+		  justify-content: center;
+		  margin: 0;
+		  padding: 0;
+		}
+
+		@media (max-width: 767px) {
+		  .section-responsive {
+			max-width: 95vw;
+		  }
+		}
+
+	</style>
+
+	<body>
+
+        
+        
+
+
+<style>
+    /* Efeito de sombra inicial do navbar */
+    .navbar-init {
+        background: linear-gradient(to bottom, black, #00000000);
+    }
+
+    /* Letras do Logotipo brancas quando está no TOPO */
+    .navbar-brand {
+      color: white;
+    }
+
+    /* Letras do Logotipo pretas quando está fora do TOPO */
+    .bg-light-added .navbar-brand {
+      color: black;
+    }
+
+    /* Estabelece as cores das letras do Navbar como Brancas */
+    .navbar-nav .nav-link {
+      color: white;
+    }
+
+    /* Cor do navbar quando não está no TOPO */
+    .bg-light-added {
+      background-color: rgb(248,249,250); !important;
+      transition: background-color 1.0s ease;
+    }
+
+    /* Cor do texto do Navbar quando não está no TOPO */
+    .bg-light-added .navbar-nav .nav-link {
+      color: black;
+      transition: background-color 1.0s ease;
+    }
+
+    /* Retorno ao TOPO com transição de transparência */
+    #mainNavbar {
+      transition: background-color 1.0s ease;
+    }
+
+</style>
+
+
+    <!-- Todas as informações sobre o NavBar -->
+    <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+
+        <!-- Ajustando o Logo do canto superior esquerdo -->
+        <a class="navbar-brand" href="http://localhost:4000" style="font-family: 'Oswald';font-size: 1.75rem;font-weight: bold;word-spacing: 1px;letter-spacing: 2px; padding-top:15px; --bs-navbar-brand-hover-color: white">
+          <img src="/assets/logo.svg" alt="Logotipo no canto superior esquerdo" class="d-inline-block" />
+            | Garcez Filho |
+            <small style="font-size: 1rem;">BLOG</small>
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent" style="text-align: center;font-family:'Book Antiqua';font-weight: bold;">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            
+            <!-- Dropdown de Categorias -->
+            <li class="nav-item dropdown px-3">
+              <a class="nav-link dropdown-toggle" href="http://localhost:4000/categorias" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                CATEGORIAS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="http://localhost:4000/categorias/civil">Civil</a></li>
+                <li><a class="dropdown-item" href="http://localhost:4000/categorias/penal">Penal</a></li>
+                <li><a class="dropdown-item" href="http://localhost:4000/categorias/armas">Armas</a></li>
+                <li><a class="dropdown-item" href="http://localhost:4000/categorias/ambiental">Ambiental</a></li>
+                <li><a class="dropdown-item" href="http://localhost:4000/categorias/trabalhista">Trabalhista</a></li>
+                <li><a class="dropdown-item" href="http://localhost:4000/categorias/imobiliario">Imobiliário</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="http://localhost:4000/categorias">Todas categorias</a></li>
+              </ul>
+            </li>
+
+            <!-- Dropdown de Serviços -->
+            <li class="nav-item dropdown px-3">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                SERVIÇOS
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="https://www.garcezfilho.com.br/#civil">Civil</a></li>
+                <li><a class="dropdown-item" href="https://www.garcezfilho.com.br/#criminal">Penal</a></li>
+                <li><a class="dropdown-item" href="https://www.garcezfilho.com.br/#armas">Armas</a></li>
+                <li><a class="dropdown-item" href="https://www.garcezfilho.com.br/#ambiental">Ambiental</a></li>
+                <li><a class="dropdown-item" href="https://www.garcezfilho.com.br/#trabalhista">Trabalhista</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="https://www.garcezfilho.com.br/#imobiliario">Imobiliário</a></li>
+              </ul>
+            </li>
+
+            <!-- Dropdown mais info -->
+            <li class="nav-item dropdown px-3">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                INFORMAÇÕES
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="https://www.garcezfilho.com.br/#sobre">Sobre</a></li>
+                <li><a class="dropdown-item" href="https://www.garcezfilho.com.br/#equipe">Equipe</a></li>
+                <li><a class="dropdown-item" href="https://www.garcezfilho.com.br/#localizacao">Localização</a></li>
+                <li><a class="dropdown-item" href="https://www.garcezfilho.com.br/#contatos">Contatos</a></li>
+              </ul>
+            </li>
+
+            <!-- Botão BUSCAR com trigger de um modal -->
+            <button type="button" class="btn btn-default" data-bs-toggle="modal" data-bs-target="#buscar_site">
+              <i class="bi bi-search"></i>
+            </button>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+<!-- Modal -->
+<div class="modal fade" id="buscar_site" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <!-- Pesquisar no Site -->
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-default" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script>
+// Escuta o evento de scroll
+window.addEventListener('scroll', function() {
+  // Verifica a posição do scroll
+if (window.scrollY > 0) {
+  document.getElementById("mainNavbar").classList.add("bg-light-added");
+  document.getElementById("mainNavbar").classList.remove("navbar-init");
+} else {
+  document.getElementById("mainNavbar").classList.remove("bg-light-added");
+  document.getElementById("mainNavbar").classList.add("navbar-init");
+}
+});
+</script>
+
+
+<script>
+  var searchButton = document.getElementById("search-button");
+  var searchForm = document.querySelector("form.form-inline");
+  
+  searchButton.addEventListener("click", function() {
+    searchForm.style.display = (searchForm.style.display === "none") ? "inline" : "none";
+  });
+</script>
+
+		<!-- Carousel com as principais TAGS -->
+		<section>
+
+		    <!-- Configurando o Carousel para: Transição automático -->
+		    <div id="carousel_blog" class="carousel slide" data-bs-ride="carousel">
+
+		      <!-- Indicadores inferior -->
+		      <div class="carousel-indicators">
+		        <button type="button" data-bs-target="#carousel_blog" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+		        <button type="button" data-bs-target="#carousel_blog" data-bs-slide-to="1" aria-label="Slide 2"></button>
+		        <button type="button" data-bs-target="#carousel_blog" data-bs-slide-to="2" aria-label="Slide 3"></button>
+		        <button type="button" data-bs-target="#carousel_blog" data-bs-slide-to="3" aria-label="Slide 4"></button>
+		        <button type="button" data-bs-target="#carousel_blog" data-bs-slide-to="4" aria-label="Slide 5"></button>
+		        <button type="button" data-bs-target="#carousel_blog" data-bs-slide-to="5" aria-label="Slide 6"></button>
+		      </div>
+
+		      <!-- Conteúdo: Os slides terão 5 segundos mudar -->
+		      <div class="carousel-inner">
+
+		        <!-- 1o Item: CIVIL -->
+		        <div class="carousel-item active" data-bs-interval="5000">
+		          <div style="height: 50vh; background-image: url('./01-Figure/civil_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%); animation: zoom 20s;"></div>
+		          <div class="carousel-caption d-md-block">
+		            <h5 class="titulo_regular">Direito Civil</h5>
+		            <p>Leia os meus últimos posts sobre Direito Civil.</p>
+		            <a href="http://localhost:4000/categorias/civil" class="btn btn-lg btn-default" style="margin-bottom: 1.5rem;">Leia mais</a>
+		          </div>
+		        </div>
+
+		        <!-- 2o Item: PENAL -->
+		        <div class="carousel-item" data-bs-interval="5000">
+		          <div style="height: 50vh; background-image: url('./01-Figure/criminal_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%); animation: zoom 20s;"></div>
+		          <div class="carousel-caption d-md-block">
+		            <h5 class="titulo_regular">Direito Penal</h5>
+		            <p>Leia os meus últimos posts sobre Direito Penal.</p>
+		            <a href="http://localhost:4000/categorias/penal" class="btn btn-lg btn-default" style="margin-bottom: 1.5rem;">Leia mais</a>
+		          </div>
+		        </div>
+
+		        <!-- 3o Item: ARMAS -->
+		        <div class="carousel-item" data-bs-interval="5000">
+		          <div style="height: 50vh; background-image: url('./01-Figure/gun_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%); animation: zoom 20s;"></div>
+		          <div class="carousel-caption d-md-block">
+		            <h5 class="titulo_regular">Regularização de Armas</h5>
+		            <p>Leia os meus últimos posts sobre Regularização de Armas.</p>
+		            <a href="http://localhost:4000/categorias/armas" class="btn btn-lg btn-default" style="margin-bottom: 1.5rem;">Leia mais</a>
+		          </div>
+		        </div>
+
+		        <!-- 4o Item: AMBIENTAL -->
+		        <div class="carousel-item" data-bs-interval="5000">
+		          <div style="height: 50vh; background-image: url('./01-Figure/environment_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%); animation: zoom 20s;"></div>
+		          <div class="carousel-caption d-md-block">
+		            <h5 class="titulo_regular">Direito Ambiental</h5>
+		            <p>Leia os meus últimos posts sobre Direito Ambiental.</p>
+		            <a href="http://localhost:4000/categorias/ambiental" class="btn btn-lg btn-default" style="margin-bottom: 1.5rem;">Leia mais</a>
+		          </div>
+		        </div>
+
+		        <!-- 5o Item: IMOBILIÁRIO -->
+		        <div class="carousel-item" data-bs-interval="5000">
+		          <div style="height: 50vh; background-image: url('./01-Figure/realstate_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%); animation: zoom 20s;"></div>
+		          <div class="carousel-caption d-md-block">
+		            <h5 class="titulo_regular">Direito Imobiliário</h5>
+		            <p>Leia os meus últimos posts sobre Direito Imobiliário.</p>
+		            <a href="http://localhost:4000/categorias/imobiliario" class="btn btn-lg btn-default" style="margin-bottom: 1.5rem;">Leia mais</a>
+		          </div>
+		        </div>
+
+		        <!-- 6o Item: TRABALHISTA -->
+		        <div class="carousel-item" data-bs-interval="5000">
+		          <div style="height: 50vh; background-image: url('./01-Figure/labour_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%); animation: zoom 20s;"></div>
+		          <div class="carousel-caption d-md-block">
+		            <h5 class="titulo_regular">Direito do Trabalho</h5>
+		            <p>Leia os meus últimos posts sobre Direito do Trabalho.</p>
+		            <a href="http://localhost:4000/categorias/trabalhista" class="btn btn-lg btn-default" style="margin-bottom: 1.5rem;">Leia mais</a>
+		          </div>
+		        </div>
+		      </div>
+
+		      <!-- Botões Laterais -->
+		      <button class="carousel-control-prev" type="button" data-bs-target="#carousel_blog" data-bs-slide="prev">
+		        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		        <span class="visually-hidden">Previous</span>
+		      </button>
+		      <button class="carousel-control-next" type="button" data-bs-target="#carousel_blog" data-bs-slide="next">
+		        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+		        <span class="visually-hidden">Next</span>
+		      </button>
+		    </div>    
+		</section>
+
+		
+
+			
+			<style>
+    /* Definindo estilo para a ID corpo-artigo */
+    /* Aplicação: col */
+    #corpo-artigo {
+      max-width: 85vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
+
+    @media (max-width: 767px) {
+      #corpo-artigo {
+        max-width: 95vw;
+      }
+    }
+</style>
+
+<!-- Post em Destaques -->
+<section style="margin: 2vh 0; padding: 2vh 0;">
+
+    <!-- Configurando os limites da página -->
+    <div class="row justify-content-center m-0 p-0">
+
+        <div class="col m-0 p-0 section-responsive">
+
+            <!-- Título da Seção: DESTAQUE -->
+            <h1 style="text-align: center;font-family:'Oswald';">DESTAQUES</h1>
+            <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding: 3vh; opacity:1"></hr>
+
+            <!-- Definindo uma "linha" -->
+            <div class="row mb-2 g-3">
+
+                
+
+                <!-- Coluna da Esquerda -->
+                <div class="col-md-6">
+                    <div class="card mb-3 shadow h-100">
+
+                        <!-- Imagem do Destaque 1 -->
+                        <a href="/posts/civil/2023/02/07/direito-civil/">
+                            <div class="img-hover-link" style="background-image: url('/assets/images/posts/2023-02-07-direito-civil.jpg'); min-height: 30vh; background-size: cover;background-repeat: no-repeat; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                            </div>
+
+                            <!-- Categoria do Destaque 1 -->
+                            <div class="card-img-overlay" style="height:25%;">
+                                
+
+<style>
+	/* Badge CIVIL */
+	.badge-civil {
+	  background-color: #4285F4;
+	  color: white;
+	}
+
+	/* Badge IMOBILIÁRIO */
+	.badge-imobiliario {
+	  background-color: #3B97A4;
+	  color: white;
+	}
+
+	/* Badge AMBIENTAL */
+	.badge-ambiental {
+	  background-color: #34A853;
+	  color: white;
+	}
+
+	/* Badge PENAL */
+	.badge-penal {
+	  background-color: #EA4335;
+	  color: white;
+	}
+
+	/* Badge TRABALHISTA */
+	.badge-trabalhista {
+	  background-color: #FBBC05;
+	  color: white;
+	}
+
+	/* Badge ARMAS */
+	.badge-armas {
+	  background-color: #1D1E2C;
+	  color: white;
+	}
+
+	/* Badge ARMAS */
+	.badge-data {
+	  background-color: #062A4E;
+	  color: white;
+	}
+</style>
+
+
+
+	
+
+			<span class="badge badge-civil">Civil</span>
+
+		
+
+
+
+
+
+                            </div>
+
+                            <!-- TEMPO de Leitura do Destaque 1 -->
+                            <div class="card-img-overlay" style="height:25%; text-align: right;">
+                                <span class="badge rounded-pill text-bg-light" style="margin:auto; margin-left: 0;">
+
+                                    
+                                    
+                                    
+
+<span>
+	<i class="bi bi-clock"></i>
+	
+	
+		11 minutos
+	
+</span>
+
+                                </span>
+                            </div>
+                        </a>
+
+
+                        <!-- Corpo do Destaque 1 -->
+                        <div class="card-body">
+
+                            <!-- Título do Destaque 1 -->
+                            <h5 class="card-title">O que é o Direito Civil?</h5>
+
+                            <!-- Data do Destaque 1 -->
+                            <div class="mb-1 text-muted"><i class="bi bi-calendar3"></i> 07 Feb 2023</div>
+
+                            <!-- Teaser da Publicação do Destaque 1 -->
+                            <p class="card-text">O que é o Direito Civil? O Direito Civil é uma área do direito que regulamenta as relações entre particulares e suas obrigações de direito privado, como contratos, propriedade, família...</p>
+
+                            <!-- LEIA MAIS -->
+                            <div class="container-fluid m-0 p-0 g-0" style="text-align: right;">
+                                <a class="btn btn-default"  href="/posts/civil/2023/02/07/direito-civil/"><i class="bi bi-book"></i> Leia mais</a>
+                            </div>
+
+                            <!-- Autor do Destaque 1 -->
+                            
+
+
+
+
+<div class="row">
+    <div class="col">
+        
+        <!-- Avatar e Nome do Autor do Destaque 1 -->
+        <img src="/assets/profile_carlos.jpg" class="img-fluid" alt="Avatar" style="border-radius: 50%; width: 35px; margin: auto; margin-right: 0.5rem;">
+        <span class="card-text"><small class="text-muted" style="font-family: Book Antiqua;">José Carlos Garcez Filho</small></span>
+    </div>
+</div>
+
+                      </div>
+                    </div>
+                </div>
+
+                
+
+                <!-- Coluna da Direita -->
+                <div class="col-md-6">
+                    <div class="card mb-3 shadow h-100">
+
+                        <!-- Imagem do Destaque 2 -->
+                        <a href="/posts/penal/2023/02/06/direito-penal/">
+                            <div style="background-image: url('/assets/images/posts/2023-02-06-direito-penal.jpg'); min-height: 30vh; background-size: cover;background-repeat: no-repeat; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+                            </div>
+
+                            <!-- Categoria do Destaque 2 -->
+                            <div class="card-img-overlay" style="height:25%;">
+                                
+
+<style>
+	/* Badge CIVIL */
+	.badge-civil {
+	  background-color: #4285F4;
+	  color: white;
+	}
+
+	/* Badge IMOBILIÁRIO */
+	.badge-imobiliario {
+	  background-color: #3B97A4;
+	  color: white;
+	}
+
+	/* Badge AMBIENTAL */
+	.badge-ambiental {
+	  background-color: #34A853;
+	  color: white;
+	}
+
+	/* Badge PENAL */
+	.badge-penal {
+	  background-color: #EA4335;
+	  color: white;
+	}
+
+	/* Badge TRABALHISTA */
+	.badge-trabalhista {
+	  background-color: #FBBC05;
+	  color: white;
+	}
+
+	/* Badge ARMAS */
+	.badge-armas {
+	  background-color: #1D1E2C;
+	  color: white;
+	}
+
+	/* Badge ARMAS */
+	.badge-data {
+	  background-color: #062A4E;
+	  color: white;
+	}
+</style>
+
+
+
+	
+
+			<span class="badge badge-penal">Penal</span>
+
+		
+
+
+
+
+
+                            </div>
+
+                            <!-- TEMPO de Leitura do Destaque 2 -->
+                            <div class="card-img-overlay" style="height:25%; text-align: right;">
+                                <span class="badge rounded-pill text-bg-light" style="margin:auto; margin-left: 0;">
+
+                                    
+                                    
+                                    
+
+<span>
+	<i class="bi bi-clock"></i>
+	
+	
+		2 minutos
+	
+</span>
+
+                                </span>
+                            </div>
+                        </a>
+
+                        <!-- Corpo do Destaque 2 -->
+                        <div class="card-body">
+
+                            <!-- Título do Destaque 2 -->
+                            <h5 class="card-title">O que é o Direito Penal?</h5>
+
+                            <!-- Data do Destaque 2 -->
+                            <div class="mb-1 text-muted"><i class="bi bi-calendar3"></i> 06 Feb 2023</div>
+
+                            <!-- Teaser da Publicação do Destaque 2 -->
+                            <p class="card-text">O que é o Direito Penal? O Direito Penal é um setor do Direito que regula as infrações penais e as punições adequadas a seus autores. Ele define os crimes...</p>
+
+                            <!-- LEIA MAIS -->
+                            <div class="container-fluid m-0 p-0 g-0" style="text-align: right;">
+                                <a class="btn btn-default"  href="/posts/penal/2023/02/06/direito-penal/"><i class="bi bi-book"></i> Leia mais</a>
+                            </div>
+
+                        <!-- Autor do Destaque 2 -->
+                        
+
+
+
+
+<div class="row">
+    <div class="col">
+        
+        <!-- Avatar e Nome do Autor do Destaque 1 -->
+        <img src="/assets/profile_carlos.jpg" class="img-fluid" alt="Avatar" style="border-radius: 50%; width: 35px; margin: auto; margin-right: 0.5rem;">
+        <span class="card-text"><small class="text-muted" style="font-family: Book Antiqua;">José Carlos Garcez Filho</small></span>
+    </div>
+</div>
+
+                      </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    
+    </div>
+</section>
+
+
+
+
+
+		
+
+		<!-- Corpo da página -->
+		<section>
+			<div class="row justify-content-center m-0 p-0">
+				<!-- Responsividade do layout default -->
+				<div class="col m-0 p-0 section-responsive">
+					<div class="container-fluid m-0 p-0" style="text-align: justify;">
+						<!-- Últimas Postagens -->
+<section class="reveal" style="margin: 2vh 0; padding: 2vh 0;">
+    <!-- Configurando os limites da página -->
+    <div class="row justify-content-center m-0 p-0">
+	    <!-- Definindo um container responsivo. -->
+	    <div class="col m-0 p-0 section-responsive">
+	        <!-- Criando uma "linha" -->
+	        <div class="row gx-4">
+	            <!-- Coluna da Esquerda: Parte do Post -->
+	            <div class="col-md-8">
+	            	<h1 style="text-align: center; font-family:'Oswald';">ÚLTIMAS PUBLICAÇÕES</h1>
+	            	<hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding: 3vh; opacity:1" />
+	                <!-- Listar as publicações -->
+	                <div class="row-cols-1 row-cols-sm-1 row-cols-md-1 g-3 m-0 p-0">
+	                	
+
+
+
+
+    <!-- Cria uma coluna para uma publicação nova -->
+    <div class="col">
+        <div class="card mb-3" style="border-width: 0px;">
+
+            <!-- Imagem do Destaque 1 -->
+            <a href="/posts/armas/2023/02/09/porte-de-armas/">
+                <div class="img-hover-link" style="background-image: url('/assets/images/posts/2023-02-08-armas.jpg'); min-height: 30vh; background-size: cover; background-repeat: no-repeat; border-radius: 0px; border-width: 0px;">
+                </div>
+
+                <!-- Categoria do Destaque 1 -->
+                <div class="card-img-overlay" style="height:25%;">
+                    
+
+<style>
+	/* Badge CIVIL */
+	.badge-civil {
+	  background-color: #4285F4;
+	  color: white;
+	}
+
+	/* Badge IMOBILIÁRIO */
+	.badge-imobiliario {
+	  background-color: #3B97A4;
+	  color: white;
+	}
+
+	/* Badge AMBIENTAL */
+	.badge-ambiental {
+	  background-color: #34A853;
+	  color: white;
+	}
+
+	/* Badge PENAL */
+	.badge-penal {
+	  background-color: #EA4335;
+	  color: white;
+	}
+
+	/* Badge TRABALHISTA */
+	.badge-trabalhista {
+	  background-color: #FBBC05;
+	  color: white;
+	}
+
+	/* Badge ARMAS */
+	.badge-armas {
+	  background-color: #1D1E2C;
+	  color: white;
+	}
+
+	/* Badge ARMAS */
+	.badge-data {
+	  background-color: #062A4E;
+	  color: white;
+	}
+</style>
+
+
+
+	
+
+			<span class="badge badge-armas">Armas</span>
+
+	
+
+
+
+
+
+                </div>
+
+                <!-- TEMPO de Leitura do Destaque 1 -->
+                <div class="card-img-overlay" style="height:25%; text-align: right;">
+                    <span class="badge rounded-pill text-bg-light" style="margin:auto; margin-left: 0;">
+
+                        
+                        
+                        
+
+<span>
+	<i class="bi bi-clock"></i>
+	
+	
+		1 minuto
+	
+</span>
+
+                    </span>
+                </div>
+            </a>
+
+            <!-- Corpo do Destaque 1 -->
+            <div class="card-body">
+
+                <!-- Título do Destaque 1 -->
+                <h5 class="card-title">Porte de Armas</h5>
+
+                <!-- Data do Destaque 1 -->
+                <div class="mb-1 text-muted"><i class="bi bi-calendar3"></i> 09 Feb 2023</div>
+
+                <!-- Teaser da Publicação do Destaque 1 -->
+                <p class="card-text">Regularização de Armas
+</p>
+
+                <!-- LEIA MAIS -->
+                <div class="container-fluid m-0 p-0 g-0" style="text-align: right;">
+                    <a class="btn btn-default" href="/posts/armas/2023/02/09/porte-de-armas/"><i class="bi bi-book"></i> Leia mais</a>
+                </div>
+
+                <!-- Autor do Destaque 1 -->
+                
+
+
+
+
+<div class="row">
+    <div class="col">
+        
+        <!-- Avatar e Nome do Autor do Destaque 1 -->
+        <img src="/assets/profile_carlos.jpg" class="img-fluid" alt="Avatar" style="border-radius: 50%; width: 35px; margin: auto; margin-right: 0.5rem;" />
+        <span class="card-text"><small class="text-muted" style="font-family: Book Antiqua;">José Carlos Garcez Filho</small></span>
+    </div>
+</div>
+
+          </div>
+        </div>
+    </div>
+
+
+
+    <!-- Cria uma coluna para uma publicação nova -->
+    <div class="col">
+        <div class="card mb-3" style="border-width: 0px;">
+
+            <!-- Imagem do Destaque 1 -->
+            <a href="/posts/armas/2023/02/08/armas/">
+                <div class="img-hover-link" style="background-image: url('/assets/images/posts/2023-02-08-armas.jpg'); min-height: 30vh; background-size: cover; background-repeat: no-repeat; border-radius: 0px; border-width: 0px;">
+                </div>
+
+                <!-- Categoria do Destaque 1 -->
+                <div class="card-img-overlay" style="height:25%;">
+                    
+
+<style>
+	/* Badge CIVIL */
+	.badge-civil {
+	  background-color: #4285F4;
+	  color: white;
+	}
+
+	/* Badge IMOBILIÁRIO */
+	.badge-imobiliario {
+	  background-color: #3B97A4;
+	  color: white;
+	}
+
+	/* Badge AMBIENTAL */
+	.badge-ambiental {
+	  background-color: #34A853;
+	  color: white;
+	}
+
+	/* Badge PENAL */
+	.badge-penal {
+	  background-color: #EA4335;
+	  color: white;
+	}
+
+	/* Badge TRABALHISTA */
+	.badge-trabalhista {
+	  background-color: #FBBC05;
+	  color: white;
+	}
+
+	/* Badge ARMAS */
+	.badge-armas {
+	  background-color: #1D1E2C;
+	  color: white;
+	}
+
+	/* Badge ARMAS */
+	.badge-data {
+	  background-color: #062A4E;
+	  color: white;
+	}
+</style>
+
+
+
+	
+
+			<span class="badge badge-armas">Armas</span>
+
+	
+
+
+
+
+
+                </div>
+
+                <!-- TEMPO de Leitura do Destaque 1 -->
+                <div class="card-img-overlay" style="height:25%; text-align: right;">
+                    <span class="badge rounded-pill text-bg-light" style="margin:auto; margin-left: 0;">
+
+                        
+                        
+                        
+
+<span>
+	<i class="bi bi-clock"></i>
+	
+	
+		1 minuto
+	
+</span>
+
+                    </span>
+                </div>
+            </a>
+
+            <!-- Corpo do Destaque 1 -->
+            <div class="card-body">
+
+                <!-- Título do Destaque 1 -->
+                <h5 class="card-title">Armas</h5>
+
+                <!-- Data do Destaque 1 -->
+                <div class="mb-1 text-muted"><i class="bi bi-calendar3"></i> 08 Feb 2023</div>
+
+                <!-- Teaser da Publicação do Destaque 1 -->
+                <p class="card-text">Regularização de Armas
+</p>
+
+                <!-- LEIA MAIS -->
+                <div class="container-fluid m-0 p-0 g-0" style="text-align: right;">
+                    <a class="btn btn-default" href="/posts/armas/2023/02/08/armas/"><i class="bi bi-book"></i> Leia mais</a>
+                </div>
+
+                <!-- Autor do Destaque 1 -->
+                
+
+
+
+
+<div class="row">
+    <div class="col">
+        
+        <!-- Avatar e Nome do Autor do Destaque 1 -->
+        <img src="/assets/profile_carlos.jpg" class="img-fluid" alt="Avatar" style="border-radius: 50%; width: 35px; margin: auto; margin-right: 0.5rem;" />
+        <span class="card-text"><small class="text-muted" style="font-family: Book Antiqua;">José Carlos Garcez Filho</small></span>
+    </div>
+</div>
+
+          </div>
+        </div>
+    </div>
+
+
+
+    <!-- Cria uma coluna para uma publicação nova -->
+    <div class="col">
+        <div class="card mb-3" style="border-width: 0px;">
+
+            <!-- Imagem do Destaque 1 -->
+            <a href="/posts/civil/2023/02/07/direito-civil/">
+                <div class="img-hover-link" style="background-image: url('/assets/images/posts/2023-02-07-direito-civil.jpg'); min-height: 30vh; background-size: cover; background-repeat: no-repeat; border-radius: 0px; border-width: 0px;">
+                </div>
+
+                <!-- Categoria do Destaque 1 -->
+                <div class="card-img-overlay" style="height:25%;">
+                    
+
+<style>
+	/* Badge CIVIL */
+	.badge-civil {
+	  background-color: #4285F4;
+	  color: white;
+	}
+
+	/* Badge IMOBILIÁRIO */
+	.badge-imobiliario {
+	  background-color: #3B97A4;
+	  color: white;
+	}
+
+	/* Badge AMBIENTAL */
+	.badge-ambiental {
+	  background-color: #34A853;
+	  color: white;
+	}
+
+	/* Badge PENAL */
+	.badge-penal {
+	  background-color: #EA4335;
+	  color: white;
+	}
+
+	/* Badge TRABALHISTA */
+	.badge-trabalhista {
+	  background-color: #FBBC05;
+	  color: white;
+	}
+
+	/* Badge ARMAS */
+	.badge-armas {
+	  background-color: #1D1E2C;
+	  color: white;
+	}
+
+	/* Badge ARMAS */
+	.badge-data {
+	  background-color: #062A4E;
+	  color: white;
+	}
+</style>
+
+
+
+	
+
+			<span class="badge badge-civil">Civil</span>
+
+		
+
+
+
+
+
+                </div>
+
+                <!-- TEMPO de Leitura do Destaque 1 -->
+                <div class="card-img-overlay" style="height:25%; text-align: right;">
+                    <span class="badge rounded-pill text-bg-light" style="margin:auto; margin-left: 0;">
+
+                        
+                        
+                        
+
+<span>
+	<i class="bi bi-clock"></i>
+	
+	
+		11 minutos
+	
+</span>
+
+                    </span>
+                </div>
+            </a>
+
+            <!-- Corpo do Destaque 1 -->
+            <div class="card-body">
+
+                <!-- Título do Destaque 1 -->
+                <h5 class="card-title">O que é o Direito Civil?</h5>
+
+                <!-- Data do Destaque 1 -->
+                <div class="mb-1 text-muted"><i class="bi bi-calendar3"></i> 07 Feb 2023</div>
+
+                <!-- Teaser da Publicação do Destaque 1 -->
+                <p class="card-text">O que é o Direito Civil? O Direito Civil é uma área do direito que regulamenta as relações entre particulares e suas obrigações de direito privado, como contratos, propriedade, família e sucessões. Seu objetivo principal é proteger os direitos e garantir os deveres dos cidadãos em suas relações privadas e patrimoniais. Ele é uma das bases do sistema jurídico brasileiro e é regulado pelo Código Civil brasileiro. O Código Civil brasileiro, promulgado em 11 de janeiro de 2003, regulamenta o Direito Civil no Brasil. É a principal lei que define as relações entre particulares e estabelece seus direitos e obrigações....</p>
+
+                <!-- LEIA MAIS -->
+                <div class="container-fluid m-0 p-0 g-0" style="text-align: right;">
+                    <a class="btn btn-default" href="/posts/civil/2023/02/07/direito-civil/"><i class="bi bi-book"></i> Leia mais</a>
+                </div>
+
+                <!-- Autor do Destaque 1 -->
+                
+
+
+
+
+<div class="row">
+    <div class="col">
+        
+        <!-- Avatar e Nome do Autor do Destaque 1 -->
+        <img src="/assets/profile_carlos.jpg" class="img-fluid" alt="Avatar" style="border-radius: 50%; width: 35px; margin: auto; margin-right: 0.5rem;" />
+        <span class="card-text"><small class="text-muted" style="font-family: Book Antiqua;">José Carlos Garcez Filho</small></span>
+    </div>
+</div>
+
+          </div>
+        </div>
+    </div>
+
+
+
+    <!-- Cria uma coluna para uma publicação nova -->
+    <div class="col">
+        <div class="card mb-3" style="border-width: 0px;">
+
+            <!-- Imagem do Destaque 1 -->
+            <a href="/posts/penal/2023/02/06/direito-penal/">
+                <div class="img-hover-link" style="background-image: url('/assets/images/posts/2023-02-06-direito-penal.jpg'); min-height: 30vh; background-size: cover; background-repeat: no-repeat; border-radius: 0px; border-width: 0px;">
+                </div>
+
+                <!-- Categoria do Destaque 1 -->
+                <div class="card-img-overlay" style="height:25%;">
+                    
+
+<style>
+	/* Badge CIVIL */
+	.badge-civil {
+	  background-color: #4285F4;
+	  color: white;
+	}
+
+	/* Badge IMOBILIÁRIO */
+	.badge-imobiliario {
+	  background-color: #3B97A4;
+	  color: white;
+	}
+
+	/* Badge AMBIENTAL */
+	.badge-ambiental {
+	  background-color: #34A853;
+	  color: white;
+	}
+
+	/* Badge PENAL */
+	.badge-penal {
+	  background-color: #EA4335;
+	  color: white;
+	}
+
+	/* Badge TRABALHISTA */
+	.badge-trabalhista {
+	  background-color: #FBBC05;
+	  color: white;
+	}
+
+	/* Badge ARMAS */
+	.badge-armas {
+	  background-color: #1D1E2C;
+	  color: white;
+	}
+
+	/* Badge ARMAS */
+	.badge-data {
+	  background-color: #062A4E;
+	  color: white;
+	}
+</style>
+
+
+
+	
+
+			<span class="badge badge-penal">Penal</span>
+
+		
+
+
+
+
+
+                </div>
+
+                <!-- TEMPO de Leitura do Destaque 1 -->
+                <div class="card-img-overlay" style="height:25%; text-align: right;">
+                    <span class="badge rounded-pill text-bg-light" style="margin:auto; margin-left: 0;">
+
+                        
+                        
+                        
+
+<span>
+	<i class="bi bi-clock"></i>
+	
+	
+		2 minutos
+	
+</span>
+
+                    </span>
+                </div>
+            </a>
+
+            <!-- Corpo do Destaque 1 -->
+            <div class="card-body">
+
+                <!-- Título do Destaque 1 -->
+                <h5 class="card-title">O que é o Direito Penal?</h5>
+
+                <!-- Data do Destaque 1 -->
+                <div class="mb-1 text-muted"><i class="bi bi-calendar3"></i> 06 Feb 2023</div>
+
+                <!-- Teaser da Publicação do Destaque 1 -->
+                <p class="card-text">O que é o Direito Penal? O Direito Penal é um setor do Direito que regula as infrações penais e as punições adequadas a seus autores. Ele define os crimes e as contravenções, bem como os processos de perseguição e punição, protegendo a sociedade e os direitos individuais. O objetivo principal do Direito Penal é preservar a ordem e a paz social, bem como proteger a vida, liberdade, propriedade e outros valores jurídicos fundamentais. No Brasil, o Direito Penal é baseado na Constituição Federal de 1988 e no Código Penal. A Constituição estabelece os princípios gerais do Direito Penal, incluindo...</p>
+
+                <!-- LEIA MAIS -->
+                <div class="container-fluid m-0 p-0 g-0" style="text-align: right;">
+                    <a class="btn btn-default" href="/posts/penal/2023/02/06/direito-penal/"><i class="bi bi-book"></i> Leia mais</a>
+                </div>
+
+                <!-- Autor do Destaque 1 -->
+                
+
+
+
+
+<div class="row">
+    <div class="col">
+        
+        <!-- Avatar e Nome do Autor do Destaque 1 -->
+        <img src="/assets/profile_carlos.jpg" class="img-fluid" alt="Avatar" style="border-radius: 50%; width: 35px; margin: auto; margin-right: 0.5rem;" />
+        <span class="card-text"><small class="text-muted" style="font-family: Book Antiqua;">José Carlos Garcez Filho</small></span>
+    </div>
+</div>
+
+          </div>
+        </div>
+    </div>
+
+
+
+    <!-- Cria uma coluna para uma publicação nova -->
+    <div class="col">
+        <div class="card mb-3" style="border-width: 0px;">
+
+            <!-- Imagem do Destaque 1 -->
+            <a href="/posts/trabalhista/2023/02/05/direito-trabalhista/">
+                <div class="img-hover-link" style="background-image: url('/assets/images/posts/2023-02-05-direito-trabalhista.jpg'); min-height: 30vh; background-size: cover; background-repeat: no-repeat; border-radius: 0px; border-width: 0px;">
+                </div>
+
+                <!-- Categoria do Destaque 1 -->
+                <div class="card-img-overlay" style="height:25%;">
+                    
+
+<style>
+	/* Badge CIVIL */
+	.badge-civil {
+	  background-color: #4285F4;
+	  color: white;
+	}
+
+	/* Badge IMOBILIÁRIO */
+	.badge-imobiliario {
+	  background-color: #3B97A4;
+	  color: white;
+	}
+
+	/* Badge AMBIENTAL */
+	.badge-ambiental {
+	  background-color: #34A853;
+	  color: white;
+	}
+
+	/* Badge PENAL */
+	.badge-penal {
+	  background-color: #EA4335;
+	  color: white;
+	}
+
+	/* Badge TRABALHISTA */
+	.badge-trabalhista {
+	  background-color: #FBBC05;
+	  color: white;
+	}
+
+	/* Badge ARMAS */
+	.badge-armas {
+	  background-color: #1D1E2C;
+	  color: white;
+	}
+
+	/* Badge ARMAS */
+	.badge-data {
+	  background-color: #062A4E;
+	  color: white;
+	}
+</style>
+
+
+
+	
+
+			<span class="badge badge-trabalhista">Trabalhista</span>
+
+		
+
+
+
+
+
+                </div>
+
+                <!-- TEMPO de Leitura do Destaque 1 -->
+                <div class="card-img-overlay" style="height:25%; text-align: right;">
+                    <span class="badge rounded-pill text-bg-light" style="margin:auto; margin-left: 0;">
+
+                        
+                        
+                        
+
+<span>
+	<i class="bi bi-clock"></i>
+	
+	
+		1 minuto
+	
+</span>
+
+                    </span>
+                </div>
+            </a>
+
+            <!-- Corpo do Destaque 1 -->
+            <div class="card-body">
+
+                <!-- Título do Destaque 1 -->
+                <h5 class="card-title">O que é o Direito do Trabalho?</h5>
+
+                <!-- Data do Destaque 1 -->
+                <div class="mb-1 text-muted"><i class="bi bi-calendar3"></i> 05 Feb 2023</div>
+
+                <!-- Teaser da Publicação do Destaque 1 -->
+                <p class="card-text">O que é o Direito do Trabalho?
+</p>
+
+                <!-- LEIA MAIS -->
+                <div class="container-fluid m-0 p-0 g-0" style="text-align: right;">
+                    <a class="btn btn-default" href="/posts/trabalhista/2023/02/05/direito-trabalhista/"><i class="bi bi-book"></i> Leia mais</a>
+                </div>
+
+                <!-- Autor do Destaque 1 -->
+                
+
+
+
+
+<div class="row">
+    <div class="col">
+        
+        <!-- Avatar e Nome do Autor do Destaque 1 -->
+        <img src="/assets/profile_carlos.jpg" class="img-fluid" alt="Avatar" style="border-radius: 50%; width: 35px; margin: auto; margin-right: 0.5rem;" />
+        <span class="card-text"><small class="text-muted" style="font-family: Book Antiqua;">José Carlos Garcez Filho</small></span>
+    </div>
+</div>
+
+          </div>
+        </div>
+    </div>
+
+
+	                </div>
+	            </div>
+	            <!-- Coluna da Direita: Outras informações -->
+	            <div class="col-md-4">
+	                <div class="position-sticky" style="top: 12vh;">
+	                    <div class="p-4 mb-3 bg-light rounded">
+	                      <h4 class="fst-italic" style="text-align: right;">Sobre</h4>
+	                      <p class="mb-0" style="text-align: justify;">Este blog tem o objetivo de fornece informações atualizadas sobre questões 
+	                      jurídicas. Nossa equipe de especialistas em direito compartilha análises e opiniões informadas para 
+	                      ajudá-lo a tomar decisões conscientes. Acompanhe-nos para ficar por dentro das tendências e desenvolvimentos 
+	                      do mundo jurídico.</p>
+	                    </div>
+	                    <div class="p-4" style="text-align: right;">
+	                      <h4 class="fst-italic">Arquivos</h4>
+	                      <ol class="list-unstyled mb-0">
+	                        <li><a href="#">Fevereiro 2023</a></li>
+	                      </ol>
+	                    </div>
+	                    <div class="p-4" style="text-align: right;">
+	                      <h4 class="fst-italic">Categorias</h4>
+	                      <ol class="list-unstyled">
+	                        <li><a href="http://localhost:4000/categorias/civil"><span class="badge badge-civil">Civil</span></a></li>
+	                        <li><a href="http://localhost:4000/categorias/imobiliario"><span class="badge badge-imobiliario">Imobiliário</span></a></li>
+	                        <li><a href="http://localhost:4000/categorias/ambiental"><span class="badge badge-ambiental">Ambiental</span></a></li>
+	                        <li><a href="http://localhost:4000/categorias/penal"><span class="badge badge-penal">Penal</span></a></li>
+	                        <li><a href="http://localhost:4000/categorias/trabalhista"><span class="badge badge-trabalhista">Trabalhista</span></a></li>
+	                        <li><a href="http://localhost:4000/categorias/armas"><span class="badge badge-armas">Armas</span></a></li>
+	                      </ol>
+	                    </div>
+	                  </div>
+	            </div>
+	        </div>
+	    </div>
+    </div>
+</section>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		
+
+			
+			<style>
+    /* Botão customizado na Cor AZUL*/
+    .btn-default {
+      background-color: #062A4E; /* Cor do Logotipo */
+      color: white; /* cor da fonte */
+      border: none; /* sem borda */
+      transition: all 0.2s ease-in-out; /* efeito de transição */
+      display: inline-block;
+      white-space: nowrap;
+    }
+
+    /* Botão customizado ao passar o mouse */
+    .btn-default:hover {
+      background-color: #062A4E30; /* cor ao passar o mouse */
+      cursor: pointer; /* cursor de clique */
+    }
+
+    /* Botão customizado do WhatsApp*/
+    .btn-whatsapp {
+      background-color: #25D366; /* cor do WhatsApp */
+      color: white; /* cor da fonte */
+      border: none; /* sem borda */
+      transition: all 0.2s ease-in-out; /* efeito de transição */
+      display: inline-block;
+      white-space: nowrap;
+    }
+
+    /* Botão customizado ao passar o mouse */
+    .btn-whatsapp:hover {
+      background-color: #25D36630; /* cor ao passar o mouse */
+      cursor: pointer; /* cursor de clique */
+    }
+</style>
+
+<!-- Ficou Interessado -->
+<section class="reveal" style="margin: 2vh 0; padding: 2vh 0;">
+
+        <h1 style="text-align: center;font-family:'Oswald';">FICOU INTERESSADO?</h1>
+        <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding: 3vh; opacity:1"></hr>
+
+        <!-- Linha de informação -->
+        <div class="row m-0 gx-5">
+
+            <!-- Columa: Conteúdo -->
+            <div class="col p-2 d-block section-responsive" style="max-width:100vw; margin: auto;">
+
+                <div class="row m-0 justify-content-center">
+
+                    <!-- Inscreva-se -->
+                    <div class="col-sm-5" style="padding-bottom: 2.5vh;">
+                
+                        <div class="container-fluid p-0 m-0">
+                            <h3 style="text-align: center;font-family:'Oswald';">NEWSLETTER</h3>
+                            <hr style="max-width: 25px;border-width: 2px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding: 1vh; opacity:1"></hr>
+
+                            <p style="text-align: center;">Fique por dentro das novidades do blog da <strong>Garcez Filho | Advocacia & Consultoria
+                            Jurídica</strong>, assinando a nossa newsletter.</p>
+
+                            <!-- Formulário para inscrição da newsletter -->
+                            <form>
+                                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                                    <label for="newsletter1" class="visually-hidden">Email address</label>
+                                    <input id="newsletter1" type="text" class="form-control" placeholder="Endereço de email">
+                                    <button class="btn btn-default" type="button">
+                                        <i class="bi bi-send"></i> Assinar
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-2 d-none d-sm-block" style="padding-bottom: 2.5vh; max-width: 5vh;">
+                    </div>
+
+                    <!-- Entre em contato -->
+                    <div class="col-sm-5" style="padding-bottom: 2.5vh;">
+                        <h3 style="text-align: center;font-family:'Oswald';">MENSAGEM</h3>
+                        <hr style="max-width: 25px;border-width: 2px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding: 1vh; opacity:1"></hr>
+
+                        <p style="text-align: center;">Envie uma mensagem pelo WhatsApp e logo alguém da equipe de <strong>Garcez Filho | Advocacia & Consultoria Jurídica</strong>
+                        entrará em contato com você.</p>
+
+                        <!-- Entre em contato -->
+                        <div class="container-fluid" style="text-align: center;">
+                            <a href="https://wa.me/5511999776346" class="btn btn-whatsapp" role="button" target="_blank"><i class="fa fa-whatsapp" aria-hidden="true"></i> WhatsApp</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</section>
+
+		
+
+		
+		
+
+<!-- Footer -->
+<section class="reveal" style="background: #062a4e; color: #e4c84d;">
+    <div class="container-fluid" style="max-width:70vw">
+        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
+            <!-- Coluna da Esquerda: Logo + Slogan -->
+            <div class="col-lg-6 col-md-6 col-sm-12 align-items-start">
+                <div class="icon-square text-bg-light d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-2">
+                    <img src="/assets/logo_footer.svg" alt="logotipo footnote" style="background: #062a4e;">
+                </div>
+            </div>
+
+            <!-- Coluna do Meio: Links -->
+            <div class="col-lg-3 col-md-6 col-sm-12 align-items-start">
+                <div>
+                    <h5 style="font-family:'Book Antiqua';font-weight: bold;">Links</h5>
+
+                    <!-- Links -->
+                    <ul class="list-unstyled small">
+                      <li class="mb-2"><a href="https://www.garcezfilho.com.br/" style="color: white; text-decoration: none!important">Início</a></li>
+                      <li class="mb-2"><a href="https://www.garcezfilho.com.br/#servicos" style="color: white; text-decoration: none!important">Serviços</a></li>
+                      <li class="mb-2"><a href="https://www.garcezfilho.com.br/#sobre" style="color: white; text-decoration: none!important">Sobre</a></li>
+                      <li class="mb-2"><a href="https://www.garcezfilho.com.br/#equipe" style="color: white; text-decoration: none!important">Equipe</a></li>
+                      <li class="mb-2"><a href="https://www.garcezfilho.com.br/#localizacao" style="color: white; text-decoration: none!important">Localização</a></li>
+                      <li class="mb-2"><a href="#" style="color: white; text-decoration: none!important">Blog</a></li>
+                      <li class="mb-2"><a href="https://www.garcezfilho.com.br/#contatos" style="color: white; text-decoration: none!important">Contatos</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Coluna da Direita: Aviso e Termos -->
+            <div class="col-lg-3 col-md-6 col-sm-12 align-items-start">
+                <div>
+                    <h5 style="font-family:'Book Antiqua';font-weight: bold;">Políticas, avisos e termos</h5>
+
+                    <!-- Links -->
+                    <ul class="list-unstyled small">
+                      <li class="mb-2"><a href="https://blog.garcezfilho.com.br/politica-de-cookies" style="color: white; text-decoration: none!important">Política de Cookies</a></li>
+                      <li class="mb-2"><a href="https://blog.garcezfilho.com.br/politica-de-comentarios" style="color: white; text-decoration: none!important">Política de Comentários</a></li>
+                      <li class="mb-2"><a href="https://blog.garcezfilho.com.br/politica-de-privacidade" style="color: white; text-decoration: none!important">Política de Privacidade</a></li>
+                      <li class="mb-2"><a href="https://blog.garcezfilho.com.br/termos-de-uso" style="color: white; text-decoration: none!important">Termos de uso</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Direitos Autorais -->
+    <p style="text-align:center; font-size:0.75rem; margin:auto; padding-bottom: 0.5rem;">
+        Garcez Filho | Copyright © 2023 All rights reserved
+    </p>
+</section>
+
+	</body>
+</html>
