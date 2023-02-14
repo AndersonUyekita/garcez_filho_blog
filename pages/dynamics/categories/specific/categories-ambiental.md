@@ -23,8 +23,8 @@ call_action_section: true
 
 <hr style="max-width: 50px; border-width: 3px; border-color: rgba(6,42,78); text-align: center; margin: auto; padding-bottom: 10px; opacity:1; margin-bottom: 2vw;">
 
-<div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 mx-1 gx-2 gy-2 h-100">
-
+<div class="card-body p-2">
+<div class="row row-cols-1 row-cols-sm-1 row-cols-md-1 mx-1 gx-5 gy-5 h-100">
   {% for post in site.categories['ambiental'] %}
   <div class="col">
     <div class="card card-hover mb-3 h-100" style="margin:auto; border-radius: 0px; border-width: 0px;">
@@ -66,4 +66,5 @@ call_action_section: true
     </div>
   </div>
   {% endfor %}
+</div>
 </div>

@@ -11,9 +11,7 @@ featured_section: true
 call_action_section: true
 ---
 
-## O que é o Direito Civil?  
-
-O Direito Civil é uma área do direito que regulamenta as relações entre particulares e suas obrigações de direito privado, como contratos, propriedade, família e sucessões. Seu objetivo principal é proteger os direitos e garantir os deveres dos cidadãos em suas relações privadas e patrimoniais. Ele é uma das bases do sistema jurídico brasileiro e é regulado pelo Código Civil brasileiro.
+<p class="lead" style="padding: 0 4rem 1rem 1.0rem;"><i>O Direito Civil é uma área do direito que regulamenta as relações entre particulares e suas obrigações de direito privado, como contratos, propriedade, família e sucessões. Seu objetivo principal é proteger os direitos e garantir os deveres dos cidadãos em suas relações privadas e patrimoniais. Ele é uma das bases do sistema jurídico brasileiro e é regulado pelo Código Civil brasileiro.</i></p>
 
 O Código Civil brasileiro, promulgado em 11 de janeiro de 2003, regulamenta o Direito Civil no Brasil. É a principal lei que define as relações entre particulares e estabelece seus direitos e obrigações. Além disso, outras leis complementares, como a lei de registros públicos, a lei de locações, e a lei de alienação fiduciária, regulamentam questões específicas. Estas leis trabalham juntas com o Código Civil para formar o sistema jurídico brasileiro de Direito Civil.
 

@@ -9,9 +9,7 @@ hero_url: /assets/images/posts/2023-02-08-regularização-das-armas.jpg
 comments: true
 ---
 
-## Regularização de Armas
-
-A regularização de armas no Brasil é um assunto relevante e complexo. De acordo com a legislação brasileira, o porte e a posse de armas são permitidos somente para aqueles que possuem autorização específica e cumprem certos requisitos legais.
+<p class="lead" style="padding: 0 4rem 1rem 1.0rem;"><i>A regularização de armas no Brasil é um assunto relevante e complexo. De acordo com a legislação brasileira, o porte e a posse de armas são permitidos somente para aqueles que possuem autorização específica e cumprem certos requisitos legais.</i></p>
 
 A regulamentação da posse e do porte de armas é feita através do Exército Brasileiro, que é responsável por emitir as licenças de porte e posse de armas para os cidadãos que cumprem os requisitos necessários. Esses requisitos incluem a comprovação de capacitação técnica, psicológica e moral adequadas para o porte de armas, bem como a apresentação de uma justificativa válida para a necessidade de ter uma arma.
 

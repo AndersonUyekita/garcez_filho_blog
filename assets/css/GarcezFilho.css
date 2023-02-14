@@ -1,0 +1,141 @@
+.parallax {
+  /* The image used */
+  background-image: url("/01-Figure/bg.jpg");
+
+  /* Set a specific height */
+  min-height: 100vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  filter: brightness(65%);
+}
+
+#header {
+  position: absolute;
+  z-index: 1000;
+  top: 50vh;
+  right: 5vw;
+  color: white;
+}
+
+.text-box {
+  height: 50vh;
+  padding: 10px;
+}
+
+@media only screen and (max-device-width: 1024px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
+
+#header {
+  position: absolute;
+  top: 50vp;
+  -webkit-transform: translateY(-50vp);
+  -ms-transform: translateY(-50vp);
+  transform: translateY(-50vp);
+}
+
+/* Parallax Hero: Texto sobre o Parallax */
+
+.parallax-hero {
+  position: absolute;
+  z-index: 1000;
+  top: 35vh;
+  right: 5vw;
+  color: white;
+}
+
+/* Parallax Hero: Texto sobre o Parallax - Publicações Semelhantes */
+
+.parallax-hero-related-posts {
+  position: absolute;
+  z-index: 1000;
+  color: white;
+}
+
+/* Parallax de Publicações Semelhantes */
+.parallax-related-posts {
+  /* The image used */
+  background-image: url("/assets/publicacoes_semelhantes.jpg");
+
+  /* Set a specific height */
+  min-height: 40vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  filter: brightness(65%);
+}
+
+/* Text Fade-up effect */
+.reveal {
+  position: relative;
+  transform: translateY(100px);
+  opacity: 0;
+  transition: 0.5s all ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.titulo_regular {
+  font-family: 'Book Antiqua';
+  font-weight: bold;
+}
+
+.corpo_regular {
+  font-family: 'Book Antiqua';
+}
+
+/* Zoom Animation */
+@-webkit-keyframes zoom {
+  from {
+    -webkit-transform: scale(1, 1);
+  }
+
+  to {
+    -webkit-transform: scale(1.5, 1.5);
+  }
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(1, 1);
+  }
+
+  to {
+    transform: scale(1.5, 1.5);
+  }
+}
+
+.carousel-inner .item>img {
+  -webkit-animation: zoom 20s;
+  animation: zoom 20s;
+}
+
+  html
+    {
+  scroll-padding-top: 10vh; /* height of sticky header */
+    }
+
+/**************************************************** SOMBRA **********************************************************/
+/* Cria uma sombra em cada card que o mouse passa por cima  */
+
+/* Criando uma classe */
+.card-hover {}
+
+/* Adicionando um efeito para a classe criada */
+.card-hover:hover {
+  box-shadow: 0 .5rem 1rem rgba(var(--bs-body-color-rgb), .15) !important;
+}

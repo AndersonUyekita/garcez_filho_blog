@@ -24,7 +24,8 @@ call_action_section: true
 
 <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding-bottom: 10px; opacity:1; margin-bottom: 2vw;">
 
-<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 mx-1 gx-4 gy-4 h-100">
+<div class="card-body p-2">
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 mx-1 gx-5 gy-5 h-100">
 
 {% comment %} LOOP: Varredura de todas as categorias do site {% endcomment %}
 {% for cat in site.categories %}
@@ -70,5 +71,6 @@ call_action_section: true
 
 {% endfor %}
 
+</div>
 </div>
 

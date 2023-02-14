@@ -9,9 +9,8 @@ hero_url: /assets/images/posts/2023-02-09-porte-de-armas.jpg
 comments: true
 ---
 
-## Porte de Armas
+<p class="lead" style="padding: 0 4rem 1rem 1.0rem;"><i>O porte de armas no Brasil é regulamentado pela Lei de Armas (Lei nº 10.826/2003) e pelos regulamentos do Exército Brasileiro. Atualmente, apenas pessoas com licença de porte expedida pelo Exército Brasileiro podem portar armas no país.</i></p>
 
-O porte de armas no Brasil é regulamentado pela Lei de Armas (Lei nº 10.826/2003) e pelos regulamentos do Exército Brasileiro. Atualmente, apenas pessoas com licença de porte expedida pelo Exército Brasileiro podem portar armas no país.
 
 A obtenção da licença de porte é um processo rigoroso, que envolve verificações de antecedentes criminais, saúde mental, idade e outros requisitos específicos. Além disso, os portadores de armas são obrigados a cumprir regras rigorosas quanto ao uso, armazenamento e transporte das armas.
 
@@ -42,3 +41,13 @@ Algumas situações em que a pessoa pode solicitar o porte de armas incluem:
 * Proteção de bens: proprietários de estabelecimentos comerciais ou residenciais podem solicitar o porte de arma para proteger seus bens.
 
 Em todos os casos, é necessário comprovar a necessidade do porte de arma e atender aos requisitos previstos na Lei de Armas, como a idade mínima de 25 anos, a ausência de antecedentes criminais e a não dependência química, entre outros.
+
+### Qual é a diferença entre porte e posse de armas?
+
+No contexto da regulamentação de armas no Brasil, posse e porte são conceitos distintos, com significados diferentes.
+
+Posse de armas se refere à propriedade da arma, ao direito de tê-la em sua posse e guardá-la em sua residência ou estabelecimento comercial. Para ter direito à posse de uma arma de fogo, é necessário que o proprietário possua o Certificado de Registro (CR) expedido pelo Exército Brasileiro.
+
+Por outro lado, o porte de armas se refere ao direito de levar a arma consigo, acompanhada ou não, em público. Apenas pessoas com licença de porte expedida pelo Exército Brasileiro têm direito ao porte de armas no Brasil. Além disso, é importante destacar que o porte de arma fora do contexto previsto na lei é considerado crime e pode resultar em penalidades.
+
+Em resumo, posse é o direito de ter a arma em sua posse, enquanto o porte é o direito de levá-la consigo em público. Ambas as situações estão regulamentadas pelas leis brasileiras e requerem certos procedimentos e documentações para serem legalmente exercidas.

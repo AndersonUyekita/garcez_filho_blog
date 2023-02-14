@@ -8,9 +8,7 @@ hero_url: /assets/images/posts/2023-02-04-direito-imobiliario.jpg
 comments: true
 ---
 
-## O que é o Direito Imobiliário?
-
-O Direito Imobiliário é o conjunto de normas jurídicas que regulam as relações entre as pessoas em relação a bens imóveis, como terrenos, casas e prédios. Ele é regulamentado pelo Código Civil, pela Lei de Registros Públicos e por outras leis específicas, como a Lei de Condomínios.
+<p class="lead" style="padding: 0 4rem 1rem 1.0rem;"><i>O Direito Imobiliário é o conjunto de normas jurídicas que regulam as relações entre as pessoas em relação a bens imóveis, como terrenos, casas e prédios. Ele é regulamentado pelo Código Civil, pela Lei de Registros Públicos e por outras leis específicas, como a Lei de Condomínios.</i></p>
 
 A história do Direito Imobiliário no Brasil remonta à época colonial, quando as terras eram concedidas aos colonizadores e a propriedade imobiliária era vista como uma forma de garantir a posse da terra. Com a independência do país, o Direito Imobiliário foi regulamentado de forma mais sistemática e, desde então, tem sido objeto de constantes atualizações para acompanhar as mudanças sociais e econômicas do país.
 

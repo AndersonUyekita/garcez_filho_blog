@@ -79,11 +79,9 @@ Esse include insere o cabeçalho da publicação com:
 </div>
 
 <!-- Título do Post -->
-<div class="card-title">
-    <h1 style="margin-top: 5vh; padding-top: 5vh; padding-bottom: 2vh; text-align: left; font-family:'Oswald';">
-        {% comment %} Insere o title do Front Matter {% endcomment %}
-        {{ page.title }}
-    </h1>
+<div id="titulo-post" class="card-title">
+    {% comment %} Insere o title do Front Matter {% endcomment %}
+    <h1 style="margin-top: 5vh; padding-top: 5vh; padding-bottom: 2vh; text-align: left; font-family:'Oswald';">{{ page.title }}</h1>
 </div>
 
 <div class="container-fluid row align-items-center justify-content-center row-cols-auto">

@@ -9,9 +9,7 @@ hero_url: /assets/images/posts/2023-02-06-direito-penal.jpg
 comments: true
 ---
 
-## O que é o Direito Penal?
-
-O Direito Penal é um setor do Direito que regula as infrações penais e as punições adequadas a seus autores. Ele define os crimes e as contravenções, bem como os processos de perseguição e punição, protegendo a sociedade e os direitos individuais. O objetivo principal do Direito Penal é preservar a ordem e a paz social, bem como proteger a vida, liberdade, propriedade e outros valores jurídicos fundamentais.
+<p class="lead" style="padding: 0 4rem 1rem 1.0rem;"><i>O Direito Penal é um setor do Direito que regula as infrações penais e as punições adequadas a seus autores. Ele define os crimes e as contravenções, bem como os processos de perseguição e punição, protegendo a sociedade e os direitos individuais. O objetivo principal do Direito Penal é preservar a ordem e a paz social, bem como proteger a vida, liberdade, propriedade e outros valores jurídicos fundamentais.</i></p>
 
 No Brasil, o Direito Penal é baseado na Constituição Federal de 1988 e no Código Penal. A Constituição estabelece os princípios gerais do Direito Penal, incluindo o devido processo legal, a presunção de inocência e a proibição de penas cruel, inumanas ou degradantes. O Código Penal, por sua vez, define os crimes e as penas correspondentes, regulando o sistema de justiça criminal no país. Além disso, existem outras leis específicas que complementam o Direito Penal, tais como a Lei de Execução Penal e a Lei de Improbidade Administrativa.
 

@@ -8,9 +8,7 @@ hero_url: /assets/images/posts/2023-02-05-direito-trabalhista.jpg
 comments: true
 ---
 
-## O que é o Direito do Trabalho?
-
-O Direito Trabalhista no Brasil é um ramo do direito que regulamenta as relações entre empregadores e empregados, garantindo direitos e proteções aos trabalhadores. Ele foi criado no final do século XIX, durante o período de consolidação da industrialização no Brasil, com o objetivo de regulamentar as condições de trabalho e proteger os direitos dos trabalhadores.
+<p class="lead" style="padding: 0 4rem 1rem 1.0rem;"><i>O Direito Trabalhista no Brasil é um ramo do direito que regulamenta as relações entre empregadores e empregados, garantindo direitos e proteções aos trabalhadores. Ele foi criado no final do século XIX, durante o período de consolidação da industrialização no Brasil, com o objetivo de regulamentar as condições de trabalho e proteger os direitos dos trabalhadores.</i></p>
 
 Ao longo do tempo, o Direito Trabalhista evoluiu e passou a incluir uma série de direitos e proteções, como o direito à jornada de trabalho, à férias, à aposentadoria, entre outros. Em 1917, foi criada a Consolidação das Leis do Trabalho (CLT), que estabeleceu as regras gerais da relação de trabalho no Brasil, incluindo a regulamentação do salário, do horário de trabalho e da segurança e saúde do trabalhador.
 

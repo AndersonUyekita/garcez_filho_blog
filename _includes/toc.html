@@ -53,14 +53,17 @@ document.addEventListener("scroll", function() {
 <!-- Criar o TOC automaticamente. -->
 <script>
       $(document).ready(function(){
+
         // Inicializa a variável toc como uma string vazia
         var toc = "";
         // Inicializa a variável level como 0
         var level = 0;
         // Inicializa a variável headings como um array vazio
         var headings = [];
+
         // Encontra todos os elementos h2, h3, h4, h5 e h6 dentro do elemento com ID "content"
-        $("#content").find("h2, h3, h4, h5, h6").each(function (index) {
+        $("#titulo-post, #content").find("h1, h2, h3, h4, h5, h6").each(function (index) {
+
           // Armazena o título do elemento atual
           var title = $(this).text();
           // Gera um ID único para o elemento atual
@@ -69,16 +72,24 @@ document.addEventListener("scroll", function() {
           $(this).attr("id", id);
 
           // Verifica o tipo de elemento (h2, h3, etc.)
-          if ($(this).is("h2")) {
+          if ($(this).is("h1")) {
             level = 0;
-          } else if ($(this).is("h3")) {
+          } else if ($(this).is("h2")) {
             level = 1;
-          } else if ($(this).is("h4")) {
+          } else if ($(this).is("h3")) {
             level = 2;
-          } else if ($(this).is("h5")) {
+          } else if ($(this).is("h4")) {
             level = 3;
-          } else if ($(this).is("h6")) {
+          } else if ($(this).is("h5")) {
             level = 4;
+          }
+
+          // Adiciona uma linha para o elemento atual à variável toc
+          toc += "<a class='toc-topics' href='#" + id + "'>&#8227;" + title + "</a><br>";
+
+          // Adiciona espaços de acordo com o nível do elemento atual
+          for (var i = 0; i < level; i++) {
+            toc += "";
           }
 
           // Adiciona as informações do elemento atual ao array headings
@@ -88,13 +99,8 @@ document.addEventListener("scroll", function() {
             level: level
           });
 
-          // Adiciona uma linha para o elemento atual à variável toc
-          toc += "<a class='toc-topics' href='#" + id + "'>" + title + "</a><br>";
-          // Adiciona espaços de acordo com o nível do elemento atual
-          for (var i = 0; i < level; i++) {
-            toc += "&emsp;&emsp;";
-          }
         });
+
         // Insere o conteúdo da variável toc no elemento com ID "TOC"
         $("#TOC").html(toc);
 

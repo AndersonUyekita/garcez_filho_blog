@@ -2,114 +2,106 @@
 
 <html lang="pt-br" xmlns="http://www.w3.org/1999/xhtml">
 
-    {% comment %} Insere a tag head {% endcomment %}
-    {% include header.html %}
+  {% comment %} Insere a tag head {% endcomment %}
+  {% include header.html %}
 
-    <style>
-        /* Criando sections responsivos para cada tipo de dispositivo */
-        /* Aplicação: col */
-        .section-responsive {
-          max-width: 85vw;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          margin: 0;
-          padding: 0;
-        }
+  <style>
+    /* Criando sections responsivos para cada tipo de dispositivo */
+    /* Aplicação: col */
+    .section-responsive {
+      max-width: 85vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
 
-        @media (max-width: 767px) {
-          .section-responsive {
-            max-width: 95vw;
-          }
-        }
+    @media (max-width: 767px) {
+      .section-responsive {
+        max-width: 95vw;
+      }
+    }
 
-    </style>
+  </style>
 
-    <body>
+  <body>
 
-        {% comment %} Insere o Navbar {% endcomment %}
-        {% include navbar_blog.html %}
+    {% comment %} Insere o Navbar {% endcomment %}
+    {% include navbar_blog.html %}
 
-        {% comment %} Insere o Hero {% endcomment %}
-        {% include hero.html height="40vh" %}
+    {% comment %} Insere o Hero {% endcomment %}
+    {% include hero.html height="40vh" %}
 
-        <!-- Corpo do POST -->
-        <section>
+    <section>
 
-            <!-- Definição de Linha -->
-            <div class="row justify-content-center m-0 p-0">
-                <div class="col m-0 p-0 section-responsive">
-    
-                    <!-- Definição de Coluna: Essa é a coluna quer armazenará o conteúdo do POSTS -->
-                    <div class="col p-2 d-block" style="max-width:100vw; margin: auto;">
+      <!-- Definição de Linha -->
+      <div class="row justify-content-center m-0 p-0">
+        <div class="col m-0 p-0 section-responsive">
 
-                            <!-- Criação do Card flutuante -->
-                            <div class="container-fluid p-0 card shadow" style="top:-10vh;">
-            
-                                <!-- Delimita o corpo do texto -->
-                                <div class="card-body p-0" style="margin-left:5vw; margin-right:5vw;">
+          <!-- Criação do Card flutuante -->
+          <div class="container-fluid p-0 card shadow" style="top:-10vh;">
 
-                                    <!-- Informações do POST -->
-                                    {% comment %} Insere um título e as Informações gerais da publicação {% endcomment %}
-                                    {% include post_info.html %}
+            <!-- Delimita o corpo do texto -->
+            <div class="card-body p-0" style="margin-left:5vw; margin-right:5vw;">
 
-                                    <!-- Divisor -->
-                                    <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding-bottom: 10px; opacity:1; margin-bottom: 2vw;">
+              <!-- Informações do POST -->
+              {% comment %} Insere um título e as Informações gerais da publicação {% endcomment %}
+              {% include post_info.html %}
 
-                                    <!-- Conteúdo do POST -->
-                                    <div class="card-body">
+              <!-- Divisor -->
+              <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding-bottom: 10px; opacity:1; margin-bottom: 2vw;">
 
-                                        <div class="row gx-5 mb-4">
+              <!-- Conteúdo do POST -->
+              <div class="card-body">
 
-                                            <!-- CONTENT -->
-                                            <div id="content" class="col-sm-12 col-md-12 col-lg-9 p-2 d-block" style="text-align:justify; max-width: 100%;">
+                <div class="row gx-5 mb-4">
 
-                                                {{ content }}
-                                            </div>
+                  <!-- CONTENT -->
+                  <div id="content" class="col-sm-12 col-md-12 col-lg-9 p-2 d-block" style="text-align:justify; max-width: 100%;">
 
-                                            <!-- TOC -->
-                                            {% comment %} Gera o TOC automaticamente {% endcomment %}
-                                            {% include toc.html %}
-                                        </div>
+                    {{ content }}
+                  </div>
 
-                                        {% comment %}Social Media & Rating{% endcomment %}
-                                        {% include social_media.html %}
-                                    </div>
-
-                                    <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding-bottom: 10px; opacity:1; margin-bottom: 5vh;">
-
-                                    {% comment %}Minibio do Autor da Publicação{% endcomment %}
-                                    {% include minibio.html %}
-                                </div>
-                            </div>
-                    </div>
-
+                  <!-- TOC -->
+                  {% comment %} Gera o TOC automaticamente {% endcomment %}
+                  {% include toc.html %}
                 </div>
- 
+
+                {% comment %}Social Media & Rating{% endcomment %}
+                {% include social_media.html %}
+              </div>
+
+              <hr style="max-width: 50px; border-width: 3px; border-color: rgba(6,42,78); text-align: center; margin: auto; padding-bottom: 10px; opacity:1; margin-bottom: 5vh;">
+
+              {% comment %}Minibio do Autor da Publicação{% endcomment %}
+              {% include minibio.html %}
             </div>
+          </div>
 
-        </section>
+        </div>
 
-        {% if page.featured_section %}
+      </div>
 
-            {% comment %}Insere a seção "Destaques"{% endcomment %}
-            {% include featured.html %}
+    </section>
 
-        {% endif %}
-        
-        {% if page.related_section %}
+    {% comment %}Insere a seção "Destaques"{% endcomment %}
+    {% if page.featured_section %}
+        {% include featured.html %}
+    {% endif %}
 
-            {% comment %}Insere seção de Publicações Semelhantes{% endcomment %}
-            {% include related_posts.html %}
+    {% comment %}Insere seção de Publicações Semelhantes{% endcomment %}
+    {% if page.related_section %}
+        {% include related_posts.html %}
+    {% endif %}
 
-        {% endif %}
+    {% comment %}Insere a seção "Ficou Interessado?"{% endcomment %}
+    {% include call_action.html %}
 
-        {% comment %}Insere a seção "Ficou Interessado?"{% endcomment %}
-        {% include call_action.html %}
-
-        {% comment %}Footer genérico{% endcomment %}
-        {% include footer.html %}
+    {% comment %}Footer genérico{% endcomment %}
+    {% include footer.html %}
 
     <script id="dsq-count-scr" src="//garcezfilho.disqus.com/count.js" async></script>
   </body>
+
 </html>
