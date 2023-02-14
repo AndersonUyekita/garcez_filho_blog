@@ -1,0 +1,97 @@
+{% comment %}
+Esse include faz a criação de um TOC automaticamente.
+
+{% endcomment %}
+
+
+<!-- Carousel com as principais TAGS -->
+<section>
+
+    <!-- Configurando o Carousel para: Transição automático -->
+    <div id="carousel_blog" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicadores inferior -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel_blog" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel_blog" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel_blog" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carousel_blog" data-bs-slide-to="3" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carousel_blog" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carousel_blog" data-bs-slide-to="5" aria-label="Slide 6"></button>
+        </div>
+
+        <!-- Conteúdo: Os slides terão 5 segundos mudar -->
+        <div class="carousel-inner">
+
+                <!-- 1o Item: CIVIL -->
+                <div class="carousel-item active" data-bs-interval="5000">
+                  <div style="height: 50vh; background-image: url('./01-Figure/civil_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%); animation: zoom 20s;"></div>
+                  <div class="carousel-caption d-md-block">
+                    <h5 class="titulo_regular">Direito Civil</h5>
+                    <p>Leia os meus últimos posts sobre Direito Civil.</p>
+                    <a href="{{ site.url }}/categorias/civil" class="btn btn-lg btn-default" style="margin-bottom: 1.5rem;">Leia mais</a>
+                  </div>
+                </div>
+
+                <!-- 2o Item: PENAL -->
+                <div class="carousel-item" data-bs-interval="5000">
+                  <div style="height: 50vh; background-image: url('./01-Figure/criminal_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%); animation: zoom 20s;"></div>
+                  <div class="carousel-caption d-md-block">
+                    <h5 class="titulo_regular">Direito Penal</h5>
+                    <p>Leia os meus últimos posts sobre Direito Penal.</p>
+                    <a href="{{ site.url }}/categorias/penal" class="btn btn-lg btn-default" style="margin-bottom: 1.5rem;">Leia mais</a>
+                  </div>
+                </div>
+
+                <!-- 3o Item: ARMAS -->
+                <div class="carousel-item" data-bs-interval="5000">
+                  <div style="height: 50vh; background-image: url('./01-Figure/gun_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%); animation: zoom 20s;"></div>
+                  <div class="carousel-caption d-md-block">
+                    <h5 class="titulo_regular">Regularização de Armas</h5>
+                    <p>Leia os meus últimos posts sobre Regularização de Armas.</p>
+                    <a href="{{ site.url }}/categorias/armas" class="btn btn-lg btn-default" style="margin-bottom: 1.5rem;">Leia mais</a>
+                  </div>
+                </div>
+
+                <!-- 4o Item: AMBIENTAL -->
+                <div class="carousel-item" data-bs-interval="5000">
+                  <div style="height: 50vh; background-image: url('./01-Figure/environment_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%); animation: zoom 20s;"></div>
+                  <div class="carousel-caption d-md-block">
+                    <h5 class="titulo_regular">Direito Ambiental</h5>
+                    <p>Leia os meus últimos posts sobre Direito Ambiental.</p>
+                    <a href="{{ site.url }}/categorias/ambiental" class="btn btn-lg btn-default" style="margin-bottom: 1.5rem;">Leia mais</a>
+                  </div>
+                </div>
+
+                <!-- 5o Item: IMOBILIÁRIO -->
+                <div class="carousel-item" data-bs-interval="5000">
+                  <div style="height: 50vh; background-image: url('./01-Figure/realstate_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%); animation: zoom 20s;"></div>
+                  <div class="carousel-caption d-md-block">
+                    <h5 class="titulo_regular">Direito Imobiliário</h5>
+                    <p>Leia os meus últimos posts sobre Direito Imobiliário.</p>
+                    <a href="{{ site.url }}/categorias/imobiliario" class="btn btn-lg btn-default" style="margin-bottom: 1.5rem;">Leia mais</a>
+                  </div>
+                </div>
+
+                <!-- 6o Item: TRABALHISTA -->
+                <div class="carousel-item" data-bs-interval="5000">
+                  <div style="height: 50vh; background-image: url('./01-Figure/labour_law.jpg');background-position: center;background-repeat: no-repeat;background-size: cover;filter: brightness(65%); animation: zoom 20s;"></div>
+                  <div class="carousel-caption d-md-block">
+                    <h5 class="titulo_regular">Direito do Trabalho</h5>
+                    <p>Leia os meus últimos posts sobre Direito do Trabalho.</p>
+                    <a href="{{ site.url }}/categorias/trabalhista" class="btn btn-lg btn-default" style="margin-bottom: 1.5rem;">Leia mais</a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Botões Laterais -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#carousel_blog" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carousel_blog" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>    
+        </section>

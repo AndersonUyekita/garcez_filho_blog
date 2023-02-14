@@ -2,7 +2,7 @@
 title: index
 layout: shell
 date: 2023-02-03 12:00:00 -0300
-permalink: /index
+permalink: /
 featured_section: true
 call_action_section: true
 ---

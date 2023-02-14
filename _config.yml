@@ -5,8 +5,8 @@
 #description: Este é o meu site pessoal
 
 # Configurações de URL
-#baseurl: "" # Utilize "/nome_do_seu_site" se você estiver hospedando em uma sub-pasta
-#url: "http://localhost:4000" # Utilize "http://seu_domínio.com" ao publicar o site
+baseurl: "https://blog.garcezfilho.com.br"
+url: "https://blog.garcezfilho.com.br"
 
 # Encoding padrão (opcional, mas recomendável)
 encoding: UTF-8
