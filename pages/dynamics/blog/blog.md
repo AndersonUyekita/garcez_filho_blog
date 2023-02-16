@@ -1,8 +1,12 @@
 ---
 layout: default
 title: Todas as publicações do site
+date: 2023-02-01 12:00
 permalink: /blog
 hero_url: /assets/images/pages/blog.jpg
+featured_section: false
+call_action_section: false
+skip_render: true
 ---
 
 {% include post_info.html %}

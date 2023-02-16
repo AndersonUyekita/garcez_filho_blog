@@ -5,8 +5,12 @@
 #description: Este é o meu site pessoal
 
 # Configurações de URL
-#baseurl: "https://blog.garcezfilho.com.br"
-#url: "https://blog.garcezfilho.com.br"
+#
+# Comentar os campos baseurl e url quando estiver rodando o
+# servidor do jekyll localmente
+#
+baseurl: "https://blog.garcezfilho.com.br"
+url: "https://blog.garcezfilho.com.br"
 
 # Encoding padrão (opcional, mas recomendável)
 encoding: UTF-8
@@ -34,6 +38,12 @@ permalink: /posts/:categories/:year/:month/:day/:title/
 plugins:
   - jekyll-feed
   - jekyll-paginate
+  - jekyll-algolia
+
+algolia:
+  application_id: $ALGOLIA_APP_ID
+  api_key: $ALGOLIA_API_KEY
+  index_name: $ALGOLIA_INDEX_NAME
 
 # Configurações de Pastas
 exclude:
