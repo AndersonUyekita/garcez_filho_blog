@@ -43,6 +43,18 @@ Ele faz uso de um switch case.
 	  color: white;
 	}
 
+	/* Badge PROPRIEDADE INTELECTUAL */
+	.badge-propriedade-intelectual {
+	  background-color: #843131;
+	  color: white;
+	}
+
+	/* Badge SUCESSÕES */
+	.badge-sucessoes {
+	  background-color: #F3801D;
+	  color: white;
+	}
+
 	/* Badge DATA */
 	.badge-data {
 	  background-color: #062A4E;
@@ -77,6 +89,18 @@ Ele faz uso de um switch case.
 		{% when "armas" %}
 
 			<span class="badge badge-armas">Armas</span>
+
+		{% when "propriedade-intelectual" %}
+
+			<span class="badge badge-propriedade-intelectual">Propriedade Intelectual</span>
+
+		{% when "sucessoes" %}
+
+			<span class="badge badge-sucessoes">Sucessões</span>
+
+		{% when "data" %}
+
+			<span class="badge badge-data">Data</span>
 
 	{% endcase %}
 

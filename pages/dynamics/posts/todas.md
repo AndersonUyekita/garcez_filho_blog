@@ -50,7 +50,7 @@ call_action_section: false
             </div>
             <!-- Badge de Categoria -->
             <div class="card-img-overlay m-1 p-1" style="height: 0%;">
-              <span class="badge badge-data"><i class="bi bi-calendar3"></i> {{ post.date | date: "%b %d, %Y" }}</span>
+              <span class="badge badge-data"><i class="bi bi-calendar3"></i> {% include date_short.html post_date = post.date %}</span>
             </div>
           </a>
         </div>

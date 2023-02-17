@@ -3,7 +3,7 @@ title: GatoNet e o Direito da Propriedade Intelectual
 layout: post
 id_author: 1
 date: 2023-02-13 12:00:00 -0300
-categories: ['propriedade intelectual']
+categories: ['propriedade-intelectual']
 hero_url: /assets/images/posts/2023-02-13-gatonet-e-o-direito-da-propriedade-intelectual.jpg
 comments: true
 ---
@@ -62,7 +62,7 @@ Entre as principais medidas adotadas pelo governo para combater o uso de "GatoNe
 
 Em resumo, o governo brasileiro tem adotado uma série de medidas para combater o uso de "GatoNet" e outras práticas ilegais de transmissão de conteúdo. A melhor forma de contribuir para essa luta é optar por serviços legais e autorizados pelas empresas e pelos órgãos reguladores competentes.
 
-### Quais são as multas previstas para que usufrui desses serviços? 
+### Quais são as multas previstas para quem usufrui desses serviços? 
 
 As multas para quem utiliza serviços de "GatoNet" podem variar de acordo com o tipo e a gravidade da infração, bem como com a legislação estadual ou municipal aplicável. No entanto, em geral, quem utiliza esses serviços pode ser penalizado com multas que podem chegar a valores significativos.
 

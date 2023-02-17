@@ -49,6 +49,8 @@ call_action_section: true
           <div class="card-body h-100">
             <div class="row h-100">
               <div class="col" style="display: flex; flex-direction: column; height: 100%;">
+                <h4 style="text-align: center; font-family: 'Oswald'">{{ nome_categoria | upcase | replace: "-", " "}}</h4>
+                <hr style="max-width: 25px;border-width: 2px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding: 1vh; opacity:1">
                 <div class="row" style="flex: 0 0 auto;">
                   <h5 class="card-title">{{ last.title }}</h5>
                 </div>

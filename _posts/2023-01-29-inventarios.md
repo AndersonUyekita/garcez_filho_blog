@@ -4,7 +4,7 @@ layout: post
 id_author: 1
 author: José Carlos Garcez Filho
 date: 2023-01-29 12:00:00 -0300
-categories: sucessões
+categories: sucessoes
 hero_url: /assets/images/posts/2023-01-29-inventarios.jpg
 comments: true
 ---
