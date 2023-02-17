@@ -2,11 +2,7 @@ Site pessoal do Carlos.
 
 ## TO-DO's
 
-Inserir as seguintes páginas:
-
-* [Política de Cookies](https://diegocastro.adv.br/politica-de-cookies/)
-* [Política de Privacidade](https://diegocastro.adv.br/politica-site/)
-* [Termo de Uso](https://diegocastro.adv.br/termos-site/)
+* Criar as páginas com publicações relacionadas.
 
 Referências:
 

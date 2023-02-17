@@ -3,10 +3,20 @@ Esse include cria uma lista das últimas publicações em cards.
 {% endcomment %}
 
 
+<style>
+@media (max-width: 320px) {
+    .auto-center {
+        text-align: center!important;
+    }
+}
+
+</style>
+
+
 {% for post in site.posts limit: 5 %}
 
     <!-- Cria uma coluna para uma publicação nova -->
-    <div class="col">
+    <div class="col mb-5">
         <div class="card mb-3" style="border-width: 0px;">
 
             <!-- Imagem do Destaque 1 -->
@@ -43,15 +53,23 @@ Esse include cria uma lista das últimas publicações em cards.
                 <!-- Teaser da Publicação do Destaque 1 -->
                 <p class="card-text">{{ post.content | strip_html | truncatewords: 100 }}</p>
 
-                <!-- LEIA MAIS -->
-                <div class="container-fluid m-0 p-0 g-0" style="text-align: right;">
-                    <a class="btn btn-default"  href="{{ post.url }}"><i class="bi bi-book"></i> Leia mais</a>
+            </div>
+
+            <div class="card-footer mb-3" style="background-color: white; border-top: none;">
+                <div class="row d-flex m-0 p-0">
+                    <div class="col auto-center" style="margin-bottom: 1rem;">
+                        <!-- Autor do Destaque 1 -->
+                        {% include author.html id_author = post.id_author %}
+                    </div>
+
+                    <div class="col">
+                        <!-- LEIA MAIS -->
+                        <div class="container-fluid m-0 p-0 g-0 auto-center" style="text-align: right;">
+                            <a class="btn btn-default"  href="{{ post.url }}"><i class="bi bi-book"></i> Leia mais</a>
+                        </div>
+                    </div>
                 </div>
-
-                <!-- Autor do Destaque 1 -->
-                {% include author.html id_author = post.id_author %}
-
-          </div>
+            </div>
         </div>
     </div>
 

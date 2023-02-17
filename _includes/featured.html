@@ -1,147 +1,165 @@
 <style>
-    /* Definindo estilo para a ID corpo-artigo */
-    /* Aplicação: col */
-    #corpo-artigo {
-      max-width: 85vw;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin: 0;
-      padding: 0;
-    }
+  /* Definindo estilo para a ID corpo-artigo */
+  /* Aplicação: col */
+  #corpo-artigo {
+    max-width: 85vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
 
-    @media (max-width: 767px) {
-      #corpo-artigo {
-        max-width: 95vw;
-      }
+  @media (max-width: 767px) {
+    #corpo-artigo {
+      max-width: 95vw;
     }
+  }
+
 </style>
 
 <!-- Post em Destaques -->
 <section style="margin: 2vh 0; padding: 2vh 0;">
 
-    <!-- Configurando os limites da página -->
-    <div class="row justify-content-center m-0 p-0">
+  <!-- Configurando os limites da página -->
+  <div class="row justify-content-center m-0 p-0">
 
-        <div class="col m-0 p-0 section-responsive">
+    <div class="col m-0 p-0 section-responsive">
 
-            <!-- Título da Seção: DESTAQUE -->
-            <h1 style="text-align: center;font-family:'Oswald';">DESTAQUES</h1>
-            <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding: 3vh; opacity:1"></hr>
+      <!-- Título da Seção: DESTAQUE -->
+      <h1 style="text-align: center;font-family:'Oswald';">DESTAQUES</h1>
+      <hr style="max-width: 50px;border-width: 3px;border-color: rgba(6,42,78);text-align: center;margin: auto;padding: 3vh; opacity:1">
 
-            <!-- Definindo uma "linha" -->
-            <div class="row mb-2 g-3">
+      <!-- Definindo uma "linha" -->
+      <div class="row mb-2 g-3">
 
-                {% assign featured_0 = site.tags['featured'][0] reversed %}
+        {% assign featured_0 = site.tags['featured'][0] reversed %}
 
-                <!-- Coluna da Esquerda -->
-                <div class="col-md-6">
-                    <div class="card mb-3 card-hover h-100">
+        <!-- Coluna da Esquerda -->
+        <div class="col-md-6">
+          <div class="card mb-3 card-hover h-100">
 
-                        <!-- Imagem do Destaque 1 -->
-                        <a href="{{ featured_0.url }}">
-                            <div style="background-image: url('{{ featured_0.hero_url }}'); min-height: 30vh; background-size: cover;background-repeat: no-repeat; border-top-left-radius: 5px; border-top-right-radius: 5px;">
-                            </div>
+            <!-- Imagem do Destaque 1 -->
+            <a href="{{ featured_0.url }}">
+              <div style="background-image: url('{{ featured_0.hero_url }}'); min-height: 30vh; background-size: cover;background-repeat: no-repeat; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+              </div>
 
-                            <!-- Categoria do Destaque 1 -->
-                            <div class="card-img-overlay" style="height:25%;">
-                                {% include badge.html categories = featured_0.categories %}
-                            </div>
+              <!-- Categoria do Destaque 1 -->
+              <div class="card-img-overlay" style="height:25%;">
+                {% include badge.html categories = featured_0.categories %}
+              </div>
 
-                            <!-- TEMPO de Leitura do Destaque 1 -->
-                            <div class="card-img-overlay" style="height:25%; text-align: right;">
-                                <span class="badge rounded-pill text-bg-light" style="margin:auto; margin-left: 0;">
+              <!-- TEMPO de Leitura do Destaque 1 -->
+              <div class="card-img-overlay" style="height:25%; text-align: right;">
+                <span class="badge rounded-pill text-bg-light" style="margin:auto; margin-left: 0;">
 
-                                    {% comment %} Conta a quantidade de palavras {% endcomment %}
-                                    {% assign words = featured_0.content | strip_html | number_of_words %}
-                                    {% include reading_time.html content = words %}
+                  {% comment %} Conta a quantidade de palavras {% endcomment %}
+                  {% assign words = featured_0.content | strip_html | number_of_words %}
+                  {% include reading_time.html content = words %}
 
-                                </span>
-                            </div>
-                        </a>
+                </span>
+              </div>
+            </a>
 
 
-                        <!-- Corpo do Destaque 1 -->
-                        <div class="card-body">
+            <!-- Corpo do Destaque 1 -->
+            <div class="card-body pb-0">
 
-                            <!-- Título do Destaque 1 -->
-                            <h5 class="card-title">{{ featured_0.title }}</h5>
+              <!-- Título do Destaque 1 -->
+              <h5 class="card-title">{{ featured_0.title }}</h5>
 
-                            <!-- Data do Destaque 1 -->
-                            <div class="mb-1 text-muted"><i class="bi bi-calendar3"></i> {{ featured_0.date | date: "%d %b %Y" }}</div>
+              <!-- Data do Destaque 1 -->
+              <div class="mb-1 text-muted"><i class="bi bi-calendar3"></i> {{ featured_0.date | date: "%d %b %Y" }}</div>
 
-                            <!-- Teaser da Publicação do Destaque 1 -->
-                            <p class="card-text">{{ featured_0.content | strip_html | truncatewords: 30 }}</p>
+              <!-- Teaser da Publicação do Destaque 1 -->
+              <p class="card-text">{{ featured_0.content | strip_html | truncatewords: 30 }}</p>
 
-                            <!-- LEIA MAIS -->
-                            <div class="container-fluid m-0 p-0 g-0" style="text-align: right;">
-                                <a class="btn btn-default"  href="{{ featured_0.url }}"><i class="bi bi-book"></i> Leia mais</a>
-                            </div>
-
-                            <!-- Autor do Destaque 1 -->
-                            {% include author.html id_author = featured_0.id_author %}
-
-                      </div>
-                    </div>
-                </div>
-
-                {% assign featured_1 = site.tags['featured'][1] reversed %}
-
-                <!-- Coluna da Direita -->
-                <div class="col-md-6">
-                    <div class="card mb-3 card-hover h-100">
-
-                        <!-- Imagem do Destaque 2 -->
-                        <a href="{{ featured_1.url }}">
-                            <div style="background-image: url('{{ featured_1.hero_url }}'); min-height: 30vh; background-size: cover;background-repeat: no-repeat; border-top-left-radius: 5px; border-top-right-radius: 5px;">
-                            </div>
-
-                            <!-- Categoria do Destaque 2 -->
-                            <div class="card-img-overlay" style="height:25%;">
-                                {% include badge.html categories = featured_1.categories %}
-                            </div>
-
-                            <!-- TEMPO de Leitura do Destaque 2 -->
-                            <div class="card-img-overlay" style="height:25%; text-align: right;">
-                                <span class="badge rounded-pill text-bg-light" style="margin:auto; margin-left: 0;">
-
-                                    {% comment %} Conta a quantidade de palavras {% endcomment %}
-                                    {% assign words = featured_1.content | strip_html | number_of_words %}
-                                    {% include reading_time.html content = words %}
-
-                                </span>
-                            </div>
-                        </a>
-
-                        <!-- Corpo do Destaque 2 -->
-                        <div class="card-body">
-
-                            <!-- Título do Destaque 2 -->
-                            <h5 class="card-title">{{ featured_1.title }}</h5>
-
-                            <!-- Data do Destaque 2 -->
-                            <div class="mb-1 text-muted"><i class="bi bi-calendar3"></i> {{ featured_1.date | date: "%d %b %Y" }}</div>
-
-                            <!-- Teaser da Publicação do Destaque 2 -->
-                            <p class="card-text">{{ featured_1.content | strip_html | truncatewords: 30 }}</p>
-
-                            <!-- LEIA MAIS -->
-                            <div class="container-fluid m-0 p-0 g-0" style="text-align: right;">
-                                <a class="btn btn-default"  href="{{ featured_1.url }}"><i class="bi bi-book"></i> Leia mais</a>
-                            </div>
-
-                        <!-- Autor do Destaque 2 -->
-                        {% include author.html id_author = featured_1.id_author %}
-
-                      </div>
-                    </div>
-                </div>
             </div>
 
+            <!-- Footer do Destaque 1 -->
+              <div class="card-footer mb-3" style="background-color: white; border-top: none;">
+                <div class="row m-0 p-0">
+                  <!-- Coluna Avatar -->
+                  <div class="col">
+                    <!-- Autor do Destaque 1 -->
+                    {% include author.html id_author = featured_0.id_author %}
+                  </div>
+
+                  <!-- Coluna: LEIA MAIS -->
+                  <div class="col">
+                    <div class="container-fluid m-0 p-0 g-0" style="text-align: right;">
+                      <a class="btn btn-default" href="{{ featured_0.url }}"><i class="bi bi-book"></i> Leia mais</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
         </div>
-    
+
+        {% assign featured_1 = site.tags['featured'][1] reversed %}
+
+        <!-- Coluna da Direita -->
+        <div class="col-md-6">
+          <div class="card mb-3 card-hover h-100">
+
+            <!-- Imagem do Destaque 2 -->
+            <a href="{{ featured_1.url }}">
+              <div style="background-image: url('{{ featured_1.hero_url }}'); min-height: 30vh; background-size: cover;background-repeat: no-repeat; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+              </div>
+
+              <!-- Categoria do Destaque 2 -->
+              <div class="card-img-overlay" style="height:25%;">
+                {% include badge.html categories = featured_1.categories %}
+              </div>
+
+              <!-- TEMPO de Leitura do Destaque 2 -->
+              <div class="card-img-overlay" style="height:25%; text-align: right;">
+                <span class="badge rounded-pill text-bg-light" style="margin:auto; margin-left: 0;">
+
+                  {% comment %} Conta a quantidade de palavras {% endcomment %}
+                  {% assign words = featured_1.content | strip_html | number_of_words %}
+                  {% include reading_time.html content = words %}
+
+                </span>
+              </div>
+            </a>
+
+            <!-- Corpo do Destaque 2 -->
+            <div class="card-body pb-0">
+
+              <!-- Título do Destaque 2 -->
+              <h5 class="card-title">{{ featured_1.title }}</h5>
+
+              <!-- Data do Destaque 2 -->
+              <div class="mb-1 text-muted"><i class="bi bi-calendar3"></i> {{ featured_1.date | date: "%d %b %Y" }}</div>
+
+              <!-- Teaser da Publicação do Destaque 2 -->
+              <p class="card-text">{{ featured_1.content | strip_html | truncatewords: 30 }}</p>
+
+            </div>
+
+            <!-- Footer do Destaque 2 -->
+              <div class="card-footer mb-3" style="background-color: white; border-top: none;">
+                <div class="row m-0 p-0">
+                  <!-- Coluna Avatar -->
+                  <div class="col">
+                    <!-- Autor do Destaque 2 -->
+                    {% include author.html id_author = featured_1.id_author %}
+                  </div>
+                  <!-- Coluna: LEIA MAIS -->
+                  <div class="col">
+                    <div class="container-fluid m-0 p-0 g-0" style="text-align: right;">
+                      <a class="btn btn-default" href="{{ featured_1.url }}"><i class="bi bi-book"></i> Leia mais</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+          </div>
+
+        </div>
+      </div>
     </div>
+  </div>
 </section>
-
-
-

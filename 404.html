@@ -1,5 +1,5 @@
 ---
-permalink: /404.html
+permalink: /404
 ---
 <!DOCTYPE html>
 
@@ -8,16 +8,26 @@ permalink: /404.html
   <!-- Inserindo o Header -->
   {% include header.html %}
 
+  {% include navbar_blog.html %}
+
   <body>
 
     <section>
 
         <!-- Inserir Hero -->
-        <div class="container-fluid-g0" style="height: 200px;background-image: url(/assets/404.jpg);background-position: center;background-size: cover;">
+        <div class="container-fluid-g0" style="height: 50vh;background-image: url(/assets/404.jpg);background-position: center;background-size: cover;">
         </div>
 
-        <div class="container-fluid" style="max-width: 70vw; min-height: 100vh">
-            <p>Não foi possível encontrar a página.</p>
+        <div class="container-fluid card" style="max-width: 70vw; padding-top: -10vh; margin-top: -10vh;">
+            <h1 style="font-family: 'Oswald'; text-align: center; padding-top: 10hv; margin-top: 10vh;">
+              Eu acho que você está perdido!
+            </h1>
+
+            <div class="container-fluid" style="margin-left: 2.5vw; margin-right: 2.5vw;">
+              <p>
+                Creio que você digitou errado o endereço.
+              </p>
+            </div>
         </div>
     </section>
 

@@ -7,6 +7,21 @@ featured_section: true
 call_action_section: true
 ---
 
+<style>
+.btn-outline-default {
+	color: #062A4E;
+	border-color: #062A4E;
+}
+
+.btn-outline-default:hover {
+	color: white;
+	border-color: white;
+	background-color: #062A4E90;
+}
+</style>
+
+
+
 <!-- Últimas Postagens -->
 <section class="reveal" style="margin: 2vh 0; padding: 2vh 0;">
     <!-- Configurando os limites da página -->
@@ -22,6 +37,11 @@ call_action_section: true
 	                <!-- Listar as publicações -->
 	                <div class="row-cols-1 row-cols-sm-1 row-cols-md-1 g-3 m-0 p-0">
 	                	{% include last_posts.html %}
+	                </div>
+	                <!-- TODAS as publicações -->
+	                <div class="containter-fluid mb-3 pb-3" style="text-align: center;">
+	                	<a class="btn btn-outline-default btn-lg" href="{{ page.url}}todas-publicacoes" role="button">Veja todas as publicações
+	                	</a>
 	                </div>
 	            </div>
 	            <!-- Coluna da Direita: Outras informações -->
