@@ -69,7 +69,7 @@
               <h5 class="card-title">{{ featured_0.title }}</h5>
 
               <!-- Data do Destaque 1 -->
-              <div class="mb-1 text-muted"><i class="bi bi-calendar3"></i> {{ featured_0.date | date: "%d %b %Y" }}</div>
+              <div class="mb-1 text-muted"><i class="bi bi-calendar3"></i> {% include date_short.html post_date = featured_0.date %}</div>
 
               <!-- Teaser da Publicação do Destaque 1 -->
               <p class="card-text">{{ featured_0.content | strip_html | truncatewords: 30 }}</p>
@@ -132,7 +132,7 @@
               <h5 class="card-title">{{ featured_1.title }}</h5>
 
               <!-- Data do Destaque 2 -->
-              <div class="mb-1 text-muted"><i class="bi bi-calendar3"></i> {{ featured_1.date | date: "%d %b %Y" }}</div>
+              <div class="mb-1 text-muted"><i class="bi bi-calendar3"></i> {% include date_short.html post_date = featured_1.date %}</div>
 
               <!-- Teaser da Publicação do Destaque 2 -->
               <p class="card-text">{{ featured_1.content | strip_html | truncatewords: 30 }}</p>

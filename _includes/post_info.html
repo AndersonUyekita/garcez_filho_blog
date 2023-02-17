@@ -122,7 +122,7 @@ Esse include insere o cabeçalho da publicação com:
         <span>
             <i class="bi bi-calendar3"></i>
             {% comment %} Insere a data do artigo de acordo com o front matter {% endcomment %}
-            {% include date_short.html %}
+            {% include date_short.html post_date = page.date%}
         </span>
     </div>
 

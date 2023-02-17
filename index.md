@@ -40,7 +40,7 @@ call_action_section: true
 	                </div>
 	                <!-- TODAS as publicações -->
 	                <div class="containter-fluid mb-3 pb-3" style="text-align: center;">
-	                	<a class="btn btn-outline-default btn-lg" href="{{ page.url}}todas-publicacoes" role="button">Veja todas as publicações
+	                	<a class="btn btn-outline-default btn-lg" href="{{ page.url}}posts/todas" role="button">Veja todas as publicações
 	                	</a>
 	                </div>
 	            </div>

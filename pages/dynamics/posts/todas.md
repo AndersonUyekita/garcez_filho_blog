@@ -2,11 +2,10 @@
 layout: default
 title: Todas as publicações
 date: 2023-02-01 12:00
-permalink: /todas-publicacoes
+permalink: /posts/todas
 hero_url: /assets/images/pages/blog.jpg
 featured_section: false
 call_action_section: false
-skip_render: true
 ---
 
 <style>
@@ -50,7 +49,7 @@ skip_render: true
             <div class="container-fluid m-0 p-0 h-100" style="background-image: url('{{ post.hero_url }}'); background-size: cover;background-repeat: no-repeat;">
             </div>
             <!-- Badge de Categoria -->
-            <div class="card-img-overlay m-1 p-1">
+            <div class="card-img-overlay m-1 p-1" style="height: 0%;">
               <span class="badge badge-data"><i class="bi bi-calendar3"></i> {{ post.date | date: "%b %d, %Y" }}</span>
             </div>
           </a>

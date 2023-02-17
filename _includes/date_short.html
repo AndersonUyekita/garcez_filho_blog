@@ -1,17 +1,40 @@
-{% assign m = page.date | date: "%-m" %}
-{{ page.date | date: "%-d " }}
-{% case m %}
-  {% when '1' %}Jan
-  {% when '2' %}Fev
-  {% when '3' %}Mar
-  {% when '4' %}Abr
-  {% when '5' %}Mai
-  {% when '6' %}Jun
-  {% when '7' %}Jul
-  {% when '8' %}Ago
-  {% when '9' %}Set
-  {% when '10' %}Out
-  {% when '11' %}Nov
-  {% when '12' %}Dez
-{% endcase %}
-{{ page.date | date: " %Y" }}
+{% assign dia = include.post_date | date: "%d" %}
+{% assign mes = include.post_date | date: "%B" | string | downcase %}
+{% assign ano = include.post_date | date: "%Y" %}
+
+{% if mes == "january" %}
+  {{ dia }} Jan {{ ano }}
+{% endif%}
+{% if mes == "february" %}
+  {{ dia }} Fev {{ ano }}
+{% endif%}
+{% if mes == "march" %}
+  {{ dia }} Mar {{ ano }}
+{% endif%}
+{% if mes == "april" %}
+  {{ dia }} Abr {{ ano }}
+{% endif%}
+{% if mes == "may" %}
+  {{ dia }} Mai {{ ano }}
+{% endif%}
+{% if mes == "june" %}
+  {{ dia }} Jun {{ ano }}
+{% endif%}
+{% if mes == "july" %}
+  {{ dia }} Jul {{ ano }}
+{% endif%}
+{% if mes == "august" %}
+  {{ dia }} Ago {{ ano }}
+{% endif%}
+{% if mes == "september" %}
+  {{ dia }} Set {{ ano }}
+{% endif%}
+{% if mes == "october" %}
+  {{ dia }} Out {{ ano }}
+{% endif%}
+{% if mes == "november" %}
+  {{ dia }} Nov {{ ano }}
+{% endif%}
+{% if mes == "december" %}
+  {{ dia }} Dez {{ ano }}
+{% endif%}

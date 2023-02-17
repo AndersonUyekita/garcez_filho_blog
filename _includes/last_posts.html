@@ -4,14 +4,30 @@ Esse include cria uma lista das últimas publicações em cards.
 
 
 <style>
-@media (max-width: 320px) {
-    .auto-center {
-        text-align: center!important;
+    @media (max-width: 320px) {
+        .auto-center {
+            text-align: center!important;
+        }
     }
-}
 
-</style>
+    /* Criando sections responsivos para cada tipo de dispositivo */
+    /* Aplicação: col */
+    .section-responsive {
+      max-width: 85vw;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0;
+      padding: 0;
+    }
 
+    @media (max-width: 767px) {
+      .section-responsive {
+        max-width: 95vw;
+      }
+    }
+
+  </style>
 
 {% for post in site.posts limit: 5 %}
 
@@ -48,7 +64,7 @@ Esse include cria uma lista das últimas publicações em cards.
                 <h5 class="card-title">{{ post.title }}</h5>
 
                 <!-- Data do Destaque 1 -->
-                <div class="mb-1 text-muted"><i class="bi bi-calendar3"></i> {{ post.date | date: "%d %b %Y" }}</div>
+                <div class="mb-1 text-muted"><i class="bi bi-calendar3"></i> {% include date_short.html post_date = post.date %}</div>
 
                 <!-- Teaser da Publicação do Destaque 1 -->
                 <p class="card-text">{{ post.content | strip_html | truncatewords: 100 }}</p>
